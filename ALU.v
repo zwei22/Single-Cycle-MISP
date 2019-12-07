@@ -24,7 +24,7 @@ assign out =    (ctrl==`AND)?   in1&in2:
                 (ctrl==`ADD)?   in1+in2:
                 (ctrl==`SUB)?   in1-in2:
                 (ctrl==`SLT)?   (in1<in2)? 1:0:
-                (ctrl==`NOR)?   in1~|in2:
+                (ctrl==`NOR)?   ~(in1 | in2):
                 0;
 
 assign zero = (out==0);

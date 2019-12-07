@@ -43,7 +43,7 @@ assign alu_op = (opcode == `RTYPE) ? 2'b10 : (
                 (opcode == `BEQ || opcode == `BNE) ? 2'b01 : 2'b11
                 ));
 assign mem_write = (opcode == `SW) ? 0 : 1;
-assign alu_src = (opcode == `LW || opcode == `SW) ? 1 : 0;
+assign alu_src = (opcode == `LW || opcode == `SW || opcode == `ADDI) ? 1 : 0;
 assign reg_write = (opcode == `RTYPE || opcode == `LW || opcode == `ADDI || opcode == `JAL) ? 1 : 0;
 assign mem_enable = (opcode == `LW || opcode == `SW) ? 0 : 1;
 

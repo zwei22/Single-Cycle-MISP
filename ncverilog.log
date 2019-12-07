@@ -1,0 +1,70 @@
+ncverilog: 15.20-s027: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s027: Started on Dec 08, 2019 at 02:26:48 CST
+ncverilog
+	tb.v
+	SingleCycleMIPS.v
+	+define+Baseline
+	+access+r
+Recompiling... reason: file './SingleCycleMIPS.v' is newer than expected.
+	expected: Sun Dec  8 02:25:59 2019
+	actual:   Sun Dec  8 02:26:45 2019
+file: SingleCycleMIPS.v
+	module worklib.SingleCycleMIPS:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+always@(*)begin
+      |
+ncelab: *W,STARMT (./SingleCycleMIPS.v,135|6): This @* expands to empty list, will never wake up.
+    .write_reg(w_write_reg),
+                         |
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,59|25): port sizes differ in port connection (5/6).
+    .read_reg1(IR[25:21]),
+                |
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,57|16): port sizes differ in port connection (5/6).
+    .read_reg2(IR[20:16]),
+                |
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,58|16): port sizes differ in port connection (5/6).
+		$readmemh (`DMEM_INIT, Data_memory.mem);
+		                                     |
+ncelab: *W,MEMODR (./tb.v,79|39): $readmem default memory order incompatible with IEEE1364.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SingleCycleMIPS:v <0x618e3e59>
+			streams:  13, words:  2695
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 13      13
+		Primitives:              75       2
+		Timing outputs:          32       1
+		Registers:               93      93
+		Scalar wires:            52       -
+		Expanded wires:         108       6
+		Vectored wires:          21       -
+		Always blocks:           11      11
+		Initial blocks:           5       5
+		Cont. assignments:       18      31
+		Pseudo assignments:       9       9
+		Timing checks:           85      44
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.SingleCycle_tb:v
+Loading snapshot worklib.SingleCycle_tb:v .................... Done
+*Verdi3* Loading libsscore_ius152.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Reading instruction memory......
+FSDB Dumper for IUS, Release Verdi3_L-2016.06-SP1-1, Linux, 09/27/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'MIPS.fsdb'
+*Verdi3* : Begin traversing the scope (SingleCycle_tb), layer (0).
+*Verdi3* : Enable +mda dumping.
+*Verdi3* : End of traversing.
+*Verdi3* : Begin traversing the scopes, layer (0).
+*Verdi3* : End of traversing.
+Simulation interrupted at 22 NS + 68076646
+ncsim> quit
+TOOL:	ncverilog	15.20-s027: Exiting on Dec 08, 2019 at 02:27:06 CST  (total: 00:00:18)

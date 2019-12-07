@@ -15,7 +15,7 @@
 module ALU_CTRL(
     alu_op,
     funct,
-    alu_ctrl,
+    alu_ctrl
 );
     input   [1:0] alu_op;
     output  [3:0] alu_ctrl;

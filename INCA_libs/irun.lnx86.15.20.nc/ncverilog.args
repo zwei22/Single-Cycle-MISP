@@ -1,0 +1,8 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+tb.v
+SingleCycleMIPS.v
++define+Baseline
++access+r

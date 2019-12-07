@@ -1,15 +1,15 @@
-module ADD2(
+module ADD4(
     clk,
     in,
-    out,
+    out
 );
 
 input   clk;
 input   [31:0] in;
-output  [31:0] out;
+output reg  [31:0] out;
 
 always@(posedge clk)begin
-    out <= in+4;
+    out <= in + 3'b100;
 end
 
 endmodule

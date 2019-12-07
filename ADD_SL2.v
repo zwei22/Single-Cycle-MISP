@@ -1,4 +1,4 @@
-module ADD2(
+module ADD_SL2(
     in1,
     in2, //from SL2
     out

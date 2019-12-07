@@ -1,0 +1,2 @@
+1575739521 /home/users/b06901051/CA_HW4/tb.v
+1575743205 /home/users/b06901051/CA_HW4/SingleCycleMIPS.v

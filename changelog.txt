@@ -1,0 +1,6 @@
+changed:
+SingleCycleMIPS: w_alu_ctrl, ADD_SL2
+ADD4: output reg
+ALU: NOR
+Register: rst_n 1'b0; reg_write==
+ADD4: ADD4
