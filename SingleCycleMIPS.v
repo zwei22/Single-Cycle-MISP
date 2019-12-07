@@ -26,7 +26,6 @@ module SingleCycleMIPS(
 
 //==== reg/wire declaration ===============================
 
-
 //==== wire connection to submodule ======================
 //Example:
 //	ctrl control(
@@ -68,4 +67,3 @@ endmodule
 
 
 //	endmodule
-		
