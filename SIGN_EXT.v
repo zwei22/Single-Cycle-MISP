@@ -6,6 +6,6 @@ module SIGN_EXT(
 input   [15:0] in;
 output  [31:0] out;
 
-assign out = in;
+assign out = { {16{in[15]}},in };
 
 endmodule
