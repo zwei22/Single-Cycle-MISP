@@ -111,7 +111,7 @@ ALU_CTRL alu_ctrl(
 
 ADD4 add4(
     .clk(clk),
-    .in(IR_addr),
+    .in(w_pc_out),
     .out(w_add4)
 );
 

@@ -6,10 +6,12 @@ module ADD4(
 
 input   clk;
 input   [31:0] in;
-output reg  [31:0] out;
+// output reg  [31:0] out;
+output  [31:0] out;
 
-always@(posedge clk)begin
-    out <= in + 3'd4;
-end
+assign out = in+3'd4;
+// always@(posedge clk)begin
+//     out <= in + 3'd4;
+// end
 
 endmodule
