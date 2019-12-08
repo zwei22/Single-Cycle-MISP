@@ -7,6 +7,7 @@
 `include "SIGN_EXT.v"
 `include "SL2.v"
 `include "SL2_26.v"
+`include "PC.v"
 
 module SingleCycleMIPS( 
     clk,
@@ -41,7 +42,7 @@ module SingleCycleMIPS(
     wire [3:0] w_alu_ctrl;
     wire [4:0] w_write_reg;
     wire [27:0] w_sl28;
-    wire [31:0] w_rd1, w_rd2, w_alu, w_se_sl, w_sl_alu, w_add4, w_addsl, w_jumpaddr, w_mem_reg, w_alu_result;
+    wire [31:0] w_rd1, w_rd2, w_alu, w_se_sl, w_sl_alu, w_add4, w_addsl, w_jumpaddr, w_mem_reg, w_alu_result, w_pc_in, w_pc_out;
     integer i;
 //==== wire connection to submodule ======================
 //Example:
@@ -119,10 +120,19 @@ SL2_26 sl2_26(
     .out(w_jumpaddr[27:0])
 );
 
+PC pc(
+    .clk(clk),
+    .rst_n(rst_n),
+    .in(w_pc_in),
+    .out(w_pc_out)
+);
+
 assign w_write_reg = (w1) ? IR[15:11] : IR[20:16];
 assign w_alu = (w7) ? w_se_sl : w_rd2;
 assign w_jumpaddr[31:28] = w_add4[31:28];
-assign IR_addr = (rst_n)? ((w2) ? w_jumpaddr : ((w3 & w10) ? w_addsl : w_add4)) : 0;
+//assign IR_addr = (rst_n)? ((w2) ? w_jumpaddr : ((w3 & w10) ? w_addsl : w_add4)) : 0;
+assign w_pc_in = (w2) ? w_jumpaddr : ((w3 & w10) ? w_addsl : w_add4);
+assign IR_addr = w_pc_out;
 assign w_mem_reg = (w5) ? ReadDataMem : w_alu_result;
 assign A = (rst_n) ? w_alu_result[6:0] : 0;
 assign CEN = w9;
@@ -130,16 +140,6 @@ assign OEN = w4;
 assign WEN = w6;
 assign Data2Mem = w_rd2;
 
-//==== combinational part =================================
-
-always@(*)begin
-
-end
-
-//==== sequential part ====================================
-always@(posedge clk)begin
-
-end
 
 endmodule
 
