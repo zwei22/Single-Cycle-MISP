@@ -3,4 +3,5 @@
 *.log
 *.history
 *.key
-*.fsbd
+*.fsdb
+*.vcd
