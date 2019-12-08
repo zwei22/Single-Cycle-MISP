@@ -1,5 +1,6 @@
 module CONTROL(
     opcode,
+    ins,
     regdst,
     jump,
     branch,
@@ -9,10 +10,13 @@ module CONTROL(
     mem_write,
     alu_src,
     reg_write,
-    mem_enable
+    mem_enable,
+    jal,
+    jr
 );
 
 input wire  [5:0] opcode;
+input wire  [5:0] ins;
 output wire regdst;
 output wire jump;
 output wire branch;
@@ -23,6 +27,8 @@ output wire mem_write;
 output wire alu_src;
 output wire reg_write;
 output wire mem_enable;
+output wire jal;
+output wire jr;
 
 `define RTYPE   6'b000000
 `define LW      6'b100011
@@ -32,6 +38,7 @@ output wire mem_enable;
 `define BNE     6'b000101
 `define J       6'b000010
 `define JAL     6'b000011
+`define JR      6'b001000
 
 assign regdst = (opcode == `RTYPE) ? 1 : 0;
 assign jump = (opcode == `J || opcode == `JAL) ? 1 : 0;
@@ -46,5 +53,7 @@ assign mem_write = (opcode == `SW) ? 0 : 1;
 assign alu_src = (opcode == `LW || opcode == `SW || opcode == `ADDI) ? 1 : 0;
 assign reg_write = (opcode == `RTYPE || opcode == `LW || opcode == `ADDI || opcode == `JAL) ? 1 : 0;
 assign mem_enable = (opcode == `LW || opcode == `SW) ? 0 : 1;
+assign jal = (opcode == `JAL) ? 1 : 0;
+assign jr = (ins == `JR) ? 1 : 0;
 
 endmodule

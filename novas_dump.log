@@ -17,17 +17,17 @@ maxproc			4096
 (Special)Runtime environment variables:
 
 Runtime environment variables:
-XDG_SESSION_ID=31133
+XDG_SESSION_ID=31294
 HOSTNAME=xdn175o122
 SELINUX_ROLE_REQUESTED=
 TERM=xterm-256color
 SHELL=/bin/bash
 HISTSIZE=1000
-SSH_CLIENT=140.112.174.221 61590 22
+SSH_CLIENT=27.52.232.143 37321 22
 SELINUX_USE_CURRENT_RANGE=
 QTDIR=/usr/lib64/qt-3.3
 QTINC=/usr/lib64/qt-3.3/include
-SSH_TTY=/dev/pts/1
+SSH_TTY=/dev/pts/33
 QT_GRAPHICSSYSTEM_CHECKED=1
 USER=b06901051
 LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
@@ -40,21 +40,21 @@ SHLVL=2
 HOME=/home/users/b06901051
 LOGNAME=b06901051
 QTLIB=/usr/lib64/qt-3.3/lib
-SSH_CONNECTION=140.112.174.221 61590 140.112.175.122 22
+SSH_CONNECTION=27.52.232.143 37321 140.112.175.122 22
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 XDG_RUNTIME_DIR=/run/user/1042
-DISPLAY=localhost:10.0
-_=/usr/bin/tcsh
+DISPLAY=localhost:11.0
 OLDPWD=/home/users/b06901051
+_=/usr/bin/tcsh
 HOSTTYPE=x86_64-linux
 VENDOR=unknown
 OSTYPE=linux
 MACHTYPE=x86_64
 GROUP=b06901051
 HOST=xdn175o122
-REMOTEHOST=xdn174o221.ee.ntu.edu.tw
+REMOTEHOST=27-52-232-143.adsl.fetnet.net
 LD_LIBRARY_PATH=:/usr/cad/cadence/CTOS/cur/tools/lib:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:
-LM_LICENSE_FILE=26585@lsntu:5280@lscic:5280@lsnctu:5280@lsncu:
+LM_LICENSE_FILE=26585@lsntu:5280@lscic:5280@lsncku:5280@lsnchu:
 SHLIB_PATH=/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX
 SYNTHESIS=/usr/cad/synopsys/synthesis/cur
 SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
@@ -86,9 +86,9 @@ argv[2]=SingleCycleMIPS.v
 argv[3]=+define+Baseline
 argv[4]=+access+r
 87 profile - 100
-          CPU/Mem usage: 0.010 sys,  0.020 user,  53.76M sys,  0.00M vm
+          CPU/Mem usage: 0.020 sys,  0.020 user,  53.75M sys,  0.00M vm
 88 VC callback profile - scalar:0 vector:0
-89 Sun Dec  8 02:26:49 2019
+89 Sun Dec  8 20:50:42 2019
 90 pliAppInit
 91 *Verdi3* : Enable Parallel Dumping.
 92 pliAppMiscSet: New Sim Round
@@ -96,7 +96,7 @@ argv[4]=+access+r
 94 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
 95 argv[0]: MIPS.fsdb
 96 argv[0]: 0
-97 argv[1]: (handle)0xad0e6c0 SingleCycle_tb
+97 argv[1]: (handle)0xc3c3858 SingleCycle_tb
 98 argv[2]: +mda
 99 FSDB Dumper for IUS, Release Verdi3_L-2016.06-SP1-1, Linux, 09/27/2016
 100 (C) 1996 - 2016 by Synopsys, Inc.
@@ -106,71 +106,71 @@ argv[4]=+access+r
 104 *Verdi3* : Create FSDB file 'MIPS.fsdb'
 105 sps_call_fsdbDumpvars at 0 : /home/users/b06901051/CA_HW4/tb.v(87)
 106 argv[0]: 0
-107 argv[1]: (handle)0xad0e6c0 SingleCycle_tb
+107 argv[1]: (handle)0xc3c3858 SingleCycle_tb
 108 argv[2]: +mda
 109 *Verdi3* : Begin traversing the scope (SingleCycle_tb), layer (0).
 110 *Verdi3* : Enable +mda dumping.
 111 Cell instance `SingleCycle_tb.Data_memory'.
 112 *Verdi3* : End of traversing.
 113 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.040 user,  135.45M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.040 user,  135.44M sys,  0.00M vm
                    incr: 0.000 sys,  0.010 user,  3.96M sys,  0.00M vm
                    accu: 0.000 sys,  0.010 user,  3.96M sys,  0.00M vm
               accu incr: 0.000 sys,  0.010 user,  3.96M sys,  0.00M vm
 
-          Count usage: 3568 var,  3356 idcode,  3357 callback
-                 incr: 3568 var,  3356 idcode,  3357 callback
-                 accu: 3568 var,  3356 idcode,  3357 callback
-            accu incr: 3568 var,  3356 idcode,  3357 callback
+          Count usage: 3636 var,  3358 idcode,  3359 callback
+                 incr: 3636 var,  3358 idcode,  3359 callback
+                 accu: 3636 var,  3358 idcode,  3359 callback
+            accu incr: 3636 var,  3358 idcode,  3359 callback
 114 VC callback profile - scalar:0 vector:0
-115 Sun Dec  8 02:26:49 2019
+115 Sun Dec  8 20:50:42 2019
 116 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.020 sys,  0.050 user,  136.50M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.050 user,  136.50M sys,  0.00M vm
                    incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
                    accu: 0.000 sys,  0.020 user,  5.02M sys,  0.00M vm
               accu incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
 
-          Count usage: 3568 var,  3356 idcode,  3357 callback
+          Count usage: 3636 var,  3358 idcode,  3359 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 3568 var,  3356 idcode,  3357 callback
+                 accu: 3636 var,  3358 idcode,  3359 callback
             accu incr: 0 var,  0 idcode,  0 callback
-117 VC callback profile - scalar:220 vector:3136
-118 Sun Dec  8 02:26:49 2019
+117 VC callback profile - scalar:225 vector:3133
+118 Sun Dec  8 20:50:42 2019
 119 sps_call_fsdbDumpvars at 0 : /home/users/b06901051/CA_HW4/tb.v(88)
 120 *Verdi3* : Begin traversing the scopes, layer (0).
 121 Cell instance `SingleCycle_tb.Data_memory'.
 122 *Verdi3* : End of traversing.
 123 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.050 user,  136.63M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.050 user,  136.63M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
 
-          Count usage: 4046 var,  3356 idcode,  3357 callback
-                 incr: 478 var,  0 idcode,  0 callback
-                 accu: 478 var,  0 idcode,  0 callback
-            accu incr: 478 var,  0 idcode,  0 callback
-124 VC callback profile - scalar:220 vector:3136
-125 Sun Dec  8 02:26:49 2019
+          Count usage: 4182 var,  3358 idcode,  3359 callback
+                 incr: 546 var,  0 idcode,  0 callback
+                 accu: 546 var,  0 idcode,  0 callback
+            accu incr: 546 var,  0 idcode,  0 callback
+124 VC callback profile - scalar:225 vector:3133
+125 Sun Dec  8 20:50:42 2019
 126 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.020 sys,  0.050 user,  136.63M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.050 user,  136.63M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
 
-          Count usage: 4046 var,  3356 idcode,  3357 callback
+          Count usage: 4182 var,  3358 idcode,  3359 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 478 var,  0 idcode,  0 callback
+                 accu: 546 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-127 VC callback profile - scalar:440 vector:3182
-128 Sun Dec  8 02:26:49 2019
-129 End of simulation at 2200
-130 VC callback profile - scalar:613 vector:27233981
-131 Sun Dec  8 02:27:06 2019
+127 VC callback profile - scalar:450 vector:3176
+128 Sun Dec  8 20:50:42 2019
+129 End of simulation at 5000000
+130 VC callback profile - scalar:121993 vector:105416
+131 Sun Dec  8 20:50:42 2019
 132 Begin FSDB profile info:
-133 FSDB Writer : flush elapsed time(0.159752) bc1(613) bcn(27233981) mtf/stf(0/0) MT Compression : 0
+133 FSDB Writer : flush elapsed time(0.095175) bc1(121993) bcn(105416) mtf/stf(0/0) MT Compression : 0
 134 End FSDB profile info
-135 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:168 BlockUsed:168
-136                        ProduceTime:14.686543307 ConsumerTime:3.711586004 Buffer:64MB
+135 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
+136                        ProduceTime:0.139398608 ConsumerTime:0.027589329 Buffer:64MB
 137 SimExit
 138 Sim process exit

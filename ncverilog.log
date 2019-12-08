@@ -1,52 +1,63 @@
 ncverilog: 15.20-s027: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s027: Started on Dec 08, 2019 at 02:26:48 CST
+TOOL:	ncverilog	15.20-s027: Started on Dec 08, 2019 at 20:50:41 CST
 ncverilog
 	tb.v
 	SingleCycleMIPS.v
 	+define+Baseline
 	+access+r
-Recompiling... reason: file './SingleCycleMIPS.v' is newer than expected.
-	expected: Sun Dec  8 02:25:59 2019
-	actual:   Sun Dec  8 02:26:45 2019
+Recompiling... reason: file './ALU_CTRL.v' is newer than expected.
+	expected: Sun Dec  8 19:56:11 2019
+	actual:   Sun Dec  8 20:48:10 2019
 file: SingleCycleMIPS.v
-	module worklib.SingleCycleMIPS:v
+	module worklib.ALU_CTRL:v
 		errors: 0, warnings: 0
+`define ADDI    6'b001000
+                         |
+ncvlog: *W,MACRDF (CONTROL.v,36|25): text macro 'ADDI' redefined - replaced with new definition.
+(`include file: CONTROL.v line 36, file: SingleCycleMIPS.v line 5)
+	module worklib.CONTROL:v
+		errors: 0, warnings: 1
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
-always@(*)begin
-      |
-ncelab: *W,STARMT (./SingleCycleMIPS.v,135|6): This @* expands to empty list, will never wake up.
     .write_reg(w_write_reg),
                          |
-ncelab: *W,CUVMPW (./SingleCycleMIPS.v,59|25): port sizes differ in port connection (5/6).
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,61|25): port sizes differ in port connection (5/6).
+    .alu_op(w_aluop),
+                  |
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,77|18): port sizes differ in port connection (2/3).
+    .alu_op(w_aluop),
+                  |
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,112|18): port sizes differ in port connection (2/3).
     .read_reg1(IR[25:21]),
                 |
-ncelab: *W,CUVMPW (./SingleCycleMIPS.v,57|16): port sizes differ in port connection (5/6).
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,59|16): port sizes differ in port connection (5/6).
     .read_reg2(IR[20:16]),
                 |
-ncelab: *W,CUVMPW (./SingleCycleMIPS.v,58|16): port sizes differ in port connection (5/6).
+ncelab: *W,CUVMPW (./SingleCycleMIPS.v,60|16): port sizes differ in port connection (5/6).
 		$readmemh (`DMEM_INIT, Data_memory.mem);
 		                                     |
 ncelab: *W,MEMODR (./tb.v,79|39): $readmem default memory order incompatible with IEEE1364.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.SingleCycleMIPS:v <0x618e3e59>
-			streams:  13, words:  2695
+		worklib.ALU_CTRL:v <0x1ec93966>
+			streams:   1, words:  1295
+		worklib.CONTROL:v <0x4ac70c42>
+			streams:   2, words:  2914
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                  Instances  Unique
-		Modules:                 13      13
+		Modules:                 15      14
 		Primitives:              75       2
 		Timing outputs:          32       1
-		Registers:               93      93
-		Scalar wires:            52       -
-		Expanded wires:         108       6
-		Vectored wires:          21       -
-		Always blocks:           11      11
+		Registers:               88      88
+		Scalar wires:            54       -
+		Expanded wires:         111       6
+		Vectored wires:          23       -
+		Always blocks:            8       8
 		Initial blocks:           5       5
-		Cont. assignments:       18      31
-		Pseudo assignments:       9       9
+		Cont. assignments:       25      38
+		Pseudo assignments:       8       8
 		Timing checks:           85      44
 		Simulation timescale:  10ps
 	Writing initial simulation snapshot: worklib.SingleCycle_tb:v
@@ -65,6 +76,17 @@ FSDB Dumper for IUS, Release Verdi3_L-2016.06-SP1-1, Linux, 09/27/2016
 *Verdi3* : End of traversing.
 *Verdi3* : Begin traversing the scopes, layer (0).
 *Verdi3* : End of traversing.
-Simulation interrupted at 22 NS + 68076646
-ncsim> quit
-TOOL:	ncverilog	15.20-s027: Exiting on Dec 08, 2019 at 02:27:06 CST  (total: 00:00:18)
+-----------------------------------------------------
+
+      Error!!! Running out of time!                  
+
+      There is something wrong with your code!       
+
+--------The test result is .....FAIL ----------------
+
+-----------------------------------------------------
+
+Simulation complete via $finish(1) at time 50 US + 0
+./tb.v:172 	$finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s027: Exiting on Dec 08, 2019 at 20:50:42 CST  (total: 00:00:01)

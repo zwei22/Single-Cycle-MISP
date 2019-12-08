@@ -1,2 +1,3 @@
 Command Line: /usr/cad/synopsys/verdi/cur/platform/LINUXAMD64/bin/Novas -nWave
 uname(Linux xdn175o122 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64)
+au time 294.308342 6.324403 11.007554 delta 195866624 195866624 total 575094784 575094784
