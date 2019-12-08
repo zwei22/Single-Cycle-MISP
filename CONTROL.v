@@ -3,7 +3,8 @@ module CONTROL(
     ins,
     regdst,
     jump,
-    branch,
+    beq,
+    bne,
     mem_read,
     mem_to_reg,
     alu_op,
@@ -19,7 +20,8 @@ input wire  [5:0] opcode;
 input wire  [5:0] ins;
 output wire regdst;
 output wire jump;
-output wire branch;
+output wire beq;
+output wire bne;
 output wire mem_read;
 output wire mem_to_reg;
 output wire [1:0] alu_op;
@@ -42,7 +44,8 @@ output wire jr;
 
 assign regdst = (opcode == `RTYPE) ? 1 : 0;
 assign jump = (opcode == `J || opcode == `JAL) ? 1 : 0;
-assign branch = (opcode == `BEQ || opcode == `BNE) ? 1 : 0;
+assign beq = (opcode == `BEQ) ? 1 : 0;
+assign bne = (opcode == `BNE) ? 1 : 0;
 assign mem_read = (opcode == `LW) ? 0 : 1;
 assign mem_to_reg = (opcode == `LW) ? 1 : 0;
 assign alu_op = (opcode == `RTYPE) ? 2'b10 : (

@@ -37,7 +37,7 @@ module SingleCycleMIPS(
 
 //==== reg/wire declaration ===============================
 
-    wire w_regdst, w_jump, w_branch, w_mem_r, w_mem2reg, w_jr;
+    wire w_regdst, w_jump, w_beq, w_bne, w_mem_r, w_mem2reg, w_jr;
     wire w_mem_w, w_alusrc, w_reg_w, w_mem_en, w_zero, w_jal;
     wire [1:0] w_aluop;
     wire [3:0] w_alu_ctrl;
@@ -71,7 +71,8 @@ CONTROL control(
     .ins(IR[5:0]),
     .regdst(w_regdst),
     .jump(w_jump),
-    .branch(w_branch),
+    .beq(w_beq),
+    .bne(w_bne),
     .mem_read(w_mem_r),
     .mem_to_reg(w_mem2reg),
     .alu_op(w_aluop),
@@ -142,7 +143,7 @@ assign w_write_reg = (w_jal) ? 31 : ((w_regdst) ? IR[15:11] : IR[20:16]);
 assign w_alu = (w_alusrc) ? w_se_sl : w_rd2;
 assign w_jumpaddr = {w_add4[31:28], w_sl28};
 //assign IR_addr = (rst_n)? ((w_jump) ? w_jumpaddr : ((w_branch & w_zero) ? w_addsl : w_add4)) : 0;
-assign w_pc_in = (w_jr) ? w_rd1 : ((w_jump) ? w_jumpaddr : ((w_branch & w_zero) ? w_addsl : w_add4));
+assign w_pc_in = (w_jr) ? w_rd1 : ((w_jump) ? w_jumpaddr : (((w_beq & w_zero) || (w_bne & (~w_zero))) ? w_addsl : w_add4));
 assign IR_addr = w_pc_out;
 assign w_mem_reg = (w_mem2reg) ? ReadDataMem : w_alu_result;
 assign w_jal_wr = (w_jal) ? w_add8 : w_mem_reg;
