@@ -1,4 +1,5 @@
 `include "ADD4.v"
+`include "ADD8.v"
 `include "ADD_SL2.v"
 `include "ALU_CTRL.v"
 `include "ALU.v"
@@ -115,15 +116,15 @@ ALU_CTRL alu_ctrl(
     .alu_ctrl(w_alu_ctrl)
 );
 
-ADD4 add4_1(
+ADD4 add4(
     .clk(clk),
     .in(w_pc_out),
     .out(w_add4)
 );
 
-ADD4 add4_2(
+ADD8 add8(
     .clk(clk),
-    .in(w_add4),
+    .in(w_pc_out),
     .out(w_add8)
 );
 
@@ -139,7 +140,7 @@ PC pc(
     .out(w_pc_out)
 );
 
-assign w_write_reg = (w_jal) ? 31 : ((w_regdst) ? IR[15:11] : IR[20:16]);
+assign w_write_reg = (w_jal) ? 5'd31 : ((w_regdst) ? IR[15:11] : IR[20:16]);
 assign w_alu = (w_alusrc) ? w_se_sl : w_rd2;
 assign w_jumpaddr = {w_add4[31:28], w_sl28};
 //assign IR_addr = (rst_n)? ((w_jump) ? w_jumpaddr : ((w_branch & w_zero) ? w_addsl : w_add4)) : 0;
