@@ -1,2 +1,4 @@
-1575794322 /home/users/b06901051/CA_HW4/tb.v
-1575809069 /home/users/b06901051/CA_HW4/SingleCycleMIPS.v
+1575915401 /home/raid7_2/userb06/b06051/CA_HW4/tb.v
+1575915401 /home/raid7_2/userb06/b06051/CA_HW4/SingleCycleMIPS.v
+1575915688 /home/raid7_2/userb06/b06051/CA_HW4/SingleCycleMIPS_syn.v
+1575915402 /home/raid7_2/userb06/b06051/CA_HW4/tsmc13.v

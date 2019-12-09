@@ -2,13 +2,13 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+define+Baseline
++define+Baseline+SDF
 +access+r
 -MESSAGES
 +EMGRLOG
 ncverilog.log
 -XLSTIME
-1575809441
+1575915717
 -XLKEEP
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc
@@ -20,4 +20,4 @@ ncverilog.log
 -XLNAME
 ncverilog
 -XLVERSION
-"TOOL:	ncverilog	15.20-s027"
+"TOOL:	ncverilog	15.20-s039"

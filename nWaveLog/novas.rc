@@ -110,6 +110,8 @@ FSM = 1
 Branch = 1
 [DesignTree]
 IfShowModule = {TRUE, FALSE}
+[DisabledMessages]
+version = Verdi3_L-2016.06-SP1-1
 [Editor]
 editorName = TurboEditor
 [Emacs]
@@ -195,12 +197,12 @@ StickSet-LineWidth = 1
 StickSet-FillColor = purple6
 StickSet-TextColor = black
 [FSM_Dlg-Print]
-Orientation = Landscape       
+Orientation = Landscape     
 [FileBrowser]
 nWaveOpenFsdbDirHistory = "\"/home/users/b06901051/CA_HW4/MIPS.fsdb\"" "\"/home/users/b06901051/CA_HW4\""
 [Form]
 version = Verdi3_L-2016.06-SP1-1
-wave/openWFile.fm = 100,122,823,696
+wave/openWFile.fm = 73,89,823,696
 [General]
 autoSaveSession = FALSE
 TclAutoSource = 
@@ -231,7 +233,7 @@ filter_case_sensitive = FALSE
 filter_full_path = FALSE
 load_detail_for_funcov = FALSE
 sort_limit = 100000
-ignoreDBVersionChecking = FALSE          
+ignoreDBVersionChecking = FALSE        
 [HB]
 ViewSchematic = FALSE
 windowLayout = 0 0 804 500 182 214 804 148
@@ -302,7 +304,10 @@ FileName = test.ps
 PaperSize = A4 - 210x297 (mm)
 ColorPrint = FALSE
 [QtDialog]
-qWaveSignalDialog = 320,185,800,479
+QwUserAskDlg = 548,335,324,111
+QwWarnMsgDlg = 410,296,600,250
+AdjustBusDialog = 500,310,439,225
+qWaveSignalDialog = 320,183,800,479
 [Session Cache]
 1 = string (session file name)
 2 = string (session file name)
@@ -509,8 +514,11 @@ ovaForbidSuccessColor = -c ID_GREEN5
 SigGroupRuleFile = 
 DisplayFileName = FALSE
 waveform_vertical_scroll_bar = TRUE
-getSignalForm = 320 185 800 479 163 381 387 89
-viewPort = 0 1 1440 803 100 65
+scope_to_save_with_macro
+open_file_dir
+open_rc_file_dir
+getSignalForm = 320 183 800 479 163 381 387 89
+viewPort = 0 1 1440 799 100 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -687,7 +695,6 @@ ResolveSymbolicLink = TRUE
 signal_rc_abspath = TRUE
 signal_rc_no_natural_bus_range = FALSE
 save_scope_with_macro = FALSE
-scope_to_save_with_macro
 TipInSignalWin = FALSE
 DisplaySignalTypeAheadOfSignalName = TRUE ICON
 TipInCurveWin = FALSE
@@ -763,8 +770,6 @@ pcSelectMode = TRUE
 hierarchyDelimiter = /
 RecentFile1 = "\"/home/users/b06901051/CA_HW4/MIPS.fsdb\""
 open_file_time_range = FALSE
-open_file_dir
-open_rc_file_dir
 value_window_aligment = Right
 signal_window_alignment = Auto
 ShowDeltaTime = TRUE
@@ -943,9 +948,9 @@ Selection = darkblue
 Standard = black
 Keyword = blue
 Comment = gray25
-Number = black  
-String = black  
-Identifier = darkred  
+Number = black
+String = black
+Identifier = darkred
 Inline = green
 colorIdentifier = green
 Value = darkgreen
@@ -973,7 +978,7 @@ AddImportArgument = TRUE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -tcl
 [turboSchema_Printer_Options]
-Orientation = Landscape       
+Orientation = Landscape     
 [turbo_library]
 bdb_load_scope = 
 [verisity]

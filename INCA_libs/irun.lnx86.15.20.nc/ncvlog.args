@@ -6,9 +6,12 @@
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
 tb.v
-SingleCycleMIPS.v
+SingleCycleMIPS_syn.v
+tsmc13.v
 -DEFINE
 Baseline
+-DEFINE
+SDF
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

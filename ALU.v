@@ -5,6 +5,7 @@
 `define SLT 4'b0111
 `define NOR 4'b1100
 `define SLL 4'b0011
+`define SRL 4'b1000
 `define ADDI 4'b0100
 
 module ALU(
@@ -15,7 +16,7 @@ module ALU(
     zero,
     ctrl
 );
-input   [31:0] in1, in2;
+input signed  [31:0] in1, in2;
 output  [31:0] out;
 input   zero;
 input   [3:0] ctrl;
@@ -26,9 +27,11 @@ assign out =    (ctrl==`AND)?   in1&in2:
                 (ctrl==`OR)?    in1|in2:
                 (ctrl==`ADD)?   in1+in2:
                 (ctrl==`SUB)?   in1-in2:
-                (ctrl==`SLT)?   (in1<in2)? 1:0:
+                //(ctrl==`SLT)?   ((in1[31] & in2[31]) || (~in1[31] & ~in2[31])) ? ((in1<in2)? 1:0): (in1[31] ? 1 : 0):
+                (ctrl==`SLT)?   in1<in2:
                 (ctrl==`NOR)?   ~(in1 | in2):
-                (ctrl==`SLL)?   in2 << shamt: 
+                (ctrl==`SLL)?   in2 << shamt:
+                (ctrl==`SRL)?   in2 >>> shamt: 
                 0;
 
 assign zero = (out==0);

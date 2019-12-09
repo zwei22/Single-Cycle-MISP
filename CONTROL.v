@@ -57,6 +57,6 @@ assign alu_src = (opcode == `LW || opcode == `SW || opcode == `ADDI) ? 1 : 0;
 assign reg_write = (opcode == `RTYPE || opcode == `LW || opcode == `ADDI || opcode == `JAL) ? 1 : 0;
 assign mem_enable = (opcode == `LW || opcode == `SW) ? 0 : 1;
 assign jal = (opcode == `JAL) ? 1 : 0;
-assign jr = (ins == `JR) ? 1 : 0;
+assign jr = (opcode == `RTYPE && ins == `JR) ? 1 : 0;
 
 endmodule

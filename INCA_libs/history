@@ -2,16 +2,5 @@
 // File created by:  irun
 // Do not modify this file
 
-s1::(08Dec2019:17:04:33):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s2::(08Dec2019:17:34:50):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s3::(08Dec2019:17:43:43):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s4::(08Dec2019:18:39:17):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s5::(08Dec2019:18:39:32):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s6::(08Dec2019:18:44:36):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s7::(08Dec2019:19:57:22):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s8::(08Dec2019:19:57:57):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s9::(08Dec2019:20:07:01):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s10::(08Dec2019:20:14:00):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s11::(08Dec2019:20:44:58):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s12::(08Dec2019:20:46:15):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
-s13::(08Dec2019:20:50:41):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
+s1::(10Dec2019:02:19:37):( ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r )
+s2::(10Dec2019:02:21:57):( ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r )
