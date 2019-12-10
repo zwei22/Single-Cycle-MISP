@@ -18,7 +18,7 @@ module ALU(
 );
 input signed  [31:0] in1, in2;
 output  [31:0] out;
-input   zero;
+output   zero;
 input   [3:0] ctrl;
 input   [4:0] shamt;
 
@@ -29,7 +29,7 @@ assign out =    (ctrl==`AND)?   in1&in2:
                 (ctrl==`SUB)?   in1-in2:
                 //(ctrl==`SLT)?   ((in1[31] & in2[31]) || (~in1[31] & ~in2[31])) ? ((in1<in2)? 1:0): (in1[31] ? 1 : 0):
                 (ctrl==`SLT)?   in1<in2:
-                (ctrl==`NOR)?   ~(in1 | in2):
+                // (ctrl==`NOR)?   ~(in1 | in2):
                 (ctrl==`SLL)?   in2 << shamt:
                 (ctrl==`SRL)?   in2 >>> shamt: 
                 0;

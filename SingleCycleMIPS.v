@@ -1,5 +1,4 @@
 `include "ADD4.v"
-`include "ADD8.v"
 `include "ADD_SL2.v"
 `include "ALU_CTRL.v"
 `include "ALU.v"
@@ -122,12 +121,6 @@ ADD4 add4(
     .clk(clk),
     .in(w_pc_out),
     .out(w_add4)
-);
-
-ADD8 add8(
-    .clk(clk),
-    .in(w_pc_out),
-    .out(w_add8)
 );
 
 SL2_26 sl2_26(

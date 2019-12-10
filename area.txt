@@ -3,30 +3,30 @@
 Report : area
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-Date   : Tue Dec 10 02:52:19 2019
+Date   : Tue Dec 10 17:26:52 2019
 ****************************************
 
 Library(s) Used:
 
     slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
 
-Number of ports:                         1206
-Number of nets:                          6622
-Number of cells:                         5430
-Number of combinational cells:           4341
-Number of sequential cells:              1073
+Number of ports:                         1205
+Number of nets:                          6733
+Number of cells:                         5600
+Number of combinational cells:           4518
+Number of sequential cells:              1067
 Number of macros/black boxes:               0
-Number of buf/inv:                        818
-Number of references:                      60
+Number of buf/inv:                        750
+Number of references:                      51
 
-Combinational area:              48791.762959
-Buf/Inv area:                     5927.320771
-Noncombinational area:           27272.126244
+Combinational area:              44171.439322
+Buf/Inv area:                     4433.608763
+Noncombinational area:           27068.438244
 Macro/Black Box area:                0.000000
-Net Interconnect area:          751850.474670
+Net Interconnect area:          771777.267029
 
-Total cell area:                 76063.889203
-Total area:                     827914.363873
+Total cell area:                 71239.877566
+Total area:                     843017.144595
 
 Hierarchical area distribution
 ------------------------------
@@ -36,24 +36,23 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
                                   Total       Total    national    national    boxes   Design
 --------------------------------  ----------  -------  ----------  ----------  ------  ------------------
-SingleCycleMIPS                   76063.8892    100.0   2900.8566    213.8724  0.0000  SingleCycleMIPS
-add4                                661.9860      0.9      0.0000      0.0000  0.0000  ADD4
-add4/add_11                         661.9860      0.9    661.9860      0.0000  0.0000  ADD4_DW01_add_0
-add8                                  6.7896      0.0      6.7896      0.0000  0.0000  ADD8
-add_sl2                            1637.9910      2.2      0.0000      0.0000  0.0000  ADD_SL2
-add_sl2/add_10                     1637.9910      2.2   1637.9910      0.0000  0.0000  ADD_SL2_DW01_add_0
-alu                               13251.6018     17.4   6399.1979      0.0000  0.0000  ALU
-alu/add_26                         2928.0150      3.8   2928.0150      0.0000  0.0000  ALU_DW01_add_0
-alu/lt_26                           687.4470      0.9    687.4470      0.0000  0.0000  ALU_DW_cmp_0
-alu/sub_26                         3236.9418      4.3   3236.9418      0.0000  0.0000  ALU_DW01_sub_0
-alu_ctrl                            149.3712      0.2    149.3712      0.0000  0.0000  ALU_CTRL
-control                             397.1916      0.5    397.1916      0.0000  0.0000  CONTROL
-pc                                  992.9790      1.3      6.7896    986.1894  0.0000  PC
-register                          55284.3185     72.7  29212.2540  26072.0645  0.0000  REGISTER
-sign_ext                            173.1348      0.2    173.1348      0.0000  0.0000  SIGN_EXT
+SingleCycleMIPS                   71239.8776    100.0   2736.2087      0.0000  0.0000  SingleCycleMIPS
+add4                                628.0380      0.9      0.0000      0.0000  0.0000  ADD4
+add4/add_11                         628.0380      0.9    628.0380      0.0000  0.0000  ADD4_DW01_add_0
+add_sl2                            1823.0076      2.6      0.0000      0.0000  0.0000  ADD_SL2
+add_sl2/add_10                     1823.0076      2.6   1823.0076      0.0000  0.0000  ADD_SL2_DW01_add_0
+alu                               10213.2557     14.3   5808.5027      0.0000  0.0000  ALU
+alu/add_26                         1760.2038      2.5   1760.2038      0.0000  0.0000  ALU_DW01_add_1
+alu/lt_26                           716.3028      1.0    716.3028      0.0000  0.0000  ALU_DW_cmp_0
+alu/sub_26                         1928.2464      2.7   1928.2464      0.0000  0.0000  ALU_DW01_sub_1
+alu_ctrl                            162.9504      0.2    162.9504      0.0000  0.0000  ALU_CTRL
+control                             247.8204      0.3    247.8204      0.0000  0.0000  CONTROL
+pc                                 1003.1634      1.4      6.7896    996.3738  0.0000  PC
+register                          53860.1991     75.6  27788.1347  26072.0645  0.0000  REGISTER
+sign_ext                            171.4374      0.2    171.4374      0.0000  0.0000  SIGN_EXT
 sl2                                 210.4776      0.3    210.4776      0.0000  0.0000  SL2
-sl2_26                              183.3192      0.2    183.3192      0.0000  0.0000  SL2_26
+sl2_26                              183.3192      0.3    183.3192      0.0000  0.0000  SL2_26
 --------------------------------  ----------  -------  ----------  ----------  ------  ------------------
-Total                                                  48791.7630  27272.1262  0.0000
+Total                                                  44171.4393  27068.4382  0.0000
 
 1

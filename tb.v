@@ -1,5 +1,5 @@
 `timescale 1 ns/10 ps
-`define CYCLE 10.0
+`define CYCLE 18.0
 `define SDFFILE     "./SingleCycleMIPS_syn.sdf"   // Modify your sdf file name
 `include "HSs18n_128x32.v"
 
@@ -85,7 +85,9 @@ module SingleCycle_tb;
 	initial begin
 		$fsdbDumpfile("MIPS.fsdb");
 		$fsdbDumpvars(0,SingleCycle_tb,"+mda"); //This command is for dumping 2D array
-		$fsdbDumpvars;								
+		$fsdbDumpvars;
+		$dumpfile("MIPS.vcd");
+		$dumpvars;
 	end
 	
 //initial rst_n, value
