@@ -32,7 +32,8 @@ module SingleCycleMIPS(
     input  [31:0] ReadDataMem;  
     output        CEN;  
     output        WEN;  
-    output [6:0] A;  
+    output [6:0] A;
+    //output reg [6:0] A;  
     output [31:0] Data2Mem;  
     output        OEN;  
 
@@ -46,6 +47,7 @@ module SingleCycleMIPS(
     wire [27:0] w_sl28;
     wire [31:0] w_rd1, w_rd2, w_alu, w_se_sl, w_sl_alu, w_add4, w_add8, w_addsl, w_jumpaddr, w_mem_reg, w_alu_result, w_pc_in, w_pc_out, w_jal_wr;
     integer i;
+    //reg [6:0] A_w, A_r;
 //==== wire connection to submodule ======================
 //Example:
 //	ctrl control(
@@ -166,8 +168,19 @@ endmodule
 
 //	);
 
+//always@(*)begin
+//    if(rst_n)begin
+//        A_w = w_alu_result[8:2];
+//    end
+//    else begin
+//        A_w = 0;
+//     end
+//     A = A_r;
+// end
+
+// always@(posedge clk)begin
+//     A_r = A_w;
+// end
 
 
-
-
-//	endmodule
+	// endmodule

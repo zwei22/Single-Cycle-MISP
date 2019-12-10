@@ -3,7 +3,7 @@
 Report : area
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-Date   : Tue Dec 10 02:21:28 2019
+Date   : Tue Dec 10 02:52:19 2019
 ****************************************
 
 Library(s) Used:
@@ -11,22 +11,22 @@ Library(s) Used:
     slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
 
 Number of ports:                         1206
-Number of nets:                          6645
-Number of cells:                         5454
-Number of combinational cells:           4373
-Number of sequential cells:              1065
+Number of nets:                          6622
+Number of cells:                         5430
+Number of combinational cells:           4341
+Number of sequential cells:              1073
 Number of macros/black boxes:               0
-Number of buf/inv:                        823
-Number of references:                      57
+Number of buf/inv:                        818
+Number of references:                      60
 
-Combinational area:              49104.084552
-Buf/Inv area:                     6139.495762
-Noncombinational area:           27058.253845
+Combinational area:              48791.762959
+Buf/Inv area:                     5927.320771
+Noncombinational area:           27272.126244
 Macro/Black Box area:                0.000000
-Net Interconnect area:          752737.146332
+Net Interconnect area:          751850.474670
 
-Total cell area:                 76162.338397
-Total area:                     828899.484729
+Total cell area:                 76063.889203
+Total area:                     827914.363873
 
 Hierarchical area distribution
 ------------------------------
@@ -36,24 +36,24 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
                                   Total       Total    national    national    boxes   Design
 --------------------------------  ----------  -------  ----------  ----------  ------  ------------------
-SingleCycleMIPS                   76162.3384    100.0   2970.4500      0.0000  0.0000  SingleCycleMIPS
-add4                                631.4328      0.8      0.0000      0.0000  0.0000  ADD4
-add4/add_11                         631.4328      0.8    631.4328      0.0000  0.0000  ADD4_DW01_add_0
+SingleCycleMIPS                   76063.8892    100.0   2900.8566    213.8724  0.0000  SingleCycleMIPS
+add4                                661.9860      0.9      0.0000      0.0000  0.0000  ADD4
+add4/add_11                         661.9860      0.9    661.9860      0.0000  0.0000  ADD4_DW01_add_0
 add8                                  6.7896      0.0      6.7896      0.0000  0.0000  ADD8
 add_sl2                            1637.9910      2.2      0.0000      0.0000  0.0000  ADD_SL2
 add_sl2/add_10                     1637.9910      2.2   1637.9910      0.0000  0.0000  ADD_SL2_DW01_add_0
-alu                               13234.6278     17.4   6409.3823      0.0000  0.0000  ALU
-alu/add_26                         2931.4098      3.8   2931.4098      0.0000  0.0000  ALU_DW01_add_0
+alu                               13251.6018     17.4   6399.1979      0.0000  0.0000  ALU
+alu/add_26                         2928.0150      3.8   2928.0150      0.0000  0.0000  ALU_DW01_add_0
 alu/lt_26                           687.4470      0.9    687.4470      0.0000  0.0000  ALU_DW_cmp_0
-alu/sub_26                         3206.3886      4.2   3206.3886      0.0000  0.0000  ALU_DW01_sub_0
+alu/sub_26                         3236.9418      4.3   3236.9418      0.0000  0.0000  ALU_DW01_sub_0
 alu_ctrl                            149.3712      0.2    149.3712      0.0000  0.0000  ALU_CTRL
-control                             434.5344      0.6    434.5344      0.0000  0.0000  CONTROL
+control                             397.1916      0.5    397.1916      0.0000  0.0000  CONTROL
 pc                                  992.9790      1.3      6.7896    986.1894  0.0000  PC
-register                          55537.2311     72.9  29465.1666  26072.0645  0.0000  REGISTER
+register                          55284.3185     72.7  29212.2540  26072.0645  0.0000  REGISTER
 sign_ext                            173.1348      0.2    173.1348      0.0000  0.0000  SIGN_EXT
 sl2                                 210.4776      0.3    210.4776      0.0000  0.0000  SL2
 sl2_26                              183.3192      0.2    183.3192      0.0000  0.0000  SL2_26
 --------------------------------  ----------  -------  ----------  ----------  ------  ------------------
-Total                                                  49104.0846  27058.2538  0.0000
+Total                                                  48791.7630  27272.1262  0.0000
 
 1
