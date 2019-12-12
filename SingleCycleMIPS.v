@@ -43,10 +43,13 @@ module SingleCycleMIPS(
     wire [1:0] w_aluop;
     wire [3:0] w_alu_ctrl;
     wire [4:0] w_write_reg;
+    wire [6:0] w_A;
     wire [27:0] w_sl28;
-    wire [31:0] w_rd1, w_rd2, w_alu, w_se_sl, w_sl_alu, w_add4, w_add8, w_addsl, w_jumpaddr, w_mem_reg, w_alu_result, w_pc_in, w_pc_out, w_jal_wr;
+    wire [31:0] w_rd1, w_rd2, w_alu, w_se_sl, w_sl_alu, w_add4, w_addsl, w_jumpaddr, w_mem_reg, w_alu_result, w_pc_in, w_pc_out, w_jal_wr;
+    //reg [31:0] w_temp;
     integer i;
-    //reg [6:0] A_w, A_r;
+    // reg  [6:0] A_r;
+    // wire [6:0] A_w;
 //==== wire connection to submodule ======================
 //Example:
 //	ctrl control(
@@ -58,6 +61,7 @@ module SingleCycleMIPS(
 REGISTER register(
     .clk(clk),
     .rst_n(rst_n),
+    .reg_read(w_jump),
     .read_reg1(IR[25:21]),
     .read_reg2(IR[20:16]),
     .write_reg(w_write_reg),
@@ -70,7 +74,6 @@ REGISTER register(
 
 CONTROL control(
     .opcode(IR[31:26]),
-    .ins(IR[5:0]),
     .regdst(w_regdst),
     .jump(w_jump),
     .beq(w_beq),
@@ -82,8 +85,7 @@ CONTROL control(
     .alu_src(w_alusrc),
     .reg_write(w_reg_w),
     .mem_enable(w_mem_en),
-    .jal(w_jal),
-    .jr(w_jr)
+    .jal(w_jal)
 );
 
 ALU alu(
@@ -92,7 +94,8 @@ ALU alu(
     .shamt(IR[10:6]),
     .out(w_alu_result),
     .zero(w_zero),
-    .ctrl(w_alu_ctrl)
+    .ctrl(w_alu_ctrl),
+    .mem_addr(A)
 );
 
 SIGN_EXT sign_ext(
@@ -114,7 +117,8 @@ ADD_SL2 add_sl2(
 ALU_CTRL alu_ctrl(
     .alu_op(w_aluop),
     .funct(IR[5:0]),
-    .alu_ctrl(w_alu_ctrl)
+    .alu_ctrl(w_alu_ctrl),
+    .jr(w_jr)
 );
 
 ADD4 add4(
@@ -123,6 +127,15 @@ ADD4 add4(
     .out(w_add4)
 );
 
+<<<<<<< HEAD
+// ADD8 add8(
+//     .clk(clk),
+//     .in(w_pc_out),
+//     .out(w_add8)
+// );
+
+=======
+>>>>>>> 5d17af2cf460fd26b982421f6d4c2e5098eedb70
 SL2_26 sl2_26(
     .in(IR[25:0]),
     .out(w_sl28)
@@ -139,17 +152,17 @@ assign w_write_reg = (w_jal) ? 5'd31 : ((w_regdst) ? IR[15:11] : IR[20:16]);
 assign w_alu = (w_alusrc) ? w_se_sl : w_rd2;
 assign w_jumpaddr = {w_add4[31:28], w_sl28};
 //assign IR_addr = (rst_n)? ((w_jump) ? w_jumpaddr : ((w_branch & w_zero) ? w_addsl : w_add4)) : 0;
-assign w_pc_in = (w_jr) ? w_rd1 : ((w_jump) ? w_jumpaddr : (((w_beq & w_zero) || (w_bne & (~w_zero))) ? w_addsl : w_add4));
+assign w_pc_in = (w_jr) ? w_rd1 : ((w_jump) ? w_jumpaddr : (((w_beq && w_zero) || (w_bne && (~w_zero))) ? w_addsl : w_add4));
 assign IR_addr = w_pc_out;
 assign w_mem_reg = (w_mem2reg) ? ReadDataMem : w_alu_result;
 assign w_jal_wr = (w_jal) ? w_add4 : w_mem_reg;
-assign A = (rst_n) ? w_alu_result[8:2] : 0;
+//assign A = (w_mem_en) ? 0 : w_A;
 assign CEN = w_mem_en;
 assign OEN = w_mem_r;
 assign WEN = w_mem_w;
 assign Data2Mem = w_rd2;
 
-endmodule
+//endmodule
 
 // recommend you to use submodule for easier debugging 
 //=========================================================
@@ -158,22 +171,15 @@ endmodule
 //		clk,
 //		rst_n, ....
 
-
 //	);
 
-//always@(*)begin
-//    if(rst_n)begin
-//        A_w = w_alu_result[8:2];
-//    end
-//    else begin
-//        A_w = 0;
-//     end
+// always@(*)begin
 //     A = A_r;
 // end
 
 // always@(posedge clk)begin
-//     A_r = A_w;
+//     w_temp = w_mem_reg;
 // end
 
 
-	// endmodule
+ endmodule

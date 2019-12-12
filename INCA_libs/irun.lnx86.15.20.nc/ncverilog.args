@@ -3,7 +3,7 @@
 // Do not modify this file
 //
 tb.v
-SingleCycleMIPS.v
+SingleCycleMIPS_syn.v
 tsmc13.v
 +define+Baseline+SDF
 +access+r

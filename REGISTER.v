@@ -1,6 +1,7 @@
 module REGISTER(
     clk,
     rst_n,
+    reg_read,
     read_reg1,
     read_reg2,
     write_reg,
@@ -11,19 +12,16 @@ module REGISTER(
 );
 input   clk, rst_n;
 input   reg_write;
+input   reg_read;
 input   [4:0] read_reg1, read_reg2, write_reg;
 input   [31:0] write_data;
 output  [31:0] read_data1, read_data2;
 
 reg     [31:0] regs [0:31];
 integer i;
-// reg     [31:0] rr1, rr2, wr;
+//reg     [31:0] rr1, rr2, wr;
 
-// always@(*)begin
-//     rr1 = read_reg1;
-//     rr2 = read_reg2;
-//     wr = write_reg;
-// end
+
 assign read_data1 = regs[read_reg1];
 assign read_data2 = regs[read_reg2];
 
