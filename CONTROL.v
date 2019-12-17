@@ -1,3 +1,5 @@
+`include "define.v"
+
 module CONTROL(
     opcode,
     regdst,
@@ -27,16 +29,6 @@ output wire alu_src;
 output wire reg_write;
 output wire mem_enable;
 output wire jal;
-
-`define RTYPE   6'b000000
-`define LW      6'b100011
-`define SW      6'b101011
-`define I_ADDI    6'b001000
-`define BEQ     6'b000100
-`define BNE     6'b000101
-`define J       6'b000010
-`define JAL     6'b000011
-//`define JR      6'b001000
 
 assign regdst = (opcode == `RTYPE) ? 1 : 0;
 assign jump = (opcode == `J || opcode == `JAL) ? 1 : 0;

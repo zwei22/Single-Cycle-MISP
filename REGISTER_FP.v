@@ -23,18 +23,6 @@ integer i;
 
 assign read_data1 = regs[read_reg1];
 assign read_data2 = regs[read_reg2];
-// always @(*) begin
-//     if (read_reg1!=0) begin
-//         read_data1 = regs[read_reg1];
-//     end else begin
-//         read_data1 = 31'b0;
-//     end
-//     if (read_reg2!=0) begin
-//         read_data2 = regs[read_reg2];
-//     end else begin
-//         read_data2 = 31'b0;
-//     end
-// end
 
 always@(posedge clk) begin
 	if (~rst_n) begin

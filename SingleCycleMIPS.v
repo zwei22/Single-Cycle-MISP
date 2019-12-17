@@ -51,12 +51,6 @@ module SingleCycleMIPS(
     // reg  [6:0] A_r;
     // wire [6:0] A_w;
 //==== wire connection to submodule ======================
-//Example:
-//	ctrl control(
-//	.clk(clk),
-//	.rst_n(rst_n), ......
-
-//	);
 
 REGISTER register(
     .clk(clk),
@@ -98,21 +92,24 @@ ALU alu(
     .mem_addr(A)
 );
 
-SIGN_EXT sign_ext(
-    .in(IR[15:0]),
-    .out(w_se_sl)
-);
+// SIGN_EXT sign_ext(
+//     .in(IR[15:0]),
+//     .out(w_se_sl)
+// );
+assign w_se_sl = { {16{IR[15]}},IR[15:0] };
 
-SL2 sl2(
-    .in(w_se_sl),
-    .out(w_sl_alu)
-);
+// SL2 sl2(
+//     .in(w_se_sl),
+//     .out(w_sl_alu)
+// );
+assign w_sl_alu = {w_se_sl[29:0], 2'b00};
 
-ADD_SL2 add_sl2(
-    .in1(w_add4),
-    .in2(w_sl_alu),
-    .out(w_addsl)
-);
+// ADD_SL2 add_sl2(
+//     .in1(w_add4),
+//     .in2(w_sl_alu),
+//     .out(w_addsl)
+// );
+assign w_addsl = w_add4 + w_sl_alu;
 
 ALU_CTRL alu_ctrl(
     .alu_op(w_aluop),
@@ -121,25 +118,17 @@ ALU_CTRL alu_ctrl(
     .jr(w_jr)
 );
 
-ADD4 add4(
-    .clk(clk),
-    .in(w_pc_out),
-    .out(w_add4)
-);
-
-<<<<<<< HEAD
-// ADD8 add8(
-//     .clk(clk),
+// ADD4 add4(
 //     .in(w_pc_out),
-//     .out(w_add8)
+//     .out(w_add4)
 // );
+assign w_add4 = w_pc_out+3'd4;
 
-=======
->>>>>>> 5d17af2cf460fd26b982421f6d4c2e5098eedb70
-SL2_26 sl2_26(
-    .in(IR[25:0]),
-    .out(w_sl28)
-);
+// SL2_26 sl2_26(
+//     .in(IR[25:0]),
+//     .out(w_sl28)
+// );
+assign w_sl28 = {IR[25:0], 2'b00};
 
 PC pc(
     .clk(clk),
@@ -151,7 +140,6 @@ PC pc(
 assign w_write_reg = (w_jal) ? 5'd31 : ((w_regdst) ? IR[15:11] : IR[20:16]);
 assign w_alu = (w_alusrc) ? w_se_sl : w_rd2;
 assign w_jumpaddr = {w_add4[31:28], w_sl28};
-//assign IR_addr = (rst_n)? ((w_jump) ? w_jumpaddr : ((w_branch & w_zero) ? w_addsl : w_add4)) : 0;
 assign w_pc_in = (w_jr) ? w_rd1 : ((w_jump) ? w_jumpaddr : (((w_beq && w_zero) || (w_bne && (~w_zero))) ? w_addsl : w_add4));
 assign IR_addr = w_pc_out;
 assign w_mem_reg = (w_mem2reg) ? ReadDataMem : w_alu_result;
@@ -162,24 +150,4 @@ assign OEN = w_mem_r;
 assign WEN = w_mem_w;
 assign Data2Mem = w_rd2;
 
-//endmodule
-
-// recommend you to use submodule for easier debugging 
-//=========================================================
-//Example:
-//	module ctrl(
-//		clk,
-//		rst_n, ....
-
-//	);
-
-// always@(*)begin
-//     A = A_r;
-// end
-
-// always@(posedge clk)begin
-//     w_temp = w_mem_reg;
-// end
-
-
- endmodule
+endmodule

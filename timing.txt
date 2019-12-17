@@ -6,22 +6,14 @@ Report : timing
         -max_paths 1
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-<<<<<<< HEAD
-Date   : Thu Dec 12 15:11:40 2019
-=======
-Date   : Tue Dec 10 17:26:52 2019
->>>>>>> 5d17af2cf460fd26b982421f6d4c2e5098eedb70
+Date   : Sun Dec 15 21:11:35 2019
 ****************************************
 
 Operating Conditions: slow   Library: slow
 Wire Load Model Mode: top
 
-  Startpoint: IR[17] (input port clocked by clk)
-<<<<<<< HEAD
-  Endpoint: pc/out_reg_16_
-=======
-  Endpoint: pc/out_reg_8_
->>>>>>> 5d17af2cf460fd26b982421f6d4c2e5098eedb70
+  Startpoint: IR[23] (input port clocked by clk)
+  Endpoint: pc/out_reg_31_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -30,131 +22,89 @@ Wire Load Model Mode: top
   ------------------------------------------------
   SingleCycleMIPS    tsmc13_wl10           slow
 
-<<<<<<< HEAD
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.50       0.50
-  input external delay                     0.50       1.00 f
-  IR[17] (in)                              0.07       1.07 f
-  register/read_reg2[1] (REGISTER)         0.00       1.07 f
-  register/U508/Y (INVX8)                  0.06       1.14 r
-  register/U430/Y (AND2X2)                 0.29       1.42 r
-  register/U191/Y (AND2X2)                 0.28       1.70 r
-  register/U112/Y (INVX12)                 0.35       2.05 f
-  register/U704/Y (OA22XL)                 0.55       2.60 f
-  register/U135/Y (AND4X1)                 0.34       2.94 f
-  register/U519/Y (AO22X4)                 0.22       3.16 f
-  register/U380/Y (BUFX8)                  0.18       3.34 f
-  register/read_data2[8] (REGISTER)        0.00       3.34 f
-  U167/Y (AO22X4)                          0.37       3.71 f
-  alu/in2[8] (ALU)                         0.00       3.71 f
-  alu/U310/Y (INVXL)                       0.30       4.01 r
-  alu/U129/Y (BUFX4)                       0.23       4.24 r
-  alu/U161/Y (XOR2X4)                      0.22       4.46 r
-  alu/U77/Y (AOI32X1)                      0.25       4.72 f
-  alu/U211/Y (OA22X4)                      0.29       5.01 f
-  alu/U178/Y (OA22XL)                      0.47       5.49 f
-  alu/U209/Y (OA22X4)                      0.30       5.78 f
-  alu/U208/Y (OA22X4)                      0.24       6.03 f
-  alu/U179/Y (OA22XL)                      0.50       6.53 f
-  alu/U175/Y (AOI2BB2X4)                   0.27       6.79 f
-  alu/U157/Y (AOI32X2)                     0.27       7.06 r
-  alu/U64/Y (AOI222X2)                     0.20       7.26 f
-  alu/U176/Y (OAI221X2)                    0.19       7.45 r
-  alu/U63/Y (AOI221X2)                     0.19       7.65 f
-  alu/U394/Y (AO21X4)                      0.23       7.87 f
-  alu/U76/Y (AOI32X2)                      0.30       8.18 r
-  alu/U305/Y (NAND4BBX4)                   0.20       8.37 f
-  alu/U25/Y (NOR2X4)                       0.12       8.50 r
-  alu/U79/Y (NAND4BX2)                     0.20       8.69 f
-  alu/U734/Y (NOR2X4)                      0.16       8.85 r
-  alu/zero (ALU)                           0.00       8.85 r
-  U372/Y (MXI2X4)                          0.15       9.00 r
-  U342/Y (NAND2BX1)                        0.25       9.25 r
-  U314/Y (BUFX4)                           0.21       9.47 r
-  U251/Y (INVX20)                          0.15       9.62 f
-  U293/Y (AOI2BB2XL)                       0.50      10.12 r
-  U250/Y (NAND2X2)                         0.15      10.27 f
-  pc/in[16] (PC)                           0.00      10.27 f
-  pc/out_reg_16_/D (DFFTRX2)               0.00      10.27 f
-  data arrival time                                  10.27
-
-  clock clk (rise edge)                   10.00      10.00
-  clock network delay (ideal)              0.50      10.50
-  clock uncertainty                       -0.10      10.40
-  pc/out_reg_16_/CK (DFFTRX2)              0.00      10.40 r
-  library setup time                      -0.13      10.27
-  data required time                                 10.27
-  -----------------------------------------------------------
-  data required time                                 10.27
-  data arrival time                                 -10.27
-  -----------------------------------------------------------
-  slack (MET)                                         0.00
-=======
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.50       0.50
   input external delay                                    0.50       1.00 r
-  IR[17] (in)                                             0.07       1.07 r
-  register/read_reg2[1] (REGISTER)                        0.00       1.07 r
-  register/U579/Y (CLKINVX8)                              0.06       1.13 f
-  register/U181/Y (AND2X2)                                0.31       1.44 f
-  register/U433/Y (AND2X1)                                0.33       1.77 f
-  register/U33/Y (BUFX8)                                  0.19       1.96 f
-  register/U171/Y (INVX2)                                 0.36       2.33 r
-  register/U219/Y (OAI221XL)                              0.35       2.68 f
-  register/U444/Y (NOR4BBX1)                              0.43       3.11 r
-  register/U468/Y (AO22X4)                                0.47       3.58 r
-  register/read_data2[11] (REGISTER)                      0.00       3.58 r
-  U196/Y (AO22X4)                                         0.45       4.03 r
-  alu/in2[11] (ALU)                                       0.00       4.03 r
-  alu/sub_26/B[11] (ALU_DW01_sub_1)                       0.00       4.03 r
-  alu/sub_26/U342/Y (CLKINVX1)                            0.26       4.29 f
-  alu/sub_26/U349/Y (NAND2X1)                             0.31       4.60 r
-  alu/sub_26/U548/Y (CLKINVX1)                            0.19       4.79 f
-  alu/sub_26/U547/Y (AOI21X1)                             0.38       5.17 r
-  alu/sub_26/U482/Y (OAI21X1)                             0.22       5.39 f
-  alu/sub_26/U431/Y (AOI21X2)                             0.22       5.62 r
-  alu/sub_26/U428/Y (OAI21X4)                             0.16       5.78 f
-  alu/sub_26/U436/Y (AOI21X2)                             0.26       6.04 r
-  alu/sub_26/U449/Y (OAI21X2)                             0.20       6.24 f
-  alu/sub_26/U424/Y (AOI21X4)                             0.21       6.45 r
-  alu/sub_26/U423/Y (OAI21X4)                             0.14       6.58 f
-  alu/sub_26/U434/Y (AOI21X4)                             0.21       6.79 r
-  alu/sub_26/U433/Y (OAI21X4)                             0.13       6.92 f
-  alu/sub_26/U467/Y (AOI21X2)                             0.29       7.21 r
-  alu/sub_26/U559/Y (XOR2X1)                              0.28       7.49 f
-  alu/sub_26/DIFF[30] (ALU_DW01_sub_1)                    0.00       7.49 f
-  alu/U322/Y (NAND2X1)                                    0.28       7.77 r
-  alu/U136/Y (NAND4BX4)                                   0.19       7.95 f
-  alu/U42/Y (NOR4X2)                                      0.33       8.28 r
-  alu/U41/Y (NAND4X2)                                     0.21       8.49 f
-  alu/U270/Y (NOR2X4)                                     0.15       8.64 r
-  alu/zero (ALU)                                          0.00       8.64 r
-  U378/Y (MXI2X4)                                         0.16       8.80 r
-  U348/Y (INVXL)                                          0.19       8.99 f
-  U305/Y (NAND3BX2)                                       0.26       9.25 r
-  U334/Y (CLKINVX8)                                       0.33       9.58 f
-  U286/Y (AOI2BB2XL)                                      0.54      10.12 r
-  U257/Y (NAND2X2)                                        0.15      10.27 f
-  pc/in[8] (PC)                                           0.00      10.27 f
-  pc/out_reg_8_/D (DFFTRX2)                               0.00      10.27 f
-  data arrival time                                                 10.27
+  IR[23] (in)                                             0.06       1.06 r
+  register/read_reg1[2] (REGISTER)                        0.00       1.06 r
+  register/U268/Y (CLKINVX1)                              0.22       1.28 f
+  register/U209/Y (NOR2X4)                                0.25       1.54 r
+  register/U229/Y (NAND2X1)                               0.22       1.76 f
+  register/U15/Y (INVX6)                                  0.17       1.93 r
+  register/U111/Y (INVX12)                                0.20       2.13 f
+  register/U90/Y (OAI22X2)                                0.26       2.40 r
+  register/U196/Y (NOR4X2)                                0.17       2.56 f
+  register/U496/Y (AO22X4)                                0.27       2.84 f
+  register/read_data1[0] (REGISTER)                       0.00       2.84 f
+  U275/Y (BUFX4)                                          0.24       3.08 f
+  alu/in1[0] (ALU)                                        0.00       3.08 f
+  alu/sub_28/A[0] (ALU_DW01_sub_0)                        0.00       3.08 f
+  alu/sub_28/U31/Y (CLKINVX1)                             0.16       3.24 r
+  alu/sub_28/U28/Y (NAND2X2)                              0.11       3.35 f
+  alu/sub_28/U2_1/CO (ADDFHX4)                            0.21       3.56 f
+  alu/sub_28/U2_2/CO (ADDFHX2)                            0.22       3.79 f
+  alu/sub_28/U2_3/CO (ADDFHX2)                            0.25       4.03 f
+  alu/sub_28/U2_4/CO (ADDFHX4)                            0.21       4.25 f
+  alu/sub_28/U2_5/CO (ADDFHX4)                            0.20       4.44 f
+  alu/sub_28/U2_6/CO (ADDFHX2)                            0.24       4.68 f
+  alu/sub_28/U2_7/CO (ADDFHX4)                            0.21       4.89 f
+  alu/sub_28/U2_8/CO (ADDFHX4)                            0.20       5.09 f
+  alu/sub_28/U2_9/CO (ADDFHX2)                            0.22       5.31 f
+  alu/sub_28/U2_10/CO (ADDFHX2)                           0.23       5.54 f
+  alu/sub_28/U2_11/CO (ADDFHX2)                           0.25       5.79 f
+  alu/sub_28/U2_12/CO (ADDFHX4)                           0.21       6.01 f
+  alu/sub_28/U2_13/CO (ADDFHX4)                           0.20       6.21 f
+  alu/sub_28/U2_14/CO (ADDFHX4)                           0.20       6.41 f
+  alu/sub_28/U2_15/CO (ADDFHX4)                           0.20       6.61 f
+  alu/sub_28/U2_16/CO (ADDFHX2)                           0.22       6.83 f
+  alu/sub_28/U2_17/CO (ADDFHX2)                           0.25       7.08 f
+  alu/sub_28/U2_18/CO (ADDFHX4)                           0.21       7.29 f
+  alu/sub_28/U2_19/CO (ADDFHX4)                           0.20       7.50 f
+  alu/sub_28/U2_20/CO (ADDFHX4)                           0.20       7.70 f
+  alu/sub_28/U2_21/CO (ADDFHX4)                           0.20       7.89 f
+  alu/sub_28/U2_22/CO (ADDFHX2)                           0.22       8.12 f
+  alu/sub_28/U2_23/CO (ADDFHX2)                           0.23       8.35 f
+  alu/sub_28/U2_24/CO (ADDFHX2)                           0.23       8.58 f
+  alu/sub_28/U2_25/CO (ADDFHX2)                           0.23       8.82 f
+  alu/sub_28/U2_26/CO (ADDFHX2)                           0.25       9.06 f
+  alu/sub_28/U2_27/CO (ADDFHX4)                           0.21       9.28 f
+  alu/sub_28/U2_28/CO (ADDFHX4)                           0.20       9.48 f
+  alu/sub_28/U2_29/CO (ADDFHX4)                           0.20       9.68 f
+  alu/sub_28/U2_30/CO (ADDFHX2)                           0.22       9.90 f
+  alu/sub_28/U14/Y (XNOR3X2)                              0.24      10.13 f
+  alu/sub_28/DIFF[31] (ALU_DW01_sub_0)                    0.00      10.13 f
+  alu/U69/Y (AND2X4)                                      0.17      10.31 f
+  alu/U60/Y (NOR3X6)                                      0.14      10.45 r
+  alu/U61/Y (NAND2X6)                                     0.10      10.55 f
+  alu/U67/Y (NOR2X8)                                      0.10      10.65 r
+  alu/U75/Y (NAND4BX4)                                    0.14      10.79 f
+  alu/U35/Y (NOR2X6)                                      0.15      10.94 r
+  alu/zero (ALU)                                          0.00      10.94 r
+  U299/Y (INVX4)                                          0.08      11.02 f
+  U297/Y (NAND2X4)                                        0.10      11.12 r
+  U247/Y (NAND2X8)                                        0.10      11.22 f
+  U246/Y (NOR3X8)                                         0.22      11.44 r
+  U316/Y (OR2X6)                                          0.24      11.68 r
+  U309/Y (AND2X8)                                         0.13      11.81 r
+  U270/Y (OR2X1)                                          0.19      12.00 r
+  U269/Y (OR2X1)                                          0.23      12.23 r
+  pc/in[31] (PC)                                          0.00      12.23 r
+  pc/out_reg_31_/D (DFFTRX2)                              0.00      12.23 r
+  data arrival time                                                 12.23
 
-  clock clk (rise edge)                                  10.00      10.00
-  clock network delay (ideal)                             0.50      10.50
-  clock uncertainty                                      -0.10      10.40
-  pc/out_reg_8_/CK (DFFTRX2)                              0.00      10.40 r
-  library setup time                                     -0.13      10.27
-  data required time                                                10.27
+  clock clk (rise edge)                                  12.00      12.00
+  clock network delay (ideal)                             0.50      12.50
+  clock uncertainty                                      -0.10      12.40
+  pc/out_reg_31_/CK (DFFTRX2)                             0.00      12.40 r
+  library setup time                                     -0.17      12.23
+  data required time                                                12.23
   --------------------------------------------------------------------------
-  data required time                                                10.27
-  data arrival time                                                -10.27
+  data required time                                                12.23
+  data arrival time                                                -12.23
   --------------------------------------------------------------------------
   slack (MET)                                                        0.00
->>>>>>> 5d17af2cf460fd26b982421f6d4c2e5098eedb70
 
 
 1
