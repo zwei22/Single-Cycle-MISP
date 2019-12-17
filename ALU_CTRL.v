@@ -15,12 +15,12 @@ output  jr;
 assign alu_ctrl =   (alu_op==2'b00)? `ADD:
                     (alu_op==2'b01)? `EQ:
                     (alu_op==2'b10 & funct==`F_ADD)? `ADD:
-                    (alu_op==2'b10 & funct==`F_SUB)? `SUB:
                     (alu_op==2'b10 & funct==`F_AND)? `AND:
                     (alu_op==2'b10 & funct==`F_OR)? `OR:
                     (alu_op==2'b10 & funct==`F_SLT)? `SLT:
                     (alu_op==2'b10 & funct==`F_SLL)? `SLL:
                     (alu_op==2'b10 & funct==`F_SRL)? `SRL:
+                    (alu_op==2'b10 & funct==`F_SUB)? `SUB:
                     0;
 
 // always @(*) begin

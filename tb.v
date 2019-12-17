@@ -1,5 +1,5 @@
 `timescale 1 ns/10 ps
-`define CYCLE 12.5
+`define CYCLE 10.0
 `define SDFFILE     "./SingleCycleMIPS_syn.sdf"   // Modify your sdf file name
 `include "HSs18n_128x32.v"
 
