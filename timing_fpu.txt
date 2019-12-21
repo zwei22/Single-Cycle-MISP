@@ -1,0 +1,288 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SingleCycleMIPS
+Version: N-2017.09-SP2
+Date   : Sun Dec 22 02:59:37 2019
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: IR[16] (input port clocked by clk)
+  Endpoint: register_fp/regs_reg_26__19_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SingleCycleMIPS    tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    0.50       1.00 f
+  IR[16] (in)                                             0.13       1.13 f
+  U455/Y (AND3X6)                                         0.19       1.31 f
+  U453/Y (NAND2X8)                                        0.07       1.38 r
+  U951/Y (XOR2X4)                                         0.14       1.52 r
+  U460/Y (INVX12)                                         0.13       1.65 f
+  register_fp/read_reg2[4] (REGISTER_FP)                  0.00       1.65 f
+  register_fp/U1842/Y (CLKINVX12)                         0.05       1.70 r
+  register_fp/U219/Y (NAND2X6)                            0.07       1.77 f
+  register_fp/U16/Y (CLKINVX8)                            0.08       1.85 r
+  register_fp/U1962/Y (BUFX20)                            0.11       1.96 r
+  register_fp/U276/Y (AND2X8)                             0.13       2.09 r
+  register_fp/U275/Y (BUFX20)                             0.13       2.22 r
+  register_fp/U9/Y (CLKINVX20)                            0.10       2.31 f
+  register_fp/U1754/Y (OA22X1)                            0.49       2.81 f
+  register_fp/U1900/Y (NAND4X2)                           0.20       3.00 r
+  register_fp/U177/Y (OR4X6)                              0.20       3.20 r
+  register_fp/U3219/Y (CLKINVX1)                          0.12       3.32 f
+  register_fp/U499/Y (AOI222X1)                           0.43       3.75 r
+  register_fp/U1631/Y (NAND4X4)                           0.35       4.10 f
+  register_fp/read_data2[29] (REGISTER_FP)                0.00       4.10 f
+  fpu/in2[29] (FPU)                                       0.00       4.10 f
+  fpu/sub_dp/b[29] (FPU_DW_fp_sub_0)                      0.00       4.10 f
+  fpu/sub_dp/U1/b[29] (FPU_DW_fp_addsub_4)                0.00       4.10 f
+  fpu/sub_dp/U1/lt_204/B[29] (FPU_DW01_cmp2_0)            0.00       4.10 f
+  fpu/sub_dp/U1/lt_204/U222/Y (NAND2BX2)                  0.31       4.41 f
+  fpu/sub_dp/U1/lt_204/U370/Y (BUFX20)                    0.20       4.60 f
+  fpu/sub_dp/U1/lt_204/U95/Y (INVX3)                      0.17       4.78 r
+  fpu/sub_dp/U1/lt_204/U23/Y (NOR3X2)                     0.12       4.89 f
+  fpu/sub_dp/U1/lt_204/U88/Y (NAND4BBXL)                  0.34       5.23 r
+  fpu/sub_dp/U1/lt_204/U319/Y (NOR2X2)                    0.18       5.42 f
+  fpu/sub_dp/U1/lt_204/U40/Y (NAND3X4)                    0.15       5.57 r
+  fpu/sub_dp/U1/lt_204/U438/Y (NAND4X4)                   0.16       5.72 f
+  fpu/sub_dp/U1/lt_204/U19/Y (NOR3X6)                     0.15       5.87 r
+  fpu/sub_dp/U1/lt_204/U599/Y (AOI21X4)                   0.11       5.98 f
+  fpu/sub_dp/U1/lt_204/LT_LE (FPU_DW01_cmp2_0)            0.00       5.98 f
+  fpu/sub_dp/U1/U159/Y (BUFX20)                           0.13       6.12 f
+  fpu/sub_dp/U1/U469/Y (CLKBUFX20)                        0.21       6.32 f
+  fpu/sub_dp/U1/U241/Y (MXI2X2)                           0.27       6.60 r
+  fpu/sub_dp/U1/U102/Y (INVX4)                            0.13       6.73 f
+  fpu/sub_dp/U1/U101/Y (MX2X2)                            0.26       7.00 f
+  fpu/sub_dp/U1/U264/Y (CLKMX2X2)                         0.28       7.28 f
+  fpu/sub_dp/U1/U273/Y (CLKMX2X2)                         0.30       7.58 f
+  fpu/sub_dp/U1/U77/Y (MX2X4)                             0.28       7.87 f
+  fpu/sub_dp/U1/U608/Y (MXI2X4)                           0.15       8.01 r
+  fpu/sub_dp/U1/U213/Y (CLKMX2X4)                         0.22       8.23 r
+  fpu/sub_dp/U1/U885/Y (NOR2BX4)                          0.08       8.31 f
+  fpu/sub_dp/U1/U875/Y (NAND2X8)                          0.08       8.39 r
+  fpu/sub_dp/U1/U895/Y (XOR2X4)                           0.20       8.59 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/B[3] (FPU_DW01_add_54)
+                                                          0.00       8.59 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U6/Y (NAND4X8)       0.21       8.80 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U125/Y (NAND3X8)     0.10       8.90 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U11/Y (OAI21X4)      0.11       9.00 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U7/Y (NAND2X8)       0.10       9.11 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U10/Y (CLKINVX8)     0.06       9.16 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U122/Y (OAI2BB2X4)
+                                                          0.09       9.25 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U133/Y (CLKINVX8)
+                                                          0.07       9.33 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U123/Y (OAI2BB2X4)
+                                                          0.09       9.42 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U134/Y (CLKINVX8)
+                                                          0.08       9.50 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U32/Y (OAI2BB2X4)
+                                                          0.08       9.58 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U156/Y (OAI2BB1X4)
+                                                          0.19       9.77 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U12/Y (CLKINVX8)     0.07       9.84 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U140/Y (NOR2X6)      0.05       9.89 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U141/Y (OR2X8)       0.18      10.06 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U36/Y (NAND2X8)      0.08      10.15 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U38/Y (NAND3X8)      0.11      10.26 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U9/Y (CLKINVX12)     0.06      10.32 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U8/Y (NOR2X8)        0.05      10.37 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U151/Y (NOR2X8)      0.08      10.44 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U145/Y (OAI2BB1X4)
+                                                          0.09      10.53 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U33/Y (CLKINVX8)     0.07      10.60 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U146/Y (OAI22X4)     0.09      10.70 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U37/Y (CLKINVX8)     0.08      10.78 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U147/Y (OAI22X4)     0.10      10.87 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U40/Y (CLKINVX8)     0.09      10.96 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U148/Y (OAI22X4)     0.10      11.06 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U27/Y (CLKINVX8)     0.09      11.14 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U149/Y (OAI22X4)     0.10      11.24 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U39/Y (CLKINVX8)     0.09      11.33 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U129/Y (OAI2BB2X4)
+                                                          0.10      11.42 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U131/Y (CLKINVX8)
+                                                          0.09      11.51 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U142/Y (NOR2X6)      0.06      11.57 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U41/Y (NOR2X8)       0.08      11.66 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U30/Y (NOR2X6)       0.06      11.72 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_21/CO (ADDFHX4)
+                                                          0.20      11.92 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_22/CO (ADDFHX4)
+                                                          0.20      12.12 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_23/CO (ADDFHX4)
+                                                          0.20      12.32 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_24/CO (ADDFHX4)
+                                                          0.20      12.53 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_25/CO (ADDFHX4)
+                                                          0.20      12.73 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_26/CO (ADDFHX4)
+                                                          0.20      12.93 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_27/CO (ADDFHX4)
+                                                          0.20      13.14 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_28/CO (ADDFHX4)
+                                                          0.20      13.34 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_29/CO (ADDFHX4)
+                                                          0.20      13.54 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_30/CO (ADDFHX4)
+                                                          0.20      13.75 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_31/CO (ADDFHX4)
+                                                          0.20      13.95 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_32/CO (ADDFHX4)
+                                                          0.20      14.15 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_33/CO (ADDFHX4)
+                                                          0.20      14.36 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_34/CO (ADDFHX4)
+                                                          0.20      14.56 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_35/CO (ADDFHX4)
+                                                          0.20      14.76 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_36/CO (ADDFHX4)
+                                                          0.20      14.97 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_37/CO (ADDFHX4)
+                                                          0.20      15.17 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_38/CO (ADDFHX4)
+                                                          0.20      15.37 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_39/CO (ADDFHX4)
+                                                          0.20      15.58 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_40/CO (ADDFHX4)
+                                                          0.20      15.78 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_41/CO (ADDFHX4)
+                                                          0.20      15.98 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_42/CO (ADDFHX4)
+                                                          0.20      16.19 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_43/CO (ADDFHX4)
+                                                          0.20      16.39 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_44/CO (ADDFHX4)
+                                                          0.20      16.60 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_45/CO (ADDFHX4)
+                                                          0.20      16.80 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_46/CO (ADDFHX4)
+                                                          0.20      17.00 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_47/CO (ADDFHX4)
+                                                          0.20      17.21 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_48/CO (ADDFHX4)
+                                                          0.20      17.41 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_49/CO (ADDFHX4)
+                                                          0.20      17.61 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_50/CO (ADDFHX4)
+                                                          0.20      17.82 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_51/CO (ADDFHX4)
+                                                          0.20      18.02 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_52/CO (ADDFHX4)
+                                                          0.20      18.22 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_53/CO (ADDFHX4)
+                                                          0.20      18.43 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U1_54/CO (ADDFHX4)
+                                                          0.24      18.67 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U153/Y (CLKINVX8)
+                                                          0.07      18.74 r
+  fpu/sub_dp/U1/add_1_root_add_274_2/U135/Y (NAND2X8)     0.06      18.80 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/U13/Y (XOR2X4)       0.20      19.00 f
+  fpu/sub_dp/U1/add_1_root_add_274_2/SUM[56] (FPU_DW01_add_54)
+                                                          0.00      19.00 f
+  fpu/sub_dp/U1/U161/Y (MXI3X4)                           0.35      19.35 r
+  fpu/sub_dp/U1/U439/Y (MXI3X4)                           0.30      19.66 f
+  fpu/sub_dp/U1/U1097/Y (MX3X4)                           0.30      19.96 f
+  fpu/sub_dp/U1/U450/Y (CLKAND2X12)                       0.18      20.13 f
+  fpu/sub_dp/U1/U753/Y (NOR2X8)                           0.14      20.28 r
+  fpu/sub_dp/U1/U162/Y (BUFX20)                           0.17      20.45 r
+  fpu/sub_dp/U1/U94/Y (NAND2X6)                           0.09      20.54 f
+  fpu/sub_dp/U1/U374/Y (NAND3X6)                          0.15      20.70 r
+  fpu/sub_dp/U1/add_366/A[0] (FPU_DW01_inc_7)             0.00      20.70 r
+  fpu/sub_dp/U1/add_366/U1_1_1/CO (ADDHX4)                0.17      20.87 r
+  fpu/sub_dp/U1/add_366/U1_1_2/CO (ADDHX4)                0.16      21.02 r
+  fpu/sub_dp/U1/add_366/U1_1_3/CO (ADDHX4)                0.16      21.18 r
+  fpu/sub_dp/U1/add_366/U1_1_4/CO (ADDHX4)                0.16      21.34 r
+  fpu/sub_dp/U1/add_366/U1_1_5/CO (ADDHX4)                0.16      21.50 r
+  fpu/sub_dp/U1/add_366/U1_1_6/CO (ADDHX4)                0.16      21.66 r
+  fpu/sub_dp/U1/add_366/U1_1_7/CO (ADDHX4)                0.16      21.82 r
+  fpu/sub_dp/U1/add_366/U1_1_8/CO (ADDHX4)                0.16      21.98 r
+  fpu/sub_dp/U1/add_366/U1_1_9/CO (ADDHX4)                0.16      22.14 r
+  fpu/sub_dp/U1/add_366/U1_1_10/CO (ADDHX4)               0.16      22.30 r
+  fpu/sub_dp/U1/add_366/U1_1_11/CO (ADDHX4)               0.16      22.46 r
+  fpu/sub_dp/U1/add_366/U1_1_12/CO (ADDHX4)               0.16      22.62 r
+  fpu/sub_dp/U1/add_366/U1_1_13/CO (ADDHX4)               0.16      22.78 r
+  fpu/sub_dp/U1/add_366/U1_1_14/CO (ADDHX4)               0.16      22.94 r
+  fpu/sub_dp/U1/add_366/U1_1_15/CO (ADDHX4)               0.16      23.10 r
+  fpu/sub_dp/U1/add_366/U1_1_16/CO (ADDHX4)               0.18      23.28 r
+  fpu/sub_dp/U1/add_366/U3/Y (NAND2X6)                    0.08      23.36 f
+  fpu/sub_dp/U1/add_366/U1/Y (CLKINVX8)                   0.08      23.44 r
+  fpu/sub_dp/U1/add_366/U1_1_18/CO (ADDHX4)               0.15      23.59 r
+  fpu/sub_dp/U1/add_366/U1_1_19/CO (ADDHX4)               0.16      23.75 r
+  fpu/sub_dp/U1/add_366/U1_1_20/CO (ADDHX4)               0.16      23.91 r
+  fpu/sub_dp/U1/add_366/U1_1_21/CO (ADDHX4)               0.16      24.07 r
+  fpu/sub_dp/U1/add_366/U1_1_22/CO (ADDHX4)               0.16      24.23 r
+  fpu/sub_dp/U1/add_366/U1_1_23/CO (ADDHX4)               0.16      24.39 r
+  fpu/sub_dp/U1/add_366/U1_1_24/CO (ADDHX4)               0.16      24.56 r
+  fpu/sub_dp/U1/add_366/U1_1_25/CO (ADDHX4)               0.16      24.72 r
+  fpu/sub_dp/U1/add_366/U1_1_26/CO (ADDHX4)               0.16      24.88 r
+  fpu/sub_dp/U1/add_366/U1_1_27/CO (ADDHX4)               0.16      25.04 r
+  fpu/sub_dp/U1/add_366/U1_1_28/CO (ADDHX4)               0.16      25.20 r
+  fpu/sub_dp/U1/add_366/U1_1_29/CO (ADDHX4)               0.16      25.36 r
+  fpu/sub_dp/U1/add_366/U1_1_30/CO (ADDHX4)               0.16      25.52 r
+  fpu/sub_dp/U1/add_366/U1_1_31/CO (ADDHX4)               0.16      25.68 r
+  fpu/sub_dp/U1/add_366/U1_1_32/CO (ADDHX4)               0.16      25.84 r
+  fpu/sub_dp/U1/add_366/U1_1_33/CO (ADDHX4)               0.16      26.00 r
+  fpu/sub_dp/U1/add_366/U1_1_34/CO (ADDHX4)               0.16      26.17 r
+  fpu/sub_dp/U1/add_366/U1_1_35/CO (ADDHX4)               0.16      26.33 r
+  fpu/sub_dp/U1/add_366/U1_1_36/CO (ADDHX4)               0.16      26.49 r
+  fpu/sub_dp/U1/add_366/U1_1_37/CO (ADDHX4)               0.16      26.65 r
+  fpu/sub_dp/U1/add_366/U1_1_38/CO (ADDHX4)               0.16      26.81 r
+  fpu/sub_dp/U1/add_366/U1_1_39/CO (ADDHX4)               0.16      26.97 r
+  fpu/sub_dp/U1/add_366/U1_1_40/CO (ADDHX4)               0.16      27.13 r
+  fpu/sub_dp/U1/add_366/U1_1_41/CO (ADDHX4)               0.16      27.29 r
+  fpu/sub_dp/U1/add_366/U1_1_42/CO (ADDHX4)               0.16      27.45 r
+  fpu/sub_dp/U1/add_366/U1_1_43/CO (ADDHX4)               0.16      27.61 r
+  fpu/sub_dp/U1/add_366/U1_1_44/CO (ADDHX4)               0.16      27.77 r
+  fpu/sub_dp/U1/add_366/U1_1_45/CO (ADDHX4)               0.16      27.94 r
+  fpu/sub_dp/U1/add_366/U1_1_46/CO (ADDHX4)               0.16      28.10 r
+  fpu/sub_dp/U1/add_366/U1_1_47/CO (ADDHX4)               0.16      28.26 r
+  fpu/sub_dp/U1/add_366/U1_1_48/CO (ADDHX4)               0.16      28.42 r
+  fpu/sub_dp/U1/add_366/U1_1_49/CO (ADDHX4)               0.16      28.58 r
+  fpu/sub_dp/U1/add_366/U1_1_50/CO (ADDHX4)               0.15      28.73 r
+  fpu/sub_dp/U1/add_366/U4/Y (XOR2X4)                     0.13      28.86 f
+  fpu/sub_dp/U1/add_366/SUM[51] (FPU_DW01_inc_7)          0.00      28.86 f
+  fpu/sub_dp/U1/U40/Y (INVX8)                             0.08      28.94 r
+  fpu/sub_dp/U1/U927/Y (AOI2BB2X4)                        0.09      29.03 f
+  fpu/sub_dp/U1/z[51] (FPU_DW_fp_addsub_4)                0.00      29.03 f
+  fpu/sub_dp/z[51] (FPU_DW_fp_sub_0)                      0.00      29.03 f
+  fpu/U422/Y (AND2X8)                                     0.15      29.18 f
+  fpu/U148/Y (NOR3X8)                                     0.10      29.27 r
+  fpu/U929/Y (NAND4BX4)                                   0.14      29.41 f
+  fpu/out[51] (FPU)                                       0.00      29.41 f
+  U448/Y (CLKMX2X6)                                       0.26      29.67 f
+  register_fp/write_data[51] (REGISTER_FP)                0.00      29.67 f
+  register_fp/U972/Y (CLKINVX12)                          0.08      29.75 r
+  register_fp/U935/Y (BUFX20)                             0.13      29.89 r
+  register_fp/U3244/Y (OAI222XL)                          0.23      30.12 f
+  register_fp/regs_reg_26__19_/D (DFFQXL)                 0.00      30.12 f
+  data arrival time                                                 30.12
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.50      30.50
+  clock uncertainty                                      -0.10      30.40
+  register_fp/regs_reg_26__19_/CK (DFFQXL)                0.00      30.40 r
+  library setup time                                     -0.28      30.12
+  data required time                                                30.12
+  --------------------------------------------------------------------------
+  data required time                                                30.12
+  data arrival time                                                -30.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

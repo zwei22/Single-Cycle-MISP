@@ -3,7 +3,7 @@
 Report : area
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-Date   : Wed Dec 18 03:03:24 2019
+Date   : Sun Dec 22 02:31:55 2019
 ****************************************
 
 Library(s) Used:
@@ -37,8 +37,8 @@ Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   B
                                   Total       Total    national    national    boxes   Design
 --------------------------------  ----------  -------  ----------  ----------  ------  --------------------------
 SingleCycleMIPS                   76929.5641    100.0   3196.2042      0.0000  0.0000  SingleCycleMIPS
-add_112                            1702.4922      2.2   1702.4922      0.0000  0.0000  SingleCycleMIPS_DW01_add_1
-add_125                             583.9056      0.8    583.9056      0.0000  0.0000  SingleCycleMIPS_DW01_add_0
+add_106                             583.9056      0.8    583.9056      0.0000  0.0000  SingleCycleMIPS_DW01_add_1
+add_109                            1702.4922      2.2   1702.4922      0.0000  0.0000  SingleCycleMIPS_DW01_add_0
 alu                               13496.0274     17.5  10304.9153      0.0000  0.0000  ALU
 alu/sub_34                         3191.1120      4.1   3191.1120      0.0000  0.0000  ALU_DW01_sub_0
 alu_ctrl                            188.4114      0.2    188.4114      0.0000  0.0000  ALU_CTRL

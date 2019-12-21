@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-Date   : Wed Dec 18 03:03:24 2019
+Date   : Sun Dec 22 02:31:56 2019
 ****************************************
 
 Operating Conditions: slow   Library: slow

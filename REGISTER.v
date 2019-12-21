@@ -5,13 +5,13 @@ module REGISTER(
     read_reg1,
     read_reg2,
     write_reg,
-    reg_write,
+    ctrl_reg_w,
     write_data,
     read_data1,
     read_data2
 );
 input   clk, rst_n;
-input   reg_write;
+input   ctrl_reg_w;
 input   reg_read;
 input   [4:0] read_reg1, read_reg2, write_reg;
 input   [31:0] write_data;
@@ -24,21 +24,17 @@ integer i;
 // assign read_data1 = regs[read_reg1];
 // assign read_data2 = regs[read_reg2];
 always @(*) begin
-    // if (read_reg1!=0) begin
-    //     read_data1 = regs[read_reg1];
-    // end else begin
-    //     read_data1 = 31'b0;
     case (read_reg1)
-        5'd0 : read_data1 = 31'b0;
-        5'd1 : read_data1 = regs[1];
-        5'd2 : read_data1 = regs[2];
-        5'd3 : read_data1 = regs[3];
-        5'd4 : read_data1 = regs[4];
-        5'd5 : read_data1 = regs[5];
-        5'd6 : read_data1 = regs[6];
-        5'd7 : read_data1 = regs[7];
-        5'd8 : read_data1 = regs[8];
-        5'd9 : read_data1 = regs[9];
+        5'd0  : read_data1 = 31'b0;
+        5'd1  : read_data1 = regs[1];
+        5'd2  : read_data1 = regs[2];
+        5'd3  : read_data1 = regs[3];
+        5'd4  : read_data1 = regs[4];
+        5'd5  : read_data1 = regs[5];
+        5'd6  : read_data1 = regs[6];
+        5'd7  : read_data1 = regs[7];
+        5'd8  : read_data1 = regs[8];
+        5'd9  : read_data1 = regs[9];
         5'd10 : read_data1 = regs[10];
         5'd11 : read_data1 = regs[11];
         5'd12 : read_data1 = regs[12];
@@ -62,23 +58,17 @@ always @(*) begin
         5'd30 : read_data1 = regs[30];
         5'd31 : read_data1 = regs[31];
     endcase
-    //end
-    // if (read_reg2!=0) begin
-    //     read_data2 = regs[read_reg2];
-    // end else begin
-    //     read_data2 = 31'b0;
-    // end
     case (read_reg2)
-        5'd0 : read_data2 = 31'b0;
-        5'd1 : read_data2 = regs[1];
-        5'd2 : read_data2 = regs[2];
-        5'd3 : read_data2 = regs[3];
-        5'd4 : read_data2 = regs[4];
-        5'd5 : read_data2 = regs[5];
-        5'd6 : read_data2 = regs[6];
-        5'd7 : read_data2 = regs[7];
-        5'd8 : read_data2 = regs[8];
-        5'd9 : read_data2 = regs[9];
+        5'd0  : read_data2 = 31'b0;
+        5'd1  : read_data2 = regs[1];
+        5'd2  : read_data2 = regs[2];
+        5'd3  : read_data2 = regs[3];
+        5'd4  : read_data2 = regs[4];
+        5'd5  : read_data2 = regs[5];
+        5'd6  : read_data2 = regs[6];
+        5'd7  : read_data2 = regs[7];
+        5'd8  : read_data2 = regs[8];
+        5'd9  : read_data2 = regs[9];
         5'd10 : read_data2 = regs[10];
         5'd11 : read_data2 = regs[11];
         5'd12 : read_data2 = regs[12];
@@ -110,7 +100,7 @@ always@(posedge clk) begin
             regs[i] <= 0;
         end
     end
-    else if (reg_write==1'b1) begin
+    else if (ctrl_reg_w==1'b1) begin
         regs[write_reg] <= write_data;
     end
 end

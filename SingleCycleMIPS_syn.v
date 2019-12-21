@@ -1,11 +1,11 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Expert(TM) in wire load mode
 // Version   : N-2017.09-SP2
-// Date      : Wed Dec 18 03:03:24 2019
+// Date      : Sun Dec 22 02:31:55 2019
 /////////////////////////////////////////////////////////////
 
 
-module REGISTER ( clk, rst_n, read_reg1, read_reg2, write_reg, reg_write, 
+module REGISTER ( clk, rst_n, read_reg1, read_reg2, write_reg, ctrl_reg_w, 
         write_data, read_data1, read_data2 );
   input [4:0] read_reg1;
   input [4:0] read_reg2;
@@ -13,7 +13,7 @@ module REGISTER ( clk, rst_n, read_reg1, read_reg2, write_reg, reg_write,
   input [31:0] write_data;
   output [31:0] read_data1;
   output [31:0] read_data2;
-  input clk, rst_n, reg_write;
+  input clk, rst_n, ctrl_reg_w;
   wire   n33, n34, n35, n36, n37, n38, n39, n40, n41, n42, n43, n44, n45, n46,
          n47, n48, n49, n50, n51, n52, n53, n54, n55, n56, n57, n58, n59, n60,
          n61, n62, n63, n64, n65, n66, n67, n68, n69, n70, n71, n72, n73, n74,
@@ -2909,7 +2909,7 @@ module REGISTER ( clk, rst_n, read_reg1, read_reg2, write_reg, reg_write,
   CLKBUFX3 U1539 ( .A(n1154), .Y(n2644) );
   CLKBUFX3 U1540 ( .A(n1118), .Y(n2642) );
   CLKBUFX3 U1541 ( .A(n1117), .Y(n2640) );
-  AND2X2 U1542 ( .A(n2770), .B(reg_write), .Y(n2393) );
+  AND2X2 U1542 ( .A(n2770), .B(ctrl_reg_w), .Y(n2393) );
   CLKINVX1 U1543 ( .A(write_reg[3]), .Y(n2773) );
   CLKINVX1 U1544 ( .A(write_reg[4]), .Y(n2772) );
   NOR3X1 U1545 ( .A(n1520), .B(n1521), .C(n1522), .Y(n1504) );
@@ -4431,81 +4431,7 @@ module PC ( clk, rst_n, in, out );
 endmodule
 
 
-module SingleCycleMIPS_DW01_add_0 ( A, SUM );
-  input [31:0] A;
-  output [31:0] SUM;
-  wire   n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16,
-         n17, n18, n19, n20, n21, n22, n23, n24, n25, n26, n27, n28, n29, n30,
-         n31, n34;
-
-  XOR2X1 U1 ( .A(A[5]), .B(n6), .Y(SUM[5]) );
-  AND2X2 U2 ( .A(A[26]), .B(n27), .Y(n28) );
-  CLKAND2X3 U3 ( .A(A[25]), .B(n26), .Y(n27) );
-  XOR2X1 U4 ( .A(A[3]), .B(A[2]), .Y(SUM[3]) );
-  XOR2X1 U5 ( .A(A[28]), .B(n29), .Y(SUM[28]) );
-  AND2X2 U6 ( .A(A[3]), .B(A[2]), .Y(n5) );
-  AND2X4 U7 ( .A(A[4]), .B(n5), .Y(n6) );
-  AND2X2 U8 ( .A(A[23]), .B(n24), .Y(n25) );
-  AND2X4 U9 ( .A(A[22]), .B(n23), .Y(n24) );
-  NAND2X1 U10 ( .A(n3), .B(n4), .Y(SUM[31]) );
-  AND2X4 U11 ( .A(A[16]), .B(n17), .Y(n18) );
-  XOR2X1 U12 ( .A(A[18]), .B(n19), .Y(SUM[18]) );
-  XOR2X1 U13 ( .A(A[27]), .B(n28), .Y(SUM[27]) );
-  NAND2X1 U14 ( .A(A[31]), .B(n34), .Y(n3) );
-  NAND2X1 U15 ( .A(n1), .B(n2), .Y(n4) );
-  AND2X2 U16 ( .A(A[21]), .B(n22), .Y(n23) );
-  AND2X2 U17 ( .A(A[20]), .B(n21), .Y(n22) );
-  AND2X2 U18 ( .A(A[5]), .B(n6), .Y(n7) );
-  AND2X2 U19 ( .A(A[7]), .B(n8), .Y(n9) );
-  AND2X2 U20 ( .A(A[8]), .B(n9), .Y(n10) );
-  AND2X2 U21 ( .A(A[9]), .B(n10), .Y(n11) );
-  AND2X2 U22 ( .A(A[10]), .B(n11), .Y(n12) );
-  AND2X2 U23 ( .A(A[11]), .B(n12), .Y(n13) );
-  AND2X2 U24 ( .A(A[13]), .B(n14), .Y(n15) );
-  AND2X2 U25 ( .A(A[14]), .B(n15), .Y(n16) );
-  AND2X2 U26 ( .A(A[18]), .B(n19), .Y(n20) );
-  AND2X2 U27 ( .A(A[6]), .B(n7), .Y(n8) );
-  XOR2X1 U28 ( .A(A[4]), .B(n5), .Y(SUM[4]) );
-  XOR2X1 U29 ( .A(A[10]), .B(n11), .Y(SUM[10]) );
-  AND2X2 U30 ( .A(A[27]), .B(n28), .Y(n29) );
-  NAND2X1 U31 ( .A(A[30]), .B(n31), .Y(n34) );
-  XOR2X1 U32 ( .A(A[30]), .B(n31), .Y(SUM[30]) );
-  AND2X6 U33 ( .A(A[29]), .B(n30), .Y(n31) );
-  XOR2X1 U34 ( .A(A[29]), .B(n30), .Y(SUM[29]) );
-  XOR2X1 U35 ( .A(A[9]), .B(n10), .Y(SUM[9]) );
-  CLKXOR2X1 U36 ( .A(A[23]), .B(n24), .Y(SUM[23]) );
-  INVX2 U37 ( .A(A[2]), .Y(SUM[2]) );
-  AND2X2 U38 ( .A(A[15]), .B(n16), .Y(n17) );
-  AND2X2 U39 ( .A(A[17]), .B(n18), .Y(n19) );
-  INVXL U40 ( .A(A[31]), .Y(n1) );
-  INVXL U41 ( .A(n34), .Y(n2) );
-  XOR2X1 U42 ( .A(A[11]), .B(n12), .Y(SUM[11]) );
-  AND2X2 U43 ( .A(A[28]), .B(n29), .Y(n30) );
-  AND2XL U44 ( .A(A[12]), .B(n13), .Y(n14) );
-  AND2XL U45 ( .A(A[19]), .B(n20), .Y(n21) );
-  AND2XL U46 ( .A(A[24]), .B(n25), .Y(n26) );
-  XOR2X1 U47 ( .A(A[6]), .B(n7), .Y(SUM[6]) );
-  XOR2X1 U48 ( .A(A[13]), .B(n14), .Y(SUM[13]) );
-  XOR2X1 U49 ( .A(A[14]), .B(n15), .Y(SUM[14]) );
-  XOR2X1 U50 ( .A(A[15]), .B(n16), .Y(SUM[15]) );
-  XOR2X1 U51 ( .A(A[16]), .B(n17), .Y(SUM[16]) );
-  XOR2X1 U52 ( .A(A[19]), .B(n20), .Y(SUM[19]) );
-  XOR2X1 U53 ( .A(A[20]), .B(n21), .Y(SUM[20]) );
-  XOR2X1 U54 ( .A(A[21]), .B(n22), .Y(SUM[21]) );
-  XOR2X1 U55 ( .A(A[22]), .B(n23), .Y(SUM[22]) );
-  XOR2X1 U56 ( .A(A[25]), .B(n26), .Y(SUM[25]) );
-  XOR2X1 U57 ( .A(A[8]), .B(n9), .Y(SUM[8]) );
-  XOR2X1 U58 ( .A(A[12]), .B(n13), .Y(SUM[12]) );
-  XOR2X1 U59 ( .A(A[17]), .B(n18), .Y(SUM[17]) );
-  XOR2X1 U60 ( .A(A[24]), .B(n25), .Y(SUM[24]) );
-  XOR2X1 U61 ( .A(A[26]), .B(n27), .Y(SUM[26]) );
-  XOR2X1 U62 ( .A(A[7]), .B(n8), .Y(SUM[7]) );
-  CLKBUFX3 U63 ( .A(A[1]), .Y(SUM[1]) );
-  CLKBUFX3 U64 ( .A(A[0]), .Y(SUM[0]) );
-endmodule
-
-
-module SingleCycleMIPS_DW01_add_1 ( A, SUM, B_31_, B_30_, B_29_, B_28_, B_27_, 
+module SingleCycleMIPS_DW01_add_0 ( A, SUM, B_31_, B_30_, B_29_, B_28_, B_27_, 
         B_26_, B_25_, B_24_, B_23_, B_22_, B_21_, B_20_, B_19_, B_18_, B_17_, 
         B_16_, B_15_, B_14_, B_13_, B_12_, B_11_, B_10_, B_9_, B_8_, B_7_, 
         B_6_, B_5_, B_4_, B_3_, B_2_ );
@@ -4590,6 +4516,80 @@ module SingleCycleMIPS_DW01_add_1 ( A, SUM, B_31_, B_30_, B_29_, B_28_, B_27_,
 endmodule
 
 
+module SingleCycleMIPS_DW01_add_1 ( A, SUM );
+  input [31:0] A;
+  output [31:0] SUM;
+  wire   n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16,
+         n17, n18, n19, n20, n21, n22, n23, n24, n25, n26, n27, n28, n29, n30,
+         n31, n34;
+
+  XOR2X1 U1 ( .A(A[5]), .B(n6), .Y(SUM[5]) );
+  AND2X2 U2 ( .A(A[26]), .B(n27), .Y(n28) );
+  CLKAND2X3 U3 ( .A(A[25]), .B(n26), .Y(n27) );
+  XOR2X1 U4 ( .A(A[3]), .B(A[2]), .Y(SUM[3]) );
+  XOR2X1 U5 ( .A(A[28]), .B(n29), .Y(SUM[28]) );
+  AND2X2 U6 ( .A(A[3]), .B(A[2]), .Y(n5) );
+  AND2X4 U7 ( .A(A[4]), .B(n5), .Y(n6) );
+  AND2X2 U8 ( .A(A[23]), .B(n24), .Y(n25) );
+  AND2X4 U9 ( .A(A[22]), .B(n23), .Y(n24) );
+  NAND2X1 U10 ( .A(n3), .B(n4), .Y(SUM[31]) );
+  AND2X4 U11 ( .A(A[16]), .B(n17), .Y(n18) );
+  XOR2X1 U12 ( .A(A[18]), .B(n19), .Y(SUM[18]) );
+  XOR2X1 U13 ( .A(A[27]), .B(n28), .Y(SUM[27]) );
+  NAND2X1 U14 ( .A(A[31]), .B(n34), .Y(n3) );
+  NAND2X1 U15 ( .A(n1), .B(n2), .Y(n4) );
+  AND2X2 U16 ( .A(A[21]), .B(n22), .Y(n23) );
+  AND2X2 U17 ( .A(A[20]), .B(n21), .Y(n22) );
+  AND2X2 U18 ( .A(A[5]), .B(n6), .Y(n7) );
+  AND2X2 U19 ( .A(A[7]), .B(n8), .Y(n9) );
+  AND2X2 U20 ( .A(A[8]), .B(n9), .Y(n10) );
+  AND2X2 U21 ( .A(A[9]), .B(n10), .Y(n11) );
+  AND2X2 U22 ( .A(A[10]), .B(n11), .Y(n12) );
+  AND2X2 U23 ( .A(A[11]), .B(n12), .Y(n13) );
+  AND2X2 U24 ( .A(A[13]), .B(n14), .Y(n15) );
+  AND2X2 U25 ( .A(A[14]), .B(n15), .Y(n16) );
+  AND2X2 U26 ( .A(A[18]), .B(n19), .Y(n20) );
+  AND2X2 U27 ( .A(A[6]), .B(n7), .Y(n8) );
+  XOR2X1 U28 ( .A(A[4]), .B(n5), .Y(SUM[4]) );
+  XOR2X1 U29 ( .A(A[10]), .B(n11), .Y(SUM[10]) );
+  AND2X2 U30 ( .A(A[27]), .B(n28), .Y(n29) );
+  NAND2X1 U31 ( .A(A[30]), .B(n31), .Y(n34) );
+  XOR2X1 U32 ( .A(A[30]), .B(n31), .Y(SUM[30]) );
+  AND2X6 U33 ( .A(A[29]), .B(n30), .Y(n31) );
+  XOR2X1 U34 ( .A(A[29]), .B(n30), .Y(SUM[29]) );
+  XOR2X1 U35 ( .A(A[9]), .B(n10), .Y(SUM[9]) );
+  CLKXOR2X1 U36 ( .A(A[23]), .B(n24), .Y(SUM[23]) );
+  INVX2 U37 ( .A(A[2]), .Y(SUM[2]) );
+  AND2X2 U38 ( .A(A[15]), .B(n16), .Y(n17) );
+  AND2X2 U39 ( .A(A[17]), .B(n18), .Y(n19) );
+  INVXL U40 ( .A(A[31]), .Y(n1) );
+  INVXL U41 ( .A(n34), .Y(n2) );
+  XOR2X1 U42 ( .A(A[11]), .B(n12), .Y(SUM[11]) );
+  AND2X2 U43 ( .A(A[28]), .B(n29), .Y(n30) );
+  AND2XL U44 ( .A(A[12]), .B(n13), .Y(n14) );
+  AND2XL U45 ( .A(A[19]), .B(n20), .Y(n21) );
+  AND2XL U46 ( .A(A[24]), .B(n25), .Y(n26) );
+  XOR2X1 U47 ( .A(A[6]), .B(n7), .Y(SUM[6]) );
+  XOR2X1 U48 ( .A(A[13]), .B(n14), .Y(SUM[13]) );
+  XOR2X1 U49 ( .A(A[14]), .B(n15), .Y(SUM[14]) );
+  XOR2X1 U50 ( .A(A[15]), .B(n16), .Y(SUM[15]) );
+  XOR2X1 U51 ( .A(A[16]), .B(n17), .Y(SUM[16]) );
+  XOR2X1 U52 ( .A(A[19]), .B(n20), .Y(SUM[19]) );
+  XOR2X1 U53 ( .A(A[20]), .B(n21), .Y(SUM[20]) );
+  XOR2X1 U54 ( .A(A[21]), .B(n22), .Y(SUM[21]) );
+  XOR2X1 U55 ( .A(A[22]), .B(n23), .Y(SUM[22]) );
+  XOR2X1 U56 ( .A(A[25]), .B(n26), .Y(SUM[25]) );
+  XOR2X1 U57 ( .A(A[8]), .B(n9), .Y(SUM[8]) );
+  XOR2X1 U58 ( .A(A[12]), .B(n13), .Y(SUM[12]) );
+  XOR2X1 U59 ( .A(A[17]), .B(n18), .Y(SUM[17]) );
+  XOR2X1 U60 ( .A(A[24]), .B(n25), .Y(SUM[24]) );
+  XOR2X1 U61 ( .A(A[26]), .B(n27), .Y(SUM[26]) );
+  XOR2X1 U62 ( .A(A[7]), .B(n8), .Y(SUM[7]) );
+  CLKBUFX3 U63 ( .A(A[1]), .Y(SUM[1]) );
+  CLKBUFX3 U64 ( .A(A[0]), .Y(SUM[0]) );
+endmodule
+
+
 module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A, 
         Data2Mem, OEN );
   output [31:0] IR_addr;
@@ -4629,15 +4629,15 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   wire   [31:0] w_alu;
   wire   [31:0] w_alu_result;
   wire   [3:0] w_alu_ctrl;
-  wire   [31:0] w_add4;
-  wire   [31:0] w_addsl;
   wire   [27:2] w_pc_in;
+  wire   [31:0] w_pc_add4;
+  wire   [31:0] w_pc_branch;
 
   AO22X4 U174 ( .A0(IR[4]), .A1(n195), .B0(Data2Mem[4]), .B1(n268), .Y(
         w_alu[4]) );
   REGISTER register ( .clk(clk), .rst_n(n188), .read_reg1({IR[25], n161, 
         IR[23:21]}), .read_reg2(IR[20:16]), .write_reg({n15, n16, n17, n18, 
-        n19}), .reg_write(w_reg_w), .write_data(w_jal_wr), .read_data1(w_rd1), 
+        n19}), .ctrl_reg_w(w_reg_w), .write_data(w_jal_wr), .read_data1(w_rd1), 
         .read_data2({Data2Mem[31], n308, Data2Mem[29:28], n309, 
         Data2Mem[26:18], n310, n311, n312, Data2Mem[14], n313, Data2Mem[12:7], 
         n314, n315, Data2Mem[4], n316, n317, n318, n319}) );
@@ -4652,25 +4652,24 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
         w_alu_ctrl), .jr(w_jr) );
   PC pc ( .clk(clk), .rst_n(n188), .in({n182, n158, n12, n11, w_pc_in, n204, 
         n221}), .out({IR_addr[31:5], n306, IR_addr[3], n307, IR_addr[1:0]}) );
-  SingleCycleMIPS_DW01_add_0 add_125 ( .A(IR_addr), .SUM(w_add4) );
-  SingleCycleMIPS_DW01_add_1 add_112 ( .A({w_add4[31:30], n229, w_add4[28], 
-        n227, w_add4[26:6], n232, w_add4[4:0]}), .SUM(w_addsl), .B_31_(n262), 
-        .B_30_(n261), .B_29_(n261), .B_28_(n261), .B_27_(n261), .B_26_(n262), 
-        .B_25_(n261), .B_24_(n260), .B_23_(n260), .B_22_(n260), .B_21_(n260), 
-        .B_20_(n262), .B_19_(n260), .B_18_(n260), .B_17_(n260), .B_16_(IR[14]), 
-        .B_15_(IR[13]), .B_14_(IR[12]), .B_13_(IR[11]), .B_12_(IR[10]), 
-        .B_11_(IR[9]), .B_10_(IR[8]), .B_9_(IR[7]), .B_8_(IR[6]), .B_7_(n258), 
-        .B_6_(IR[4]), .B_5_(IR[3]), .B_4_(IR[2]), .B_3_(IR[1]), .B_2_(IR[0])
-         );
+  SingleCycleMIPS_DW01_add_0 add_109 ( .A({w_pc_add4[31:30], n229, 
+        w_pc_add4[28], n227, w_pc_add4[26:6], n232, w_pc_add4[4:0]}), .SUM(
+        w_pc_branch), .B_31_(n262), .B_30_(n261), .B_29_(n261), .B_28_(n261), 
+        .B_27_(n261), .B_26_(n262), .B_25_(n261), .B_24_(n260), .B_23_(n260), 
+        .B_22_(n260), .B_21_(n260), .B_20_(n262), .B_19_(n260), .B_18_(n260), 
+        .B_17_(n260), .B_16_(IR[14]), .B_15_(IR[13]), .B_14_(IR[12]), .B_13_(
+        IR[11]), .B_12_(IR[10]), .B_11_(IR[9]), .B_10_(IR[8]), .B_9_(IR[7]), 
+        .B_8_(IR[6]), .B_7_(n258), .B_6_(IR[4]), .B_5_(IR[3]), .B_4_(IR[2]), 
+        .B_3_(IR[1]), .B_2_(IR[0]) );
+  SingleCycleMIPS_DW01_add_1 add_106 ( .A(IR_addr), .SUM(w_pc_add4) );
   INVX3 U244 ( .A(n78), .Y(n11) );
-  NAND2X2 U245 ( .A(w_addsl[9]), .B(n255), .Y(n56) );
+  NAND2X2 U245 ( .A(w_pc_branch[9]), .B(n255), .Y(n56) );
   BUFX16 U246 ( .A(n196), .Y(n265) );
   OAI211X1 U247 ( .A0(n265), .A1(n290), .B0(n105), .C0(n106), .Y(w_pc_in[15])
          );
   OAI211X2 U248 ( .A0(n159), .A1(n289), .B0(n103), .C0(n104), .Y(w_pc_in[16])
          );
-  OAI2BB1X2 U249 ( .A0N(w_add4[31]), .A1N(n263), .B0(n128), .Y(w_jal_wr[31])
-         );
+  OAI2BB1X2 U249 ( .A0N(w_pc_add4[31]), .A1N(n263), .B0(n128), .Y(w_jal_wr[31]) );
   NOR2BX2 U250 ( .AN(w_alu_result[31]), .B(n209), .Y(n240) );
   CLKINVX20 U251 ( .A(n254), .Y(n255) );
   OAI211X2 U252 ( .A0(n159), .A1(n298), .B0(n62), .C0(n63), .Y(w_pc_in[7]) );
@@ -4688,14 +4687,14 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
          );
   OAI211X2 U262 ( .A0(n159), .A1(n280), .B0(n84), .C0(n85), .Y(w_pc_in[25]) );
   OAI211X2 U263 ( .A0(n159), .A1(n279), .B0(n82), .C0(n83), .Y(w_pc_in[26]) );
-  NAND2X2 U264 ( .A(w_addsl[8]), .B(n255), .Y(n60) );
+  NAND2X2 U264 ( .A(w_pc_branch[8]), .B(n255), .Y(n60) );
   OAI211X2 U265 ( .A0(n159), .A1(n297), .B0(n60), .C0(n61), .Y(w_pc_in[8]) );
-  NAND2X6 U266 ( .A(n73), .B(w_add4[28]), .Y(n163) );
+  NAND2X6 U266 ( .A(n73), .B(w_pc_add4[28]), .Y(n163) );
   NAND2X8 U267 ( .A(n248), .B(n196), .Y(n73) );
   BUFX20 U268 ( .A(n196), .Y(n159) );
   OAI211X2 U269 ( .A0(n159), .A1(n288), .B0(n101), .C0(n102), .Y(w_pc_in[17])
          );
-  NAND2X2 U270 ( .A(w_addsl[15]), .B(n255), .Y(n105) );
+  NAND2X2 U270 ( .A(w_pc_branch[15]), .B(n255), .Y(n105) );
   OAI222X2 U271 ( .A0(n191), .A1(n225), .B0(n205), .B1(n265), .C0(n206), .C1(
         n207), .Y(n204) );
   OAI222X2 U272 ( .A0(n222), .A1(n225), .B0(n223), .B1(n265), .C0(n207), .C1(
@@ -4718,7 +4717,7 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   OR2X6 U286 ( .A(n201), .B(n207), .Y(n94) );
   OR2X8 U287 ( .A(n118), .B(n184), .Y(n196) );
   AND3X4 U288 ( .A(n162), .B(n163), .C(n164), .Y(n78) );
-  NAND2X2 U289 ( .A(w_addsl[28]), .B(n208), .Y(n164) );
+  NAND2X2 U289 ( .A(w_pc_branch[28]), .B(n208), .Y(n164) );
   OR2X4 U290 ( .A(n200), .B(n207), .Y(n113) );
   OR2X4 U291 ( .A(n202), .B(n207), .Y(n109) );
   INVX16 U292 ( .A(n59), .Y(n254) );
@@ -4732,7 +4731,7 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   CLKINVX12 U298 ( .A(n156), .Y(Data2Mem[17]) );
   OAI2BB1X1 U299 ( .A0N(Data2Mem[17]), .A1N(n268), .B0(n264), .Y(w_alu[17]) );
   CLKINVX1 U300 ( .A(n228), .Y(n229) );
-  CLKINVX1 U301 ( .A(w_add4[29]), .Y(n228) );
+  CLKINVX1 U301 ( .A(w_pc_add4[29]), .Y(n228) );
   OAI21X1 U302 ( .A0(n279), .A1(n269), .B0(n134), .Y(w_jal_wr[26]) );
   CLKINVX1 U303 ( .A(n197), .Y(n134) );
   OAI2BB2X1 U304 ( .B0(n198), .B1(n216), .A0N(w_alu_result[26]), .A1N(n272), 
@@ -4749,7 +4748,7 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   INVX3 U314 ( .A(n309), .Y(n170) );
   BUFX4 U315 ( .A(n308), .Y(Data2Mem[30]) );
   BUFX16 U316 ( .A(n307), .Y(IR_addr[2]) );
-  NAND2X4 U317 ( .A(w_addsl[7]), .B(n255), .Y(n62) );
+  NAND2X4 U317 ( .A(w_pc_branch[7]), .B(n255), .Y(n62) );
   OR2X6 U318 ( .A(n203), .B(n207), .Y(n70) );
   CLKINVX3 U319 ( .A(n214), .Y(n243) );
   OR3X6 U320 ( .A(n179), .B(n180), .C(n181), .Y(n158) );
@@ -4767,11 +4766,11 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   NAND2X8 U331 ( .A(n185), .B(n186), .Y(w_alu[1]) );
   OAI2BB2X1 U332 ( .B0(n194), .B1(n216), .A0N(w_alu_result[30]), .A1N(n272), 
         .Y(n193) );
-  NAND2X2 U333 ( .A(w_addsl[27]), .B(n255), .Y(n80) );
+  NAND2X2 U333 ( .A(w_pc_branch[27]), .B(n255), .Y(n80) );
   OAI2BB2X2 U334 ( .B0(n215), .B1(n216), .A0N(w_alu_result[28]), .A1N(n272), 
         .Y(n214) );
-  CLKAND2X3 U335 ( .A(n73), .B(w_add4[30]), .Y(n180) );
-  CLKAND2X3 U336 ( .A(n73), .B(w_add4[31]), .Y(n246) );
+  CLKAND2X3 U335 ( .A(n73), .B(w_pc_add4[30]), .Y(n180) );
+  CLKAND2X3 U336 ( .A(n73), .B(w_pc_add4[31]), .Y(n246) );
   OAI211X2 U337 ( .A0(n159), .A1(n278), .B0(n80), .C0(n81), .Y(w_pc_in[27]) );
   OAI211X2 U338 ( .A0(n159), .A1(n291), .B0(n107), .C0(n108), .Y(w_pc_in[14])
          );
@@ -4783,28 +4782,28 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   INVX3 U344 ( .A(n259), .Y(n260) );
   CLKINVX1 U345 ( .A(ReadDataMem[30]), .Y(n194) );
   CLKINVX1 U346 ( .A(ReadDataMem[28]), .Y(n215) );
-  BUFX4 U347 ( .A(w_add4[5]), .Y(n232) );
+  BUFX4 U347 ( .A(w_pc_add4[5]), .Y(n232) );
   CLKINVX1 U348 ( .A(ReadDataMem[26]), .Y(n198) );
   CLKBUFX3 U349 ( .A(IR[5]), .Y(n258) );
   BUFX6 U350 ( .A(w_rd1[5]), .Y(n213) );
-  CLKINVX1 U351 ( .A(w_add4[10]), .Y(n295) );
+  CLKINVX1 U351 ( .A(w_pc_add4[10]), .Y(n295) );
   CLKINVX1 U352 ( .A(n271), .Y(n216) );
   OAI21XL U353 ( .A0(n284), .A1(n269), .B0(n139), .Y(w_jal_wr[21]) );
   CLKBUFX3 U354 ( .A(n120), .Y(n272) );
   OAI21XL U355 ( .A0(n283), .A1(n305), .B0(n138), .Y(w_jal_wr[22]) );
   CLKINVX1 U356 ( .A(n272), .Y(n209) );
   BUFX4 U357 ( .A(n306), .Y(IR_addr[4]) );
-  CLKINVX1 U358 ( .A(w_addsl[11]), .Y(n200) );
-  CLKINVX1 U359 ( .A(w_add4[0]), .Y(n223) );
-  CLKINVX1 U360 ( .A(w_addsl[0]), .Y(n224) );
-  CLKINVX1 U361 ( .A(w_add4[1]), .Y(n205) );
-  CLKINVX1 U362 ( .A(w_addsl[1]), .Y(n206) );
-  CLKINVX1 U363 ( .A(w_addsl[13]), .Y(n202) );
+  CLKINVX1 U358 ( .A(w_pc_branch[11]), .Y(n200) );
+  CLKINVX1 U359 ( .A(w_pc_add4[0]), .Y(n223) );
+  CLKINVX1 U360 ( .A(w_pc_branch[0]), .Y(n224) );
+  CLKINVX1 U361 ( .A(w_pc_add4[1]), .Y(n205) );
+  CLKINVX1 U362 ( .A(w_pc_branch[1]), .Y(n206) );
+  CLKINVX1 U363 ( .A(w_pc_branch[13]), .Y(n202) );
   AND2X2 U364 ( .A(w_rd1[31]), .B(n277), .Y(n245) );
-  CLKINVX1 U365 ( .A(w_addsl[3]), .Y(n203) );
-  CLKINVX1 U366 ( .A(w_addsl[20]), .Y(n201) );
+  CLKINVX1 U365 ( .A(w_pc_branch[3]), .Y(n203) );
+  CLKINVX1 U366 ( .A(w_pc_branch[20]), .Y(n201) );
   CLKINVX1 U367 ( .A(rst_n), .Y(n187) );
-  AO21X1 U368 ( .A0(w_add4[0]), .A1(n263), .B0(n244), .Y(w_jal_wr[0]) );
+  AO21X1 U368 ( .A0(w_pc_add4[0]), .A1(n263), .B0(n244), .Y(w_jal_wr[0]) );
   OAI21XL U369 ( .A0(n288), .A1(n269), .B0(n144), .Y(w_jal_wr[17]) );
   OAI21XL U370 ( .A0(n287), .A1(n269), .B0(n143), .Y(w_jal_wr[18]) );
   CLKINVX3 U371 ( .A(n193), .Y(n242) );
@@ -4815,14 +4814,14 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   OAI21X1 U376 ( .A0(n278), .A1(n269), .B0(n133), .Y(w_jal_wr[27]) );
   AO22X4 U377 ( .A0(IR[6]), .A1(n195), .B0(Data2Mem[6]), .B1(n267), .Y(
         w_alu[6]) );
-  NAND2X2 U378 ( .A(w_addsl[5]), .B(n255), .Y(n66) );
+  NAND2X2 U378 ( .A(w_pc_branch[5]), .B(n255), .Y(n66) );
   NAND2X6 U379 ( .A(n317), .B(n174), .Y(n175) );
   NAND2X1 U380 ( .A(IR[2]), .B(w_alusrc), .Y(n176) );
   NAND2X6 U381 ( .A(n175), .B(n176), .Y(w_alu[2]) );
   CLKINVX1 U382 ( .A(w_alusrc), .Y(n174) );
   NAND2X2 U383 ( .A(IR[3]), .B(n195), .Y(n177) );
   AND2X2 U384 ( .A(w_rd1[30]), .B(n277), .Y(n179) );
-  AND2X4 U385 ( .A(w_addsl[30]), .B(n255), .Y(n181) );
+  AND2X4 U385 ( .A(w_pc_branch[30]), .B(n255), .Y(n181) );
   CLKBUFX2 U386 ( .A(w_jr), .Y(n276) );
   OR3X6 U387 ( .A(n245), .B(n246), .C(n247), .Y(n182) );
   AO22X1 U388 ( .A0(w_rd1[2]), .A1(n276), .B0(IR[0]), .B1(n275), .Y(n183) );
@@ -4836,21 +4835,20 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   INVXL U396 ( .A(w_rd1[1]), .Y(n191) );
   AOI2BB2X1 U397 ( .B0(w_alu_result[25]), .B1(n272), .A0N(n192), .A1N(n216), 
         .Y(n135) );
-  BUFX6 U398 ( .A(w_add4[27]), .Y(n227) );
-  NAND2X2 U399 ( .A(w_addsl[23]), .B(n255), .Y(n88) );
-  NAND2X4 U400 ( .A(w_addsl[2]), .B(n255), .Y(n75) );
-  NAND2X1 U401 ( .A(w_addsl[14]), .B(n208), .Y(n107) );
-  NAND2X2 U402 ( .A(w_addsl[16]), .B(n255), .Y(n103) );
-  NAND2X1 U403 ( .A(w_addsl[4]), .B(n255), .Y(n68) );
-  OAI2BB1X2 U404 ( .A0N(w_add4[28]), .A1N(n263), .B0(n243), .Y(w_jal_wr[28])
-         );
+  BUFX6 U398 ( .A(w_pc_add4[27]), .Y(n227) );
+  NAND2X2 U399 ( .A(w_pc_branch[23]), .B(n255), .Y(n88) );
+  NAND2X4 U400 ( .A(w_pc_branch[2]), .B(n255), .Y(n75) );
+  NAND2X1 U401 ( .A(w_pc_branch[14]), .B(n208), .Y(n107) );
+  NAND2X2 U402 ( .A(w_pc_branch[16]), .B(n255), .Y(n103) );
+  NAND2X1 U403 ( .A(w_pc_branch[4]), .B(n255), .Y(n68) );
+  OAI2BB1X2 U404 ( .A0N(w_pc_add4[28]), .A1N(n263), .B0(n243), .Y(w_jal_wr[28]) );
   AOI222X2 U405 ( .A0(w_rd1[29]), .A1(n277), .B0(n73), .B1(n229), .C0(
-        w_addsl[29]), .C1(n208), .Y(n77) );
-  AND2X4 U406 ( .A(w_addsl[31]), .B(n255), .Y(n247) );
-  NAND2X1 U407 ( .A(w_addsl[6]), .B(n255), .Y(n64) );
-  INVX1 U408 ( .A(w_add4[16]), .Y(n289) );
-  INVX1 U409 ( .A(w_add4[14]), .Y(n291) );
-  NAND2X1 U410 ( .A(w_addsl[21]), .B(n255), .Y(n92) );
+        w_pc_branch[29]), .C1(n208), .Y(n77) );
+  AND2X4 U406 ( .A(w_pc_branch[31]), .B(n255), .Y(n247) );
+  NAND2X1 U407 ( .A(w_pc_branch[6]), .B(n255), .Y(n64) );
+  INVX1 U408 ( .A(w_pc_add4[16]), .Y(n289) );
+  INVX1 U409 ( .A(w_pc_add4[14]), .Y(n291) );
+  NAND2X1 U410 ( .A(w_pc_branch[21]), .B(n255), .Y(n92) );
   AO22XL U411 ( .A0(IR[14]), .A1(n195), .B0(Data2Mem[14]), .B1(n268), .Y(
         w_alu[14]) );
   AO22XL U412 ( .A0(IR[13]), .A1(n195), .B0(Data2Mem[13]), .B1(n268), .Y(
@@ -4866,7 +4864,7 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   CLKINVX1 U418 ( .A(w_jump), .Y(n226) );
   INVXL U419 ( .A(IR[19]), .Y(n211) );
   CLKINVX1 U420 ( .A(n211), .Y(n212) );
-  NAND2X1 U421 ( .A(w_addsl[19]), .B(n255), .Y(n97) );
+  NAND2X1 U421 ( .A(w_pc_branch[19]), .B(n255), .Y(n97) );
   INVXL U422 ( .A(n319), .Y(n233) );
   INVX3 U423 ( .A(n250), .Y(Data2Mem[2]) );
   INVXL U424 ( .A(n317), .Y(n250) );
@@ -4879,21 +4877,20 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   INVXL U431 ( .A(w_rd1[0]), .Y(n222) );
   AOI22X2 U432 ( .A0(w_alu_result[27]), .A1(n272), .B0(ReadDataMem[27]), .B1(
         n271), .Y(n133) );
-  NAND2X1 U433 ( .A(w_addsl[10]), .B(n255), .Y(n115) );
+  NAND2X1 U433 ( .A(w_pc_branch[10]), .B(n255), .Y(n115) );
   AOI22X1 U434 ( .A0(w_alu_result[29]), .A1(n272), .B0(ReadDataMem[29]), .B1(
         n271), .Y(n131) );
   OAI211X2 U435 ( .A0(n265), .A1(n300), .B0(n66), .C0(n67), .Y(w_pc_in[5]) );
   INVXL U436 ( .A(n232), .Y(n300) );
   INVX8 U437 ( .A(n315), .Y(n237) );
   CLKINVX12 U438 ( .A(n237), .Y(Data2Mem[5]) );
-  INVXL U439 ( .A(w_add4[3]), .Y(n302) );
+  INVXL U439 ( .A(w_pc_add4[3]), .Y(n302) );
   AND2X2 U440 ( .A(ReadDataMem[31]), .B(n121), .Y(n241) );
   AO22X4 U441 ( .A0(n258), .A1(n195), .B0(Data2Mem[5]), .B1(n267), .Y(w_alu[5]) );
-  INVXL U442 ( .A(w_add4[26]), .Y(n279) );
+  INVXL U442 ( .A(w_pc_add4[26]), .Y(n279) );
   OAI2BB2X4 U443 ( .B0(n249), .B1(w_zero), .A0N(w_beq), .A1N(w_zero), .Y(n118)
          );
-  OAI2BB1X2 U444 ( .A0N(w_add4[30]), .A1N(n263), .B0(n242), .Y(w_jal_wr[30])
-         );
+  OAI2BB1X2 U444 ( .A0N(w_pc_add4[30]), .A1N(n263), .B0(n242), .Y(w_jal_wr[30]) );
   OAI2BB1X4 U445 ( .A0N(Data2Mem[16]), .A1N(n268), .B0(n264), .Y(w_alu[16]) );
   INVX1 U446 ( .A(n259), .Y(n262) );
   AOI22XL U447 ( .A0(w_alu_result[23]), .A1(n272), .B0(ReadDataMem[23]), .B1(
@@ -4915,17 +4912,17 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
         n270), .Y(n141) );
   NOR2X1 U456 ( .A(n263), .B(w_mem2reg), .Y(n120) );
   CLKINVX1 U457 ( .A(n263), .Y(n305) );
-  INVXL U458 ( .A(w_add4[22]), .Y(n283) );
-  INVXL U459 ( .A(w_add4[23]), .Y(n282) );
-  INVXL U460 ( .A(w_add4[24]), .Y(n281) );
-  INVXL U461 ( .A(w_add4[25]), .Y(n280) );
-  INVXL U462 ( .A(w_add4[19]), .Y(n286) );
-  INVXL U463 ( .A(w_add4[20]), .Y(n285) );
-  INVXL U464 ( .A(w_add4[21]), .Y(n284) );
-  INVXL U465 ( .A(w_add4[18]), .Y(n287) );
-  INVXL U466 ( .A(w_add4[17]), .Y(n288) );
+  INVXL U458 ( .A(w_pc_add4[22]), .Y(n283) );
+  INVXL U459 ( .A(w_pc_add4[23]), .Y(n282) );
+  INVXL U460 ( .A(w_pc_add4[24]), .Y(n281) );
+  INVXL U461 ( .A(w_pc_add4[25]), .Y(n280) );
+  INVXL U462 ( .A(w_pc_add4[19]), .Y(n286) );
+  INVXL U463 ( .A(w_pc_add4[20]), .Y(n285) );
+  INVXL U464 ( .A(w_pc_add4[21]), .Y(n284) );
+  INVXL U465 ( .A(w_pc_add4[18]), .Y(n287) );
+  INVXL U466 ( .A(w_pc_add4[17]), .Y(n288) );
   NOR2BX1 U467 ( .AN(w_jump), .B(n277), .Y(n58) );
-  INVXL U468 ( .A(w_add4[12]), .Y(n293) );
+  INVXL U468 ( .A(w_pc_add4[12]), .Y(n293) );
   AOI22XL U469 ( .A0(w_rd1[13]), .A1(n277), .B0(n275), .B1(IR[11]), .Y(n110)
          );
   AOI22XL U470 ( .A0(w_rd1[16]), .A1(n276), .B0(n274), .B1(IR[14]), .Y(n104)
@@ -4952,7 +4949,7 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   CLKBUFX3 U487 ( .A(n305), .Y(n269) );
   CLKBUFX3 U488 ( .A(n120), .Y(n273) );
   AOI22X1 U489 ( .A0(n274), .A1(n261), .B0(w_rd1[17]), .B1(n277), .Y(n102) );
-  NAND2X1 U490 ( .A(w_addsl[17]), .B(n255), .Y(n101) );
+  NAND2X1 U490 ( .A(w_pc_branch[17]), .B(n255), .Y(n101) );
   CLKINVX1 U491 ( .A(n58), .Y(n248) );
   OAI2BB1X2 U492 ( .A0N(Data2Mem[27]), .A1N(n267), .B0(n264), .Y(w_alu[27]) );
   OAI2BB1X1 U493 ( .A0N(Data2Mem[20]), .A1N(n268), .B0(n264), .Y(w_alu[20]) );
@@ -4974,33 +4971,33 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   CLKBUFX3 U509 ( .A(n276), .Y(n277) );
   AOI22XL U510 ( .A0(w_rd1[7]), .A1(n276), .B0(n258), .B1(n275), .Y(n63) );
   CLKINVX1 U511 ( .A(n227), .Y(n278) );
-  CLKINVX1 U512 ( .A(w_add4[15]), .Y(n290) );
-  CLKINVX1 U513 ( .A(w_add4[11]), .Y(n294) );
-  CLKINVX1 U514 ( .A(w_add4[13]), .Y(n292) );
+  CLKINVX1 U512 ( .A(w_pc_add4[15]), .Y(n290) );
+  CLKINVX1 U513 ( .A(w_pc_add4[11]), .Y(n294) );
+  CLKINVX1 U514 ( .A(w_pc_add4[13]), .Y(n292) );
   CLKBUFX3 U515 ( .A(w_jal), .Y(n263) );
   CLKINVX1 U516 ( .A(w_regdst), .Y(n304) );
-  CLKINVX1 U517 ( .A(w_add4[8]), .Y(n297) );
-  CLKINVX1 U518 ( .A(w_add4[7]), .Y(n298) );
-  CLKINVX1 U519 ( .A(w_add4[6]), .Y(n299) );
-  CLKINVX1 U520 ( .A(w_add4[9]), .Y(n296) );
-  CLKINVX1 U521 ( .A(w_add4[4]), .Y(n301) );
+  CLKINVX1 U517 ( .A(w_pc_add4[8]), .Y(n297) );
+  CLKINVX1 U518 ( .A(w_pc_add4[7]), .Y(n298) );
+  CLKINVX1 U519 ( .A(w_pc_add4[6]), .Y(n299) );
+  CLKINVX1 U520 ( .A(w_pc_add4[9]), .Y(n296) );
+  CLKINVX1 U521 ( .A(w_pc_add4[4]), .Y(n301) );
   AOI22XL U522 ( .A0(w_rd1[4]), .A1(w_jr), .B0(IR[2]), .B1(n275), .Y(n69) );
   AOI22XL U523 ( .A0(w_rd1[3]), .A1(w_jr), .B0(IR[1]), .B1(n275), .Y(n71) );
   AOI22XL U524 ( .A0(IR[21]), .A1(n274), .B0(w_rd1[23]), .B1(n277), .Y(n89) );
   AOI22XL U525 ( .A0(w_rd1[6]), .A1(n276), .B0(IR[4]), .B1(n275), .Y(n65) );
   AOI22XL U526 ( .A0(n274), .A1(IR[20]), .B0(w_rd1[22]), .B1(n277), .Y(n91) );
-  NAND2X1 U527 ( .A(w_addsl[22]), .B(n255), .Y(n90) );
-  NAND2X1 U528 ( .A(w_addsl[12]), .B(n255), .Y(n111) );
+  NAND2X1 U527 ( .A(w_pc_branch[22]), .B(n255), .Y(n90) );
+  NAND2X1 U528 ( .A(w_pc_branch[12]), .B(n255), .Y(n111) );
   AOI22XL U529 ( .A0(IR[22]), .A1(n274), .B0(w_rd1[24]), .B1(n277), .Y(n87) );
-  NAND2X1 U530 ( .A(w_addsl[24]), .B(n255), .Y(n86) );
+  NAND2X1 U530 ( .A(w_pc_branch[24]), .B(n255), .Y(n86) );
   AOI22XL U531 ( .A0(n213), .A1(w_jr), .B0(IR[3]), .B1(n275), .Y(n67) );
   AOI22XL U532 ( .A0(w_rd1[18]), .A1(n276), .B0(n274), .B1(n190), .Y(n100) );
-  NAND2X1 U533 ( .A(w_addsl[18]), .B(n255), .Y(n99) );
+  NAND2X1 U533 ( .A(w_pc_branch[18]), .B(n255), .Y(n99) );
   AOI22XL U534 ( .A0(n155), .A1(n274), .B0(w_rd1[26]), .B1(n277), .Y(n83) );
-  NAND2X1 U535 ( .A(w_addsl[26]), .B(n255), .Y(n82) );
+  NAND2X1 U535 ( .A(w_pc_branch[26]), .B(n255), .Y(n82) );
   AOI22XL U536 ( .A0(IR[25]), .A1(n274), .B0(w_rd1[27]), .B1(n277), .Y(n81) );
   AOI22XL U537 ( .A0(IR[23]), .A1(n274), .B0(n165), .B1(n277), .Y(n85) );
-  NAND2X1 U538 ( .A(w_addsl[25]), .B(n255), .Y(n84) );
+  NAND2X1 U538 ( .A(w_pc_branch[25]), .B(n255), .Y(n84) );
   OAI21XL U539 ( .A0(n281), .A1(n305), .B0(n136), .Y(w_jal_wr[24]) );
   AOI22XL U540 ( .A0(w_alu_result[24]), .A1(n272), .B0(ReadDataMem[24]), .B1(
         n271), .Y(n136) );
@@ -5042,7 +5039,8 @@ module SingleCycleMIPS ( clk, rst_n, IR_addr, IR, ReadDataMem, CEN, WEN, A,
   OAI21XL U564 ( .A0(n293), .A1(n269), .B0(n149), .Y(w_jal_wr[12]) );
   AOI22X1 U565 ( .A0(w_alu_result[12]), .A1(n120), .B0(ReadDataMem[12]), .B1(
         n270), .Y(n149) );
-  OAI2BB1X1 U566 ( .A0N(w_add4[1]), .A1N(n263), .B0(n141), .Y(w_jal_wr[1]) );
+  OAI2BB1X1 U566 ( .A0N(w_pc_add4[1]), .A1N(n263), .B0(n141), .Y(w_jal_wr[1])
+         );
   OAI21XL U567 ( .A0(n299), .A1(n269), .B0(n124), .Y(w_jal_wr[6]) );
   AOI22X1 U568 ( .A0(w_alu_result[6]), .A1(n273), .B0(ReadDataMem[6]), .B1(
         n270), .Y(n124) );
