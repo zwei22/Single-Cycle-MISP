@@ -38,7 +38,7 @@ module SingleCycleMIPS(
     wire [3:0] w_alu_ctrl;
     wire [4:0] w_write_reg;
     wire [6:0] w_A;
-    wire [31:0] w_pc_in, w_pc_out, w_pc_add4, w_pc_branch, w_pc_jump;
+    wire [29:0] w_pc_in, w_pc_out, w_pc_add4, w_pc_branch, w_pc_jump;
     wire [31:0] w_rd1, w_rd2, w_alu, w_se, w_mem_reg, w_alu_result, w_jal_wr;
     
     integer i;
@@ -98,11 +98,11 @@ PC pc(
     .out(w_pc_out)
 );
 
-assign w_pc_add4 = w_pc_out + 3'd4;
+assign w_pc_add4 = w_pc_out + 1;
 
 assign w_se = { {16{IR[15]}},IR[15:0] };
-assign w_pc_branch = w_pc_add4 + {w_se[29:0], 2'b00};
-assign w_pc_jump = {w_pc_add4[31:28], IR[25:0], 2'b00};
+assign w_pc_branch = {w_pc_add4 + w_se[29:0]};
+assign w_pc_jump = {w_pc_add4[29:26], IR[25:0]};
 
 assign w_write_reg = (w_jal) ? 5'd31 : ((w_regdst) ? IR[15:11] : IR[20:16]);
 assign w_alu = (w_alusrc) ? w_se : w_rd2;
@@ -115,7 +115,7 @@ assign w_pc_in =    (w_jr) ? w_rd1 :
 assign w_mem_reg = (w_mem2reg) ? ReadDataMem : w_alu_result;
 assign w_jal_wr = (w_jal) ? w_pc_add4 : w_mem_reg;
 //assign A = (w_mem_en) ? 0 : w_A;
-assign IR_addr = w_pc_out;
+assign IR_addr = {w_pc_out, 2'b00};
 assign CEN = w_mem_en;
 assign OEN = w_mem_r;
 assign WEN = w_mem_w;

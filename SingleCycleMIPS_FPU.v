@@ -136,15 +136,15 @@ ALU_CTRL alu_ctrl(
 PC pc(
     .clk(clk),
     .rst_n(rst_n),
-    .in(w_pc_in),
-    .out(w_pc_out)
+    .in(w_pc_in[31:2]),
+    .out(w_pc_out[31:2])
 );
 
-assign w_pc_add4 = w_pc_out+3'd4;
+assign w_pc_add4 = {w_pc_out[31:2]+1, 2'b00};
 
 assign w_se = { {16{IR[15]}},IR[15:0] };
 
-assign w_pc_branch = w_pc_add4 + {w_se[29:0], 2'b00};
+assign w_pc_branch = {w_pc_add4[31:2] + w_se[29:0], 2'b00};
 assign w_pc_jump = {w_pc_add4[31:28], IR[25:0], 2'b00};
 
 assign w_write_reg = (w_jal) ? 5'd31 : ((w_regdst) ? IR[15:11] : IR[20:16]);
@@ -160,7 +160,7 @@ assign w_mem_reg = (w_mem2reg) ? ReadDataMem : w_alu_result;
 assign w_wd = (w_jal) ? w_pc_add4 : w_mem_reg;
 
 assign A = w_A + ((w_dp_sl_stage)? 7'b1: 0);
-assign IR_addr = w_pc_out;
+assign IR_addr = {w_pc_out[31:2], 2'b00};
 assign CEN = w_mem_en;
 assign OEN = w_mem_r;
 assign WEN = w_mem_w;
