@@ -14,6 +14,7 @@ output  jr;
 //==== combinational part =================================
 assign alu_ctrl =   (alu_op==2'b00)? `ADD:
                     (alu_op==2'b01)? `EQ:
+                    //(alu_op==2'b10)? {(~funct[5])&&funct[1], funct[5]&&funct[1], (funct[5]&&(~funct[2]))||((~funct[5])&&(~funct[1])), funct[0]||(~(funct[5]^funct[3])&&~(funct[3]^funct[1]))}:
                     (alu_op==2'b10 & funct==`F_ADD)? `ADD:
                     (alu_op==2'b10 & funct==`F_AND)? `AND:
                     (alu_op==2'b10 & funct==`F_OR)? `OR:

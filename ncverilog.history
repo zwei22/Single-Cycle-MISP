@@ -1,0 +1,376 @@
+s1(10Dec2019:02:19:37):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s2(10Dec2019:02:21:57):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s3(10Dec2019:02:35:17):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s4(10Dec2019:02:37:55):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s5(10Dec2019:02:42:52):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s6(10Dec2019:02:44:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s7(10Dec2019:02:48:59):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s8(10Dec2019:02:49:33):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s9(10Dec2019:02:50:01):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s10(10Dec2019:02:52:27):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s11(10Dec2019:14:36:44):  ncverilog tb.v SingleCycleMIPS.v -v tsmc13.v +define+Baseline+SDF +access+r 
+s12(10Dec2019:14:42:14):  ncverilog tb.v SingleCycleMIPS.v -v tsmc13.v +define+Baseline+SDF +access+r 
+s13(10Dec2019:15:29:23):  ncverilog tb.v SingleCycleMIPS.v tsmc13.v +define+Baseline+SDF +access+r 
+s14(11Dec2019:04:30:00):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s15(11Dec2019:04:37:42):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s16(11Dec2019:04:39:42):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s17(11Dec2019:04:40:08):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s18(11Dec2019:04:41:16):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s19(11Dec2019:04:42:58):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s20(11Dec2019:04:45:06):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s21(11Dec2019:04:55:19):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s22(11Dec2019:04:57:58):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s23(11Dec2019:04:59:13):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s24(11Dec2019:05:00:36):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s25(11Dec2019:05:01:46):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s26(11Dec2019:05:01:59):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s27(11Dec2019:05:05:45):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s28(11Dec2019:05:10:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s29(11Dec2019:05:18:04):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s30(11Dec2019:05:19:55):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s31(11Dec2019:14:13:36):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s32(11Dec2019:14:15:33):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s33(11Dec2019:14:17:39):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s34(11Dec2019:14:18:47):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s35(11Dec2019:14:19:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s36(11Dec2019:14:23:28):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s37(11Dec2019:14:32:05):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s38(11Dec2019:14:34:21):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s39(11Dec2019:14:35:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s40(11Dec2019:14:36:21):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s41(11Dec2019:14:38:16):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s42(11Dec2019:14:43:54):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s43(11Dec2019:14:44:53):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s44(11Dec2019:14:45:11):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s45(11Dec2019:14:52:46):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s46(11Dec2019:14:53:14):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s47(11Dec2019:15:44:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s48(11Dec2019:16:13:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s49(11Dec2019:16:14:32):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s50(11Dec2019:16:15:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s51(11Dec2019:16:16:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s52(11Dec2019:16:40:02):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s53(11Dec2019:16:40:27):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s54(11Dec2019:16:41:29):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s55(11Dec2019:16:44:26):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s56(11Dec2019:16:59:28):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s57(11Dec2019:17:00:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s58(11Dec2019:23:56:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s59(12Dec2019:11:35:52):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s60(12Dec2019:11:36:03):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s61(12Dec2019:11:37:22):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s62(12Dec2019:11:38:34):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s63(12Dec2019:11:38:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s64(12Dec2019:11:46:43):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s65(12Dec2019:12:00:00):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s66(12Dec2019:12:02:14):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s67(12Dec2019:12:03:32):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s68(12Dec2019:12:04:20):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s69(12Dec2019:12:11:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s70(12Dec2019:12:22:06):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s71(12Dec2019:12:22:30):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s72(12Dec2019:12:27:08):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s73(12Dec2019:12:28:34):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s74(12Dec2019:14:06:56):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s75(12Dec2019:14:08:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s76(12Dec2019:14:24:55):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s77(12Dec2019:14:25:33):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s78(12Dec2019:14:26:07):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s79(12Dec2019:14:28:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s80(12Dec2019:14:48:29):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s81(12Dec2019:14:51:57):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s82(12Dec2019:14:52:57):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s83(12Dec2019:15:01:30):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s84(12Dec2019:15:03:30):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s85(12Dec2019:15:05:52):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s86(12Dec2019:15:06:00):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s87(12Dec2019:15:06:08):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s88(12Dec2019:15:06:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s89(12Dec2019:15:07:56):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s90(12Dec2019:15:09:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s91(12Dec2019:15:09:57):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s92(12Dec2019:15:10:06):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s93(12Dec2019:15:10:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s94(12Dec2019:15:11:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s95(12Dec2019:15:11:57):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s96(17Dec2019:15:53:01):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s97(17Dec2019:15:53:41):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s98(17Dec2019:15:54:00):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s99(17Dec2019:15:54:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s100(17Dec2019:16:06:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s101(17Dec2019:16:11:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s102(17Dec2019:16:11:39):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s103(17Dec2019:16:11:54):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s104(17Dec2019:16:16:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s105(17Dec2019:16:16:32):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s106(17Dec2019:16:16:47):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s107(17Dec2019:16:17:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s108(17Dec2019:16:18:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s109(17Dec2019:16:20:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s110(17Dec2019:16:23:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s111(17Dec2019:16:37:24):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s112(17Dec2019:16:37:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s113(17Dec2019:16:39:06):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s114(17Dec2019:16:40:01):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s115(17Dec2019:16:40:14):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s116(17Dec2019:16:48:04):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s117(17Dec2019:16:49:06):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s118(17Dec2019:16:51:19):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s119(17Dec2019:16:51:22):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s120(17Dec2019:16:51:40):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s121(17Dec2019:16:53:43):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s122(17Dec2019:16:54:00):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s123(17Dec2019:16:54:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s124(18Dec2019:01:30:23):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s125(18Dec2019:01:35:09):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s126(18Dec2019:01:36:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s127(18Dec2019:02:34:23):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s128(18Dec2019:02:34:49):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s129(18Dec2019:02:36:02):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s130(18Dec2019:02:37:10):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s131(18Dec2019:02:37:53):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s132(18Dec2019:02:38:02):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s133(18Dec2019:02:40:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s134(18Dec2019:02:40:36):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s135(18Dec2019:02:40:46):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s136(18Dec2019:02:41:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s137(18Dec2019:02:43:28):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s138(18Dec2019:02:44:54):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s139(18Dec2019:02:46:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s140(18Dec2019:02:49:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s141(18Dec2019:02:49:32):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s142(18Dec2019:02:49:53):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s143(18Dec2019:03:01:22):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s144(18Dec2019:03:03:30):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s145(18Dec2019:03:03:39):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s146(18Dec2019:03:04:43):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s147(18Dec2019:03:07:04):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s148(18Dec2019:03:08:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s149(18Dec2019:03:10:14):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s150(23Dec2019:14:49:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s151(23Dec2019:14:49:46):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s152(23Dec2019:14:49:56):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s153(23Dec2019:14:50:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s154(23Dec2019:14:52:09):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s155(23Dec2019:14:52:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s156(23Dec2019:14:52:29):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s157(23Dec2019:14:52:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s158(23Dec2019:14:58:36):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s159(23Dec2019:15:01:02):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s160(23Dec2019:15:01:16):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s161(23Dec2019:15:01:26):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s162(23Dec2019:15:01:36):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s163(23Dec2019:18:43:08):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s164(23Dec2019:18:45:39):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s165(23Dec2019:18:45:59):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s166(23Dec2019:18:46:14):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s167(23Dec2019:18:50:34):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s168(23Dec2019:18:56:03):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s169(23Dec2019:18:56:17):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s170(23Dec2019:19:02:18):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s171(23Dec2019:19:09:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s172(23Dec2019:19:09:39):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s173(23Dec2019:19:28:40):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s174(23Dec2019:19:32:39):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s175(23Dec2019:19:54:19):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s176(23Dec2019:19:55:40):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s177(23Dec2019:19:55:59):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s178(23Dec2019:19:58:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s179(23Dec2019:19:59:11):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s180(23Dec2019:19:59:22):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s181(23Dec2019:20:01:26):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s182(23Dec2019:20:01:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s183(23Dec2019:20:02:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s184(23Dec2019:20:03:00):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s185(23Dec2019:20:03:11):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s186(23Dec2019:20:05:45):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s187(23Dec2019:20:05:49):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s188(23Dec2019:20:08:33):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s189(23Dec2019:20:08:48):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s190(23Dec2019:20:09:04):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s191(23Dec2019:20:12:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s192(23Dec2019:20:13:04):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s193(23Dec2019:20:13:22):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s194(23Dec2019:20:17:30):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s195(23Dec2019:20:18:16):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s196(23Dec2019:20:21:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s197(23Dec2019:20:23:51):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s198(23Dec2019:21:10:33):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s199(23Dec2019:21:12:14):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s200(23Dec2019:21:14:19):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s201(23Dec2019:21:15:44):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s202(23Dec2019:21:17:18):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s203(23Dec2019:21:17:52):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s204(23Dec2019:21:30:36):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s205(23Dec2019:21:33:20):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s206(23Dec2019:21:34:48):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s207(23Dec2019:21:39:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s208(23Dec2019:21:46:52):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s209(23Dec2019:21:47:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s210(23Dec2019:21:49:14):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s211(23Dec2019:21:50:52):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s212(23Dec2019:21:56:32):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s213(23Dec2019:21:57:04):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s214(23Dec2019:21:57:17):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s215(23Dec2019:22:00:37):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s216(23Dec2019:22:01:43):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s217(23Dec2019:22:03:43):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s218(23Dec2019:22:04:26):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s219(23Dec2019:22:07:10):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s220(23Dec2019:22:09:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s221(23Dec2019:22:10:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s222(23Dec2019:22:10:23):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s223(23Dec2019:22:10:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s224(23Dec2019:22:13:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s225(23Dec2019:22:14:22):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s226(23Dec2019:22:18:22):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s227(23Dec2019:22:20:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s228(23Dec2019:22:28:37):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s229(23Dec2019:22:29:09):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s230(23Dec2019:22:29:24):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s231(23Dec2019:22:33:08):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s232(23Dec2019:22:33:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s233(23Dec2019:22:45:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s234(23Dec2019:22:46:27):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s235(23Dec2019:22:47:41):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s236(23Dec2019:22:49:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s237(23Dec2019:22:50:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s238(23Dec2019:22:50:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s239(23Dec2019:22:50:35):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s240(23Dec2019:22:52:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s241(23Dec2019:22:53:04):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s242(23Dec2019:22:55:03):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s243(23Dec2019:22:55:18):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s244(23Dec2019:23:00:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s245(23Dec2019:23:02:41):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s246(23Dec2019:23:06:32):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s247(23Dec2019:23:11:00):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s248(23Dec2019:23:15:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s249(23Dec2019:23:19:06):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s250(23Dec2019:23:19:41):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s251(23Dec2019:23:19:51):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s252(23Dec2019:23:20:03):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s253(23Dec2019:23:22:16):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s254(23Dec2019:23:23:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s255(23Dec2019:23:23:34):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s256(23Dec2019:23:23:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s257(23Dec2019:23:24:00):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s258(23Dec2019:23:27:26):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s259(23Dec2019:23:27:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s260(23Dec2019:23:31:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s261(23Dec2019:23:42:40):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s262(23Dec2019:23:42:45):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s263(23Dec2019:23:44:40):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s264(23Dec2019:23:46:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s265(23Dec2019:23:47:32):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s266(23Dec2019:23:47:45):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s267(23Dec2019:23:47:55):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s268(23Dec2019:23:50:18):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s269(23Dec2019:23:59:38):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s270(24Dec2019:00:02:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s271(24Dec2019:00:08:19):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s272(24Dec2019:00:13:53):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s273(24Dec2019:00:16:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s274(24Dec2019:00:22:10):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s275(24Dec2019:00:22:48):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s276(24Dec2019:00:24:53):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s277(24Dec2019:00:25:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s278(24Dec2019:00:25:23):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s279(24Dec2019:00:25:37):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s280(24Dec2019:00:25:48):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s281(24Dec2019:00:25:56):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s282(24Dec2019:00:26:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s283(24Dec2019:00:27:24):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s284(24Dec2019:00:27:41):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s285(24Dec2019:00:28:04):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s286(24Dec2019:00:29:16):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s287(24Dec2019:00:29:47):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s288(24Dec2019:00:29:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s289(24Dec2019:00:30:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s290(24Dec2019:00:30:17):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s291(24Dec2019:00:30:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s292(24Dec2019:00:31:00):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s293(24Dec2019:00:31:09):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s294(24Dec2019:00:31:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s295(24Dec2019:00:33:49):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s296(24Dec2019:00:34:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s297(24Dec2019:00:36:47):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s298(24Dec2019:00:39:17):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s299(24Dec2019:01:23:21):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s300(24Dec2019:01:28:29):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s301(24Dec2019:01:28:59):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s302(24Dec2019:01:32:13):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s303(24Dec2019:01:32:55):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s304(24Dec2019:01:35:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s305(24Dec2019:01:48:01):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s306(24Dec2019:01:49:48):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s307(24Dec2019:01:51:29):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s308(24Dec2019:01:56:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s309(24Dec2019:01:59:56):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s310(24Dec2019:02:07:29):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s311(24Dec2019:02:10:08):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s312(24Dec2019:02:15:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s313(24Dec2019:02:15:47):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s314(24Dec2019:02:18:20):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s315(24Dec2019:02:18:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s316(24Dec2019:02:18:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s317(24Dec2019:02:25:50):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s318(24Dec2019:02:26:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s319(24Dec2019:02:26:18):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s320(24Dec2019:02:26:26):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s321(24Dec2019:02:36:09):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s322(24Dec2019:02:36:21):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s323(24Dec2019:02:36:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s324(24Dec2019:02:36:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s325(24Dec2019:02:39:46):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s326(24Dec2019:02:42:01):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s327(24Dec2019:02:44:01):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s328(24Dec2019:02:45:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s329(24Dec2019:02:48:33):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s330(24Dec2019:02:52:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s331(24Dec2019:02:52:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s332(24Dec2019:02:52:51):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s333(24Dec2019:02:52:59):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s334(24Dec2019:02:53:11):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s335(24Dec2019:02:56:22):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s336(24Dec2019:03:01:41):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s337(24Dec2019:03:02:11):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s338(24Dec2019:03:29:42):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s339(24Dec2019:03:53:36):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s340(24Dec2019:03:58:39):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s341(24Dec2019:04:02:59):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s342(24Dec2019:04:04:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s343(24Dec2019:04:19:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s344(24Dec2019:04:23:03):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s345(24Dec2019:04:26:21):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s346(24Dec2019:04:26:54):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s347(24Dec2019:04:28:52):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s348(24Dec2019:04:29:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s349(24Dec2019:04:33:36):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s350(24Dec2019:04:33:59):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s351(24Dec2019:04:34:08):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s352(24Dec2019:04:34:17):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s353(24Dec2019:04:34:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s354(24Dec2019:04:39:01):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s355(24Dec2019:04:41:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s356(24Dec2019:04:42:02):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s357(24Dec2019:04:43:37):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s358(24Dec2019:04:47:43):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s359(24Dec2019:04:48:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s360(24Dec2019:04:48:24):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s361(24Dec2019:04:48:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s362(24Dec2019:04:51:03):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s363(24Dec2019:04:53:49):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s364(24Dec2019:04:54:18):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s365(24Dec2019:04:54:36):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s366(24Dec2019:04:54:54):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s367(24Dec2019:04:55:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s368(24Dec2019:04:57:15):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s369(24Dec2019:05:00:22):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s370(24Dec2019:05:04:36):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s371(24Dec2019:05:04:59):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s372(24Dec2019:05:06:13):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s373(24Dec2019:05:07:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s374(24Dec2019:05:07:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s375(24Dec2019:05:11:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s376(24Dec2019:05:13:54):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 

@@ -16,7 +16,15 @@ set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
 
 set_max_area 0
 
-compile
+set_structure  true
+
+group_path -name clk -weight 15
+report_path_group
+
+compile -map_effort high
+#compile -incremental_mapping -map_effort high
+compile_ultra -increment
+
 
 # Output Design
 current_design [get_designs SingleCycleMIPS]

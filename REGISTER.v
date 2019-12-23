@@ -102,6 +102,40 @@ always@(posedge clk) begin
     end
     else if (ctrl_reg_w==1'b1) begin
         regs[write_reg] <= write_data;
+    //     case (write_reg)
+    //         5'd0  : regs[0] <= write_data;
+    //         5'd1  : regs[1] <= write_data;
+    //         5'd2  : regs[2] <= write_data;
+    //         5'd3  : regs[3] <= write_data;
+    //         5'd4  : regs[4] <= write_data;
+    //         5'd5  : regs[5] <= write_data;
+    //         5'd6  : regs[6] <= write_data;
+    //         5'd7  : regs[7] <= write_data;
+    //         5'd8  : regs[8] <= write_data;
+    //         5'd9  : regs[9] <= write_data;
+    //         5'd10 : regs[10] <= write_data;
+    //         5'd11 : regs[11] <= write_data;
+    //         5'd12 : regs[12] <= write_data;
+    //         5'd13 : regs[13] <= write_data;
+    //         5'd14 : regs[14] <= write_data;
+    //         5'd15 : regs[15] <= write_data;
+    //         5'd16 : regs[16] <= write_data;
+    //         5'd17 : regs[17] <= write_data;
+    //         5'd18 : regs[18] <= write_data;
+    //         5'd19 : regs[19] <= write_data;
+    //         5'd20 : regs[20] <= write_data;
+    //         5'd21 : regs[21] <= write_data;
+    //         5'd22 : regs[22] <= write_data;
+    //         5'd23 : regs[23] <= write_data;
+    //         5'd24 : regs[24] <= write_data;
+    //         5'd25 : regs[25] <= write_data;
+    //         5'd26 : regs[26] <= write_data;
+    //         5'd27 : regs[27] <= write_data;
+    //         5'd28 : regs[28] <= write_data;
+    //         5'd29 : regs[29] <= write_data;
+    //         5'd30 : regs[30] <= write_data;
+    //         5'd31 : regs[31] <= write_data;
+    // endcase
     end
 end
 

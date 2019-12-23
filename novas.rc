@@ -111,7 +111,7 @@ Branch = 1
 [DesignTree]
 IfShowModule = {TRUE, FALSE}
 [DisabledMessages]
-version = Verdi3_L-2016.06-SP1-1
+version = Verdi_N-2017.12
 [Editor]
 editorName = TurboEditor
 [Emacs]
@@ -197,17 +197,16 @@ StickSet-LineWidth = 1
 StickSet-FillColor = purple6
 StickSet-TextColor = black
 [FSM_Dlg-Print]
-Orientation = Landscape      
+Orientation = Landscape     
 [FileBrowser]
-nWaveOpenFsdbDirHistory = "\"/home/users/b06901051/CA_HW4/MIPS.fsdb\"" "\"/home/users/b06901051/CA_HW4\""
+nWaveOpenFsdbDirHistory = "\"/home/users/b06901051/CA_HW4/MIPS.fsdb\"" "\"/home/users/b06901051/CA_HW4\"" "\"/home/raid7_2/userb06/b06051/CA_HW4/MIPS.fsdb\""
 [Form]
-version = Verdi3_L-2016.06-SP1-1
-wave/openWFile.fm = 73,89,823,696
+version = Verdi_N-2017.12
 [General]
 autoSaveSession = FALSE
 TclAutoSource = 
 SyncBrowserDir = TRUE
-version = Verdi3_L-2016.06-SP1-1
+version = Verdi_N-2017.12
 SignalCaseInSensitive = FALSE
 cmd_enter_form = FALSE
 ShowWndCtntDuringResizing = FALSE
@@ -233,7 +232,7 @@ filter_case_sensitive = FALSE
 filter_full_path = FALSE
 load_detail_for_funcov = FALSE
 sort_limit = 100000
-ignoreDBVersionChecking = FALSE         
+ignoreDBVersionChecking = FALSE        
 [HB]
 ViewSchematic = FALSE
 windowLayout = 0 0 804 500 182 214 804 148
@@ -294,6 +293,9 @@ showCoverGroup = TRUE
 showProperty = TRUE
 showSequence = TRUE
 showDollarUnit = TRUE
+[NavigationField]
+DisplayInWaveformSignalPane = FALSE
+SearchFilterMatchCase = FALSE
 [OtherEditor]
 cmd1 = "xterm -font 9x15 -fg black -bg gray -e"
 name = "vi"
@@ -304,10 +306,13 @@ FileName = test.ps
 PaperSize = A4 - 210x297 (mm)
 ColorPrint = FALSE
 [QtDialog]
-QwUserAskDlg = 548,335,324,111
-QwWarnMsgDlg = 410,296,600,250
 AdjustBusDialog = 500,310,439,225
-qWaveSignalDialog = 320,183,800,479
+openFileDlg = 419,183,602,483
+QwWarnMsgDlg = 410,318,600,250
+QwUserAskDlg = 548,445,324,114
+qWaveSignalDialog = 323,258,800,479
+SignalTypeDialog = 0,22,620,391
+EditBusSimDialog = 506,345,428,158
 [Session Cache]
 1 = string (session file name)
 2 = string (session file name)
@@ -517,8 +522,8 @@ waveform_vertical_scroll_bar = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-getSignalForm = 320 183 800 479 163 381 387 89
-viewPort = 0 1 1440 799 100 65
+getSignalForm = 323 258 800 479 163 381 387 89
+viewPort = 0 1 1440 803 100 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -546,6 +551,8 @@ region(Active)Background = -c ID_YELLOW1
 region(NBA)Background = -c ID_RED1
 region(Re-Active)Background = -c ID_YELLOW3
 region(Re-NBA)Background = -c ID_RED3
+region(VHDL-Delta)Background = -c ID_ORANGE3
+region(Dump-Off)Background = -c ID_GRAY4
 High_Light = -c ID_GRAY2
 Input_Signal = -c ID_RED5
 Output_Signal = -c ID_GREEN5
@@ -616,6 +623,7 @@ messageBackgroundColor = -c ID_PURPLE1
 messageHighLightColor = -c ID_CYAN6
 messageInformationColor = -c ID_RED5
 ComputedAnnotColor = -c ID_PURPLE5
+fsvSecurityDataColor = -c ID_PURPLE3
 qdsAutoBusGroup = TRUE
 qdsTimeStampMode = FALSE
 qdsVbfBusOrderAscending = FALSE
@@ -635,7 +643,9 @@ EventSequence_IsGridMode = FALSE
 SetDefaultRadix = TRUE
 DefaultRadix = Hex
 SigSearchSignalMatchCase = FALSE
-SigSearchSignalFullScope = FALSE
+SigSearchSignalScopeOption = TRUE
+SigSearchSignalFullScope = TRUE
+SigSearchSignalSamenetInterface = FALSE
 SigSearchSignalWithRegExp = FALSE
 SigSearchDynamically = FALSE
 SigDisplayBySelectionOrder = FALSE
@@ -666,6 +676,7 @@ messageMaxWidth = 50
 displayTransBySpecificColor = FALSE
 fittedTransHeight = FALSE
 snap = TRUE
+gravitySnap = FALSE
 displayLeadingZero = FALSE
 displayGlitchs = FALSE
 allfileTimeRange = FALSE
@@ -682,6 +693,11 @@ anaAuto100VertFit = FALSE
 displayDeltaY = FALSE
 centerCursor = FALSE
 denseBlockDrawing = TRUE
+relativeFreqPrecision = 3
+showMarkerAbsolute = FALSE
+showMarkerAdjacent = FALSE
+showMarkerRelative = FALSE
+showMarkerFrequency = FALSE
 keepMarkerAtEndTimeOfTransaction = FALSE
 doubleClickToExpandTransaction = TRUE
 expandTransactionAssociatedSignals = TRUE
@@ -740,7 +756,7 @@ maskIsolation = FALSE
 maskRetention = FALSE
 maskDrivingPowerOff = FALSE
 maskToggle = FALSE
-autoBackupSignals = off 5 "\"/home/users/b06901051/CA_HW4/nWaveLog\"" "\"novas_autosave_sig\""
+autoBackupSignals = off 5 "\"/home/raid7_2/userb06/b06051/CA_HW4/nWaveLog\"" "\"novas_autosave_sig\""
 signal_rc_attribute = 65535
 signal_rc_alias_attribute = 0
 ConvertAttr1 = -inc FALSE
@@ -768,7 +784,8 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
-RecentFile1 = "\"/home/users/b06901051/CA_HW4/MIPS.fsdb\""
+RecentFile1 = "\"/home/raid7_2/userb06/b06051/CA_HW4/MIPS.fsdb\""
+RecentFile2 = "\"/home/users/b06901051/CA_HW4/MIPS.fsdb\""
 open_file_time_range = FALSE
 value_window_aligment = Right
 signal_window_alignment = Auto
@@ -798,6 +815,9 @@ autoConnectTBrowser = FALSE
 connectTBrowserInContainer = TRUE
 SEQShowComparisonIcon = TRUE
 SEQAddDriverLoadInSameGroup = TRUE
+autoSyncCursorMarker = FALSE
+autoSyncHorizontalRange = FALSE
+autoSyncVerticalScroll = FALSE
 [cov_hier_name_column]
 justify = TRUE
 [coverageColors]
@@ -948,9 +968,9 @@ Selection = darkblue
 Standard = black
 Keyword = blue
 Comment = gray25
-Number = black 
-String = black 
-Identifier = darkred 
+Number = black
+String = black
+Identifier = darkred
 Inline = green
 colorIdentifier = green
 Value = darkgreen
@@ -978,7 +998,7 @@ AddImportArgument = TRUE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -tcl
 [turboSchema_Printer_Options]
-Orientation = Landscape      
+Orientation = Landscape     
 [turbo_library]
 bdb_load_scope = 
 [verisity]

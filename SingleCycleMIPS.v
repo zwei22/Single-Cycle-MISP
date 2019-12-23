@@ -40,6 +40,8 @@ module SingleCycleMIPS(
     wire [6:0] w_A;
     wire [29:0] w_pc_in, w_pc_out, w_pc_add4, w_pc_branch, w_pc_jump;
     wire [31:0] w_rd1, w_rd2, w_alu, w_se, w_mem_reg, w_alu_result, w_jal_wr;
+    // wire [4:0] w_pc_temp[0:6];
+    // wire [1:0] w_pc_temp1;
     
     integer i;
 //==== wire connection to submodule ======================
@@ -80,16 +82,18 @@ ALU alu(
     .shamt(IR[10:6]),
     .out(w_alu_result),
     .zero(w_zero),
-    .ctrl(w_alu_ctrl),
-    .mem_addr(A)
-);
-
-ALU_CTRL alu_ctrl(
+    .mem_addr(A),
     .alu_op(w_aluop),
     .funct(IR[5:0]),
-    .alu_ctrl(w_alu_ctrl),
     .jr(w_jr)
 );
+
+// ALU_CTRL alu_ctrl(
+//     .alu_op(w_aluop),
+//     .funct(IR[5:0]),
+//     .alu_ctrl(w_alu_ctrl),
+//     .jr(w_jr)
+// );
 
 PC pc(
     .clk(clk),
@@ -98,6 +102,15 @@ PC pc(
     .out(w_pc_out)
 );
 
+// assign w_pc_temp[0] = w_pc_out[3:0]+{3'd0, 1'b1};
+// assign w_pc_temp[1] = w_pc_out[7:4]+{3'd0,w_pc_temp[0][4]};
+// assign w_pc_temp[2] = w_pc_out[11:8]+{3'd0,w_pc_temp[1][4]};
+// assign w_pc_temp[3] = w_pc_out[15:12]+{3'd0,w_pc_temp[2][4]};
+// assign w_pc_temp[4] = w_pc_out[19:16]+{3'd0,w_pc_temp[3][4]};
+// assign w_pc_temp[5] = w_pc_out[23:20]+{3'd0,w_pc_temp[4][4]};
+// assign w_pc_temp[6] = w_pc_out[27:24]+{3'd0,w_pc_temp[5][4]};
+// assign w_pc_temp1 = w_pc_out[29:28]+{3'd0,w_pc_temp[6][4]};
+// assign w_pc_add4 = {w_pc_temp1,w_pc_temp[6][3:0],w_pc_temp[5][3:0],w_pc_temp[4][3:0],w_pc_temp[3][3:0],w_pc_temp[2][3:0],w_pc_temp[1][3:0],w_pc_temp[0][3:0]};
 assign w_pc_add4 = w_pc_out + 1;
 
 assign w_se = { {16{IR[15]}},IR[15:0] };
