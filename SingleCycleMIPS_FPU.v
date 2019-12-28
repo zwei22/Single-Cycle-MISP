@@ -39,7 +39,7 @@ module SingleCycleMIPS(
     wire w_regdst, w_jump, w_beq, w_bne, w_mem_r, w_mem2reg, w_jr;
     wire w_mem_w, w_alusrc, w_reg_w, w_mem_en, w_zero, w_jal;
     wire [1:0] w_aluop;
-    wire [3:0] w_alu_ctrl;
+    //wire [3:0] w_alu_ctrl;
     wire [4:0] w_write_reg, w_write_reg_fp, w_read_reg_fp2;
     wire [6:0] w_A;
 
@@ -112,8 +112,10 @@ ALU alu(
     .shamt(IR[10:6]),
     .out(w_alu_result),
     .zero(w_zero),
-    .ctrl(w_alu_ctrl),
-    .mem_addr(w_A)
+    .mem_addr(w_A),
+    .alu_op(w_aluop),
+    .funct(IR[5:0]),
+    .jr(w_jr)
 );
 
 FPU fpu(
@@ -126,12 +128,12 @@ FPU fpu(
     .fpcond(w_fpcond_ctrl)
 );
 
-ALU_CTRL alu_ctrl(
-    .alu_op(w_aluop),
-    .funct(IR[5:0]),
-    .alu_ctrl(w_alu_ctrl),
-    .jr(w_jr)
-);
+// ALU_CTRL alu_ctrl(
+//     .alu_op(w_aluop),
+//     .funct(IR[5:0]),
+//     .alu_ctrl(w_alu_ctrl),
+//     .jr(w_jr)
+// );
 
 PC pc(
     .clk(clk),

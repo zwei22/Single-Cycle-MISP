@@ -3,7 +3,7 @@
 Report : area
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-Date   : Tue Dec 24 05:13:50 2019
+Date   : Sat Dec 28 16:40:07 2019
 ****************************************
 
 Library(s) Used:

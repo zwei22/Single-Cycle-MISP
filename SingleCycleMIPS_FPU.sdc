@@ -1,4 +1,4 @@
-set cycle  40      ;#clock period defined by designer
+set cycle  50      ;#clock period defined by designer
 
 ##########################################
 #  you cannot change the following parts

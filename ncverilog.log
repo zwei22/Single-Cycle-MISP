@@ -1,33 +1,16 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Dec 24, 2019 at 05:13:54 CST
+TOOL:	ncverilog	15.20-s039: Started on Dec 28, 2019 at 16:48:31 CST
 ncverilog
 	tb.v
 	SingleCycleMIPS_syn.v
 	tsmc13.v
 	+define+Baseline+SDF
 	+access+r
-Recompiling... reason: file './SingleCycleMIPS_syn.sdf' is newer than expected.
-	expected: Tue Dec 24 05:11:05 2019
-	actual:   Tue Dec 24 05:13:50 2019
+Recompiling... reason: file './tb.v' is newer than expected.
+	expected: Sat Dec 28 16:48:22 2019
+	actual:   Sat Dec 28 16:48:30 2019
 file: tb.v
 	module worklib.SingleCycle_tb:v
-		errors: 0, warnings: 0
-file: SingleCycleMIPS_syn.v
-	module worklib.REGISTER:v
-		errors: 0, warnings: 0
-	module worklib.CONTROL:v
-		errors: 0, warnings: 0
-	module worklib.ALU_DW01_sub_2:v
-		errors: 0, warnings: 0
-	module worklib.ALU:v
-		errors: 0, warnings: 0
-	module worklib.PC:v
-		errors: 0, warnings: 0
-	module worklib.SingleCycleMIPS_DW01_add_0:v
-		errors: 0, warnings: 0
-	module worklib.SingleCycleMIPS_DW01_inc_0:v
-		errors: 0, warnings: 0
-	module worklib.SingleCycleMIPS:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
@@ -41,7 +24,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,289|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
 
-  EDFFXL regs_reg_3__31_ ( .D(net19990), .E(n2592), .CK(clk), .QN(n97) );
+  EDFFXL regs_reg_3__31_ ( .D(net19949), .E(n2592), .CK(clk), .QN(n97) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,290|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -51,7 +34,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,291|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_2__31_ ( .D(net19990), .E(n2590), .CK(clk), .QN(n65) );
+  EDFFXL regs_reg_2__31_ ( .D(net19949), .E(n2590), .CK(clk), .QN(n65) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,292|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -61,7 +44,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,293|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_1__31_ ( .D(net19990), .E(n2588), .CK(clk), .QN(n33) );
+  EDFFXL regs_reg_1__31_ ( .D(net19949), .E(n2588), .CK(clk), .QN(n33) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,294|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -76,7 +59,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,296|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_5__31_ ( .D(net19990), .E(n2597), .CK(clk), .QN(n161) );
+  EDFFXL regs_reg_5__31_ ( .D(net19949), .E(n2597), .CK(clk), .QN(n161) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,297|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -91,7 +74,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,299|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_7__31_ ( .D(net19990), .E(n2600), .CK(clk), .QN(n225) );
+  EDFFXL regs_reg_7__31_ ( .D(net19949), .E(n2600), .CK(clk), .QN(n225) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,300|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -101,7 +84,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,301|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_9__31_ ( .D(net19990), .E(n2605), .CK(clk), .QN(n289) );
+  EDFFXL regs_reg_9__31_ ( .D(net19949), .E(n2605), .CK(clk), .QN(n289) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,302|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -111,7 +94,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,303|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_11__31_ ( .D(net19990), .E(n2608), .CK(clk), .QN(n353) );
+  EDFFXL regs_reg_11__31_ ( .D(net19949), .E(n2608), .CK(clk), .QN(n353) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,304|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -121,7 +104,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,305|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_13__31_ ( .D(net19990), .E(n2612), .CK(clk), .QN(n417) );
+  EDFFXL regs_reg_13__31_ ( .D(net19949), .E(n2612), .CK(clk), .QN(n417) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,306|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -131,7 +114,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,307|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_15__31_ ( .D(net19990), .E(n2616), .CK(clk), .QN(n481) );
+  EDFFXL regs_reg_15__31_ ( .D(net19949), .E(n2616), .CK(clk), .QN(n481) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,308|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -146,7 +129,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,310|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_17__31_ ( .D(net19990), .E(n2620), .CK(clk), .QN(n545) );
+  EDFFXL regs_reg_17__31_ ( .D(net19949), .E(n2620), .CK(clk), .QN(n545) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,311|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -156,7 +139,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,312|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_19__31_ ( .D(net19990), .E(n2399), .CK(clk), .QN(n609) );
+  EDFFXL regs_reg_19__31_ ( .D(net19949), .E(n2399), .CK(clk), .QN(n609) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,313|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -166,12 +149,12 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,314|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_21__31_ ( .D(net19990), .E(n2628), .CK(clk), .QN(n673) );
+  EDFFXL regs_reg_21__31_ ( .D(net19949), .E(n2628), .CK(clk), .QN(n673) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,315|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
 
-  EDFFXL regs_reg_23__31_ ( .D(net19990), .E(n2633), .CK(clk), .QN(n737) );
+  EDFFXL regs_reg_23__31_ ( .D(net19949), .E(n2633), .CK(clk), .QN(n737) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,316|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -186,7 +169,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,318|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_25__31_ ( .D(net19990), .E(n2636), .CK(clk), .QN(n801) );
+  EDFFXL regs_reg_25__31_ ( .D(net19949), .E(n2636), .CK(clk), .QN(n801) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,319|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -196,7 +179,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,320|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_27__31_ ( .D(net19990), .E(n2641), .CK(clk), .QN(n865) );
+  EDFFXL regs_reg_27__31_ ( .D(net19949), .E(n2641), .CK(clk), .QN(n865) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,321|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -206,7 +189,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,322|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_29__31_ ( .D(net19990), .E(n2644), .CK(clk), .QN(n929) );
+  EDFFXL regs_reg_29__31_ ( .D(net19949), .E(n2644), .CK(clk), .QN(n929) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,323|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -216,7 +199,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,324|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_31__31_ ( .D(net19990), .E(n2345), .CK(clk), .QN(n993) );
+  EDFFXL regs_reg_31__31_ ( .D(net19949), .E(n2345), .CK(clk), .QN(n993) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,325|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -251,7 +234,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,331|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_8__31_ ( .D(net24914), .E(n2602), .CK(clk), .QN(n257) );
+  EDFFX1 regs_reg_8__31_ ( .D(net24873), .E(n2602), .CK(clk), .QN(n257) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,332|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -276,7 +259,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,336|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_14__31_ ( .D(net24914), .E(n2614), .CK(clk), .QN(n449) );
+  EDFFX1 regs_reg_14__31_ ( .D(net24873), .E(n2614), .CK(clk), .QN(n449) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,337|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -291,7 +274,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,339|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_16__31_ ( .D(net24914), .E(n2618), .CK(clk), .QN(n513) );
+  EDFFX1 regs_reg_16__31_ ( .D(net24873), .E(n2618), .CK(clk), .QN(n513) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,340|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -311,7 +294,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,343|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_22__31_ ( .D(net24914), .E(n2631), .CK(clk), .QN(n705) );
+  EDFFX1 regs_reg_22__31_ ( .D(net24873), .E(n2631), .CK(clk), .QN(n705) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,344|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -336,7 +319,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,348|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_28__31_ ( .D(net24914), .E(n2643), .CK(clk), .QN(n897) );
+  EDFFX1 regs_reg_28__31_ ( .D(net24873), .E(n2643), .CK(clk), .QN(n897) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,349|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -346,7 +329,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,350|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_30__31_ ( .D(net24914), .E(n2379), .CK(clk), .QN(n961) );
+  EDFFX1 regs_reg_30__31_ ( .D(net24873), .E(n2379), .CK(clk), .QN(n961) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,351|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -3571,7 +3554,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,1033|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_20__0_ ( .D(n1080), .E(n2755), .CK(clk), .Q(net20569) );
+  EDFFXL regs_reg_20__0_ ( .D(n1080), .E(n2755), .CK(clk), .Q(net20528) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,2615|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): QN
@@ -4501,7 +4484,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,2817|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
 
-  EDFFXL regs_reg_6__31_ ( .D(net24914), .E(n2743), .CK(clk), .QN(n193) );
+  EDFFXL regs_reg_6__31_ ( .D(net24873), .E(n2743), .CK(clk), .QN(n193) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,2818|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -4927,9 +4910,6 @@ ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,4754|17): 1 output port was not conne
 ncelab: (./tsmc13.v,17883): QN
 
 	Reading SDF file from location "./SingleCycleMIPS_syn.sdf"
-	Compiled SDF file "SingleCycleMIPS_syn.sdf.X" older than source SDF file "./SingleCycleMIPS_syn.sdf".
-	Recompiling.
-	Writing compiled SDF file to "SingleCycleMIPS_syn.sdf.X".
 	Annotating SDF timing data:
 		Compiled SDF file:     SingleCycleMIPS_syn.sdf.X
 		Log file:              
@@ -5952,10 +5932,6 @@ ncelab: *W,MXWARN: Reached maximum warning limit for 'SDFNEP'(1000).
 ncelab: *W,MEMODR (./tb.v,79|39): $readmem default memory order incompatible with IEEE1364.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.ALU:v <0x5e8cf111>
-			streams:   0, words:     0
-		worklib.SingleCycleMIPS:v <0x012154d3>
-			streams:   0, words:     0
 		worklib.SingleCycle_tb:v <0x59958772>
 			streams:  11, words: 14915
 	Building instance specific data structures.
@@ -8165,4 +8141,4 @@ using SDF File ./SingleCycleMIPS_syn.sdf  for this simulation.
 Simulation complete via $finish(1) at time 7316 NS + 0
 ./tb.v:160 			$finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Dec 24, 2019 at 05:13:58 CST  (total: 00:00:04)
+TOOL:	ncverilog	15.20-s039: Exiting on Dec 28, 2019 at 16:48:35 CST  (total: 00:00:04)

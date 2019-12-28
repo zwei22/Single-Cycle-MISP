@@ -16,7 +16,8 @@ set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
 
 set_max_area 0
 
-compile
+compile -map_effort high
+compile_ultra -increment
 
 # Output Design
 current_design [get_designs SingleCycleMIPS]

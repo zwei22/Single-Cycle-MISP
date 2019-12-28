@@ -374,3 +374,93 @@ s373(24Dec2019:05:07:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define
 s374(24Dec2019:05:07:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
 s375(24Dec2019:05:11:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
 s376(24Dec2019:05:13:54):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s377(28Dec2019:12:54:18):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline+access+r 
+s378(28Dec2019:12:54:22):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r 
+s379(28Dec2019:12:57:08):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r 
+s380(28Dec2019:12:58:23):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single+access+r 
+s381(28Dec2019:12:58:27):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single +access+r 
+s382(28Dec2019:13:01:24):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single+access+ 
+s383(28Dec2019:13:01:28):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single +access+r 
+s384(28Dec2019:13:07:38):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single+access+r 
+s385(28Dec2019:13:08:00):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s386(28Dec2019:13:08:25):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s387(28Dec2019:13:09:13):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s388(28Dec2019:13:10:01):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s389(28Dec2019:13:10:20):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s390(28Dec2019:13:10:34):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s391(28Dec2019:13:10:52):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s392(28Dec2019:13:11:30):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s393(28Dec2019:13:11:39):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s394(28Dec2019:13:12:12):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r 
+s395(28Dec2019:13:12:17):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r 
+s396(28Dec2019:13:13:35):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v+incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s397(28Dec2019:13:14:20):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s398(28Dec2019:13:26:43):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single+access+r 
+s399(28Dec2019:13:27:01):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single+access+r 
+s400(28Dec2019:13:27:14):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single+access+r 
+s401(28Dec2019:13:27:43):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double+access+r 
+s402(28Dec2019:13:27:58):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double+access+r 
+s403(28Dec2019:13:28:13):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double+access+r 
+s404(28Dec2019:13:28:46):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s405(28Dec2019:13:29:06):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s406(28Dec2019:13:29:22):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Double +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s407(28Dec2019:13:38:55):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s408(28Dec2019:13:39:22):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s409(28Dec2019:13:43:14):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s410(28Dec2019:13:46:50):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s411(28Dec2019:13:48:04):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s412(28Dec2019:13:49:05):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Double +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s413(28Dec2019:14:13:03):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single+access+r 
+s414(28Dec2019:14:14:17):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s415(28Dec2019:14:14:58):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single+SDF +access+r 
+s416(28Dec2019:14:15:19):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s417(28Dec2019:14:16:36):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+Baseline +access+r 
+s418(28Dec2019:14:18:27):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s419(28Dec2019:14:19:24):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s420(28Dec2019:14:20:02):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s421(28Dec2019:15:01:44):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s422(28Dec2019:15:06:05):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s423(28Dec2019:15:10:32):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s424(28Dec2019:15:10:51):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s425(28Dec2019:15:22:47):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s426(28Dec2019:15:23:05):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s427(28Dec2019:15:23:17):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s428(28Dec2019:15:23:31):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s429(28Dec2019:15:23:43):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s430(28Dec2019:15:23:59):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s431(28Dec2019:15:24:17):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s432(28Dec2019:15:24:29):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s433(28Dec2019:15:24:45):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+Baseline +access+r 
+s434(28Dec2019:15:25:30):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s435(28Dec2019:15:25:40):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s436(28Dec2019:15:26:15):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r 
+s437(28Dec2019:15:26:25):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s438(28Dec2019:15:26:30):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s439(28Dec2019:15:26:46):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s440(28Dec2019:15:27:13):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Double +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s441(28Dec2019:15:27:25):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s442(28Dec2019:15:27:41):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s443(28Dec2019:15:29:59):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s444(28Dec2019:16:10:58):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s445(28Dec2019:16:11:30):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s446(28Dec2019:16:15:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s447(28Dec2019:16:15:38):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s448(28Dec2019:16:15:48):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s449(28Dec2019:16:16:06):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s450(28Dec2019:16:16:19):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s451(28Dec2019:16:18:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s452(28Dec2019:16:20:54):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s453(28Dec2019:16:22:58):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s454(28Dec2019:16:25:55):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s455(28Dec2019:16:29:18):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s456(28Dec2019:16:32:09):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s457(28Dec2019:16:32:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s458(28Dec2019:16:32:40):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s459(28Dec2019:16:36:55):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s460(28Dec2019:16:37:07):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s461(28Dec2019:16:37:16):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s462(28Dec2019:16:37:25):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s463(28Dec2019:16:41:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s464(28Dec2019:16:48:10):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s465(28Dec2019:16:48:23):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s466(28Dec2019:16:48:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 

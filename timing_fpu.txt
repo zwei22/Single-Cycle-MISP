@@ -6,14 +6,15 @@ Report : timing
         -max_paths 1
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-Date   : Sun Dec 22 15:40:51 2019
+Date   : Sat Dec 28 15:22:04 2019
 ****************************************
 
 Operating Conditions: slow   Library: slow
 Wire Load Model Mode: top
 
-  Startpoint: IR[16] (input port clocked by clk)
-  Endpoint: register_fp/regs_reg_1__24_
+  Startpoint: register_fp/dp_sl_stage_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: register_fp/regs_reg_8__24_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -26,237 +27,245 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.50       0.50
-  input external delay                                    0.50       1.00 f
-  IR[16] (in)                                             0.08       1.08 f
-  U426/Y (INVX8)                                          0.09       1.17 r
-  U502/Y (NAND3BX4)                                       0.19       1.35 r
-  U862/Y (INVX4)                                          0.09       1.44 f
-  U493/Y (NAND2X6)                                        0.09       1.53 r
-  U863/Y (NAND2BX4)                                       0.13       1.66 r
-  U702/Y (XNOR2X4)                                        0.20       1.86 f
-  register_fp/read_reg2[4] (REGISTER_FP)                  0.00       1.86 f
-  register_fp/U154/Y (CLKINVX8)                           0.09       1.95 r
-  register_fp/U204/Y (AND2X2)                             0.29       2.24 r
-  register_fp/U150/Y (BUFX16)                             0.19       2.43 r
-  register_fp/U137/Y (NAND2X2)                            0.19       2.62 f
-  register_fp/U136/Y (BUFX20)                             0.21       2.82 f
-  register_fp/U3071/Y (OA22X1)                            0.47       3.29 f
-  register_fp/U439/Y (OAI221XL)                           0.30       3.59 r
-  register_fp/U681/Y (NAND4BX2)                           0.29       3.88 r
-  register_fp/U31/Y (OA22X2)                              0.27       4.15 r
-  register_fp/U408/Y (NAND4X4)                            0.18       4.33 f
-  register_fp/read_data2[49] (REGISTER_FP)                0.00       4.33 f
-  fpu/in2[49] (FPU)                                       0.00       4.33 f
-  fpu/U63/Y (BUFX20)                                      0.19       4.52 f
-  fpu/div/b[17] (FPU_DW_fp_div_1)                         0.00       4.52 f
-  fpu/div/U228/Y (INVX12)                                 0.13       4.64 r
-  fpu/div/U286/Y (CLKINVX20)                              0.16       4.81 f
-  fpu/div/U380/Y (NOR2X8)                                 0.30       5.11 r
-  fpu/div/U269/Y (INVX3)                                  0.32       5.43 f
-  fpu/div/U681/Y (NOR2XL)                                 0.43       5.87 r
-  fpu/div/U902/Y (NOR2X1)                                 0.21       6.07 f
-  fpu/div/U91/Y (NAND3X2)                                 0.14       6.21 r
-  fpu/div/U90/Y (OAI2BB2X2)                               0.18       6.39 r
-  fpu/div/U208/Y (OR3X2)                                  0.19       6.58 r
-  fpu/div/U377/Y (CLKMX2X4)                               0.17       6.75 r
-  fpu/div/U376/Y (NOR2X2)                                 0.08       6.83 f
-  fpu/div/U396/Y (AND3X8)                                 0.19       7.02 f
-  fpu/div/U581/Y (INVX8)                                  0.10       7.12 r
-  fpu/div/mult_551/a_0_ (FPU_DW_mult_uns_1)               0.00       7.12 r
-  fpu/div/mult_551/U434/Y (CLKINVX12)                     0.08       7.21 f
-  fpu/div/mult_551/U462/Y (CLKAND2X3)                     0.25       7.46 f
-  fpu/div/mult_551/U423/Y (BUFX12)                        0.21       7.67 f
-  fpu/div/mult_551/U421/Y (AOI21X1)                       0.26       7.93 r
-  fpu/div/mult_551/U420/Y (NOR2X2)                        0.15       8.08 f
-  fpu/div/mult_551/U554/CO (ADDFHX4)                      0.22       8.30 f
-  fpu/div/mult_551/U566/CO (ADDFHX4)                      0.20       8.51 f
-  fpu/div/mult_551/U573/CO (ADDFHX4)                      0.20       8.71 f
-  fpu/div/mult_551/U491/CO (ADDFHX4)                      0.20       8.91 f
-  fpu/div/mult_551/U499/CO (ADDFHX4)                      0.20       9.12 f
-  fpu/div/mult_551/U505/CO (ADDFHX4)                      0.25       9.37 f
-  fpu/div/mult_551/U502/Y (NAND2X4)                       0.13       9.50 r
-  fpu/div/mult_551/U504/Y (NAND3X8)                       0.09       9.58 f
-  fpu/div/mult_551/U506/CO (ADDFHX4)                      0.20       9.78 f
-  fpu/div/mult_551/U640/CO (ADDFHX4)                      0.20       9.99 f
-  fpu/div/mult_551/U493/CO (ADDFHX4)                      0.20      10.19 f
-  fpu/div/mult_551/U494/CO (ADDFHX4)                      0.20      10.40 f
-  fpu/div/mult_551/U564/CO (ADDFHX4)                      0.20      10.60 f
-  fpu/div/mult_551/U581/CO (ADDFHX4)                      0.24      10.84 f
-  fpu/div/mult_551/U530/Y (NAND2X2)                       0.12      10.96 r
-  fpu/div/mult_551/U463/Y (NAND3X2)                       0.14      11.10 f
-  fpu/div/mult_551/U576/CO (ADDFHX4)                      0.23      11.33 f
-  fpu/div/mult_551/U513/CO (ADDFHX4)                      0.20      11.53 f
-  fpu/div/mult_551/U512/CO (ADDFHX4)                      0.20      11.74 f
-  fpu/div/mult_551/U569/CO (ADDFHX4)                      0.20      11.94 f
-  fpu/div/mult_551/U486/CO (ADDFHX4)                      0.20      12.14 f
-  fpu/div/mult_551/U685/CO (ADDFHX4)                      0.20      12.35 f
-  fpu/div/mult_551/U498/CO (ADDFHX4)                      0.20      12.55 f
-  fpu/div/mult_551/U497/CO (ADDFHX4)                      0.20      12.75 f
-  fpu/div/mult_551/U496/CO (ADDFHX4)                      0.20      12.96 f
-  fpu/div/mult_551/U495/CO (ADDFHX4)                      0.20      13.16 f
-  fpu/div/mult_551/U511/CO (ADDFHX4)                      0.20      13.36 f
-  fpu/div/mult_551/U510/CO (ADDFHX4)                      0.20      13.57 f
-  fpu/div/mult_551/U483/CO (ADDFHX4)                      0.20      13.77 f
-  fpu/div/mult_551/U487/S (ADDFHX4)                       0.26      14.03 r
-  fpu/div/mult_551/product_30_ (FPU_DW_mult_uns_1)        0.00      14.03 r
-  fpu/div/U350/Y (BUFX8)                                  0.14      14.17 r
-  fpu/div/mult_582_DP_OP_307_3358_37/I1_19_ (FPU_mult_582_DP_OP_307_3358_0)
-                                                          0.00      14.17 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2344/Y (INVX4)      0.17      14.34 f
-  fpu/div/mult_582_DP_OP_307_3358_37/U2128/Y (INVX3)      0.44      14.78 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2534/Y (XNOR2X1)
-                                                          0.47      15.25 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2162/Y (AO22X1)     0.46      15.71 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2205/Y (XNOR3X1)
-                                                          0.69      16.40 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2676/Y (XOR3X1)     0.79      17.20 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2366/Y (INVX1)      0.25      17.45 f
-  fpu/div/mult_582_DP_OP_307_3358_37/U3211/Y (OAI222X2)
-                                                          0.37      17.82 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2367/Y (INVX6)      0.14      17.96 f
-  fpu/div/mult_582_DP_OP_307_3358_37/U2286/Y (XOR3X1)     0.69      18.65 f
-  fpu/div/mult_582_DP_OP_307_3358_37/U2308/Y (CLKINVX1)
-                                                          0.23      18.88 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2080/Y (OAI222X4)
-                                                          0.40      19.28 f
-  fpu/div/mult_582_DP_OP_307_3358_37/U3481/Y (NAND2X1)
-                                                          0.30      19.58 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2072/Y (OAI2BB1X4)
-                                                          0.21      19.79 f
-  fpu/div/mult_582_DP_OP_307_3358_37/U2071/Y (NOR2X2)     0.17      19.96 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U2915/Y (AOI2BB2X4)
-                                                          0.19      20.15 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U3107/Y (AO22X4)     0.39      20.53 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U1912/Y (CLKINVX12)
-                                                          0.21      20.74 f
-  fpu/div/mult_582_DP_OP_307_3358_37/U2362/Y (AOI31XL)
-                                                          0.50      21.25 r
-  fpu/div/mult_582_DP_OP_307_3358_37/U3511/Y (CLKXOR2X2)
-                                                          0.56      21.81 r
-  fpu/div/mult_582_DP_OP_307_3358_37/O16_11_ (FPU_mult_582_DP_OP_307_3358_0)
-                                                          0.00      21.81 r
-  fpu/div/mult_633_DP_OP_306_1534_38/I3_9_ (FPU_mult_633_DP_OP_306_1534_0)
-                                                          0.00      21.81 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1744/Y (INVX1)      0.24      22.05 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1374/Y (OAI222X1)
-                                                          0.51      22.56 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1327/Y (INVX3)      0.18      22.74 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1863/Y (OAI222X4)
-                                                          0.56      23.30 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1796/Y (INVX6)      0.07      23.37 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1618/Y (XNOR3X1)
-                                                          0.50      23.87 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1635/Y (NAND2BX1)
-                                                          0.37      24.23 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1619/Y (CLKINVX1)
-                                                          0.23      24.47 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1528/Y (OAI2BB1X4)
-                                                          0.25      24.72 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1527/Y (INVX3)      0.08      24.80 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1790/Y (AO22X4)     0.20      25.00 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1413/Y (CLKINVX3)
-                                                          0.26      25.25 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1759/Y (AO21X4)     0.28      25.54 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1782/Y (INVX4)      0.06      25.60 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1445/Y (OAI2BB2X4)
-                                                          0.19      25.79 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U2159/Y (OAI221X2)
-                                                          0.29      26.08 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1148/Y (INVX4)      0.13      26.21 f
-  fpu/div/mult_633_DP_OP_306_1534_38/U1490/Y (NAND2X2)
-                                                          0.11      26.33 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U2158/Y (OAI2BB1X4)
-                                                          0.17      26.50 r
-  fpu/div/mult_633_DP_OP_306_1534_38/U1504/Y (XOR3X4)     0.26      26.76 r
-  fpu/div/mult_633_DP_OP_306_1534_38/O14_27_ (FPU_mult_633_DP_OP_306_1534_0)
-                                                          0.00      26.76 r
-  fpu/div/U170/Y (BUFX20)                                 0.19      26.95 r
-  fpu/div/U167/Y (MXI2X2)                                 0.30      27.25 r
-  fpu/div/U171/Y (INVX6)                                  0.20      27.45 f
-  fpu/div/add_769/A_2_ (FPU_DW01_inc_5)                   0.00      27.45 f
-  fpu/div/add_769/U1_1_2/CO (ADDHX4)                      0.20      27.66 f
-  fpu/div/add_769/U1_1_3/S (ADDHX4)                       0.18      27.83 f
-  fpu/div/add_769/SUM[3] (FPU_DW01_inc_5)                 0.00      27.83 f
-  fpu/div/mult_776_DP_OP_305_6813_39/I1[3] (FPU_mult_776_DP_OP_305_6813_0)
-                                                          0.00      27.83 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3901/Y (INVX4)      0.56      28.40 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3809/Y (XNOR2XL)
-                                                          0.78      29.18 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3827/Y (AO22XL)     0.56      29.74 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U4109/Y (CLKINVX1)
-                                                          0.33      30.07 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3310/Y (OAI222XL)
-                                                          0.61      30.68 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3309/Y (CLKINVX1)
-                                                          0.47      31.15 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3343/Y (OAI222X1)
-                                                          0.57      31.71 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3130/Y (INVX1)      0.50      32.22 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3093/Y (OAI222X1)
-                                                          0.61      32.83 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U4179/Y (CLKINVX1)
-                                                          0.48      33.31 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3549/Y (NAND2X4)
-                                                          0.19      33.50 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3564/Y (INVX3)      0.07      33.57 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3735/Y (OAI32X4)
-                                                          0.45      34.02 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U4011/Y (CLKINVX1)
-                                                          0.13      34.16 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3185/Y (OAI221X2)
-                                                          0.14      34.30 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3064/Y (OAI211X1)
-                                                          0.21      34.51 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3340/Y (OA22X2)     0.38      34.89 f
-  fpu/div/mult_776_DP_OP_305_6813_39/U3777/Y (AOI221X2)
-                                                          0.27      35.16 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3776/Y (OAI2BB1X4)
-                                                          0.22      35.38 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3720/Y (OA21X4)     0.18      35.56 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3440/Y (XOR3X4)     0.24      35.80 r
-  fpu/div/mult_776_DP_OP_305_6813_39/U3439/Y (NOR2X4)     0.08      35.89 f
-  fpu/div/mult_776_DP_OP_305_6813_39/O4 (FPU_mult_776_DP_OP_305_6813_0)
-                                                          0.00      35.89 f
-  fpu/div/U548/Y (NAND2X6)                                0.06      35.95 r
-  fpu/div/U572/Y (MXI2X4)                                 0.12      36.07 f
-  fpu/div/U656/Y (NAND2X6)                                0.14      36.20 r
-  fpu/div/U638/Y (MXI2X8)                                 0.11      36.32 f
-  fpu/div/U364/Y (INVX12)                                 0.06      36.38 r
-  fpu/div/U328/Y (AND2X8)                                 0.14      36.52 r
-  fpu/div/U599/Y (NAND2X8)                                0.09      36.61 f
-  fpu/div/U427/Y (BUFX20)                                 0.19      36.80 f
-  fpu/div/U939/Y (NOR2X1)                                 0.20      37.00 r
-  fpu/div/U976/Y (NOR2X1)                                 0.15      37.15 f
-  fpu/div/U530/Y (AND3X2)                                 0.30      37.45 f
-  fpu/div/U494/Y (MXI2X1)                                 0.27      37.72 r
-  fpu/div/U313/Y (NAND2X2)                                0.20      37.92 f
-  fpu/div/U312/Y (NOR3X6)                                 0.16      38.08 r
-  fpu/div/U595/Y (NAND3X8)                                0.12      38.20 f
-  fpu/div/U594/Y (NAND3X8)                                0.21      38.41 r
-  fpu/div/U294/Y (OAI21X2)                                0.14      38.55 f
-  fpu/div/z[24] (FPU_DW_fp_div_1)                         0.00      38.55 f
-  fpu/U56/Y (AOI222X2)                                    0.36      38.91 r
-  fpu/U7/Y (NAND2X4)                                      0.11      39.03 f
-  fpu/out[56] (FPU)                                       0.00      39.03 f
-  U427/Y (CLKMX2X4)                                       0.29      39.31 f
-  register_fp/write_data[56] (REGISTER_FP)                0.00      39.31 f
-  register_fp/U404/Y (CLKINVX8)                           0.11      39.42 r
-  register_fp/U271/Y (CLKBUFX3)                           0.32      39.74 r
-  register_fp/U2173/Y (OAI222XL)                          0.29      40.04 f
-  register_fp/regs_reg_1__24_/D (DFFX1)                   0.00      40.04 f
-  data arrival time                                                 40.04
+  register_fp/dp_sl_stage_reg/CK (DFFQX2)                 0.00       0.50 r
+  register_fp/dp_sl_stage_reg/Q (DFFQX2)                  0.59       1.09 r
+  register_fp/dp_sl_stage (REGISTER_FP)                   0.00       1.09 r
+  U424/Y (AND3X6)                                         0.25       1.34 r
+  U412/Y (NAND2X6)                                        0.08       1.42 f
+  U699/Y (NAND2BX1)                                       0.26       1.68 f
+  U414/Y (XNOR2X4)                                        0.20       1.88 r
+  register_fp/read_reg2[4] (REGISTER_FP)                  0.00       1.88 r
+  register_fp/U2170/Y (CLKINVX1)                          0.26       2.14 f
+  register_fp/U191/Y (CLKAND2X3)                          0.45       2.60 f
+  register_fp/U361/Y (NAND2XL)                            0.41       3.01 r
+  register_fp/U225/Y (BUFX6)                              0.19       3.20 r
+  register_fp/U223/Y (INVX12)                             0.07       3.26 f
+  register_fp/U224/Y (CLKINVX20)                          0.09       3.35 r
+  register_fp/U546/Y (OA22XL)                             0.35       3.70 r
+  register_fp/U75/Y (OAI221XL)                            0.30       4.00 f
+  register_fp/U157/Y (NAND4BX2)                           0.33       4.33 f
+  register_fp/U261/Y (OA22X1)                             0.41       4.74 f
+  register_fp/U3457/Y (NAND4X1)                           0.34       5.08 r
+  register_fp/read_data2[46] (REGISTER_FP)                0.00       5.08 r
+  fpu/in2[46] (FPU)                                       0.00       5.08 r
+  fpu/U54/Y (CLKBUFX3)                                    0.42       5.50 r
+  fpu/div/b[14] (FPU_DW_fp_div_1)                         0.00       5.50 r
+  fpu/div/U1019/Y (CLKINVX1)                              0.58       6.08 f
+  fpu/div/U102/Y (INVX12)                                 0.48       6.56 r
+  fpu/div/U274/Y (AND2X2)                                 0.22       6.78 r
+  fpu/div/U948/Y (NOR2X1)                                 0.10       6.87 f
+  fpu/div/U947/Y (OAI22XL)                                0.53       7.40 r
+  fpu/div/U468/Y (NOR3X1)                                 0.24       7.64 f
+  fpu/div/U179/Y (AOI21XL)                                0.45       8.09 r
+  fpu/div/U89/Y (NAND4BBX2)                               0.24       8.33 r
+  fpu/div/U373/Y (CLKMX2X2)                               0.26       8.59 r
+  fpu/div/U224/Y (NOR3X4)                                 0.16       8.75 f
+  fpu/div/U43/Y (INVX20)                                  0.30       9.06 r
+  fpu/div/mult_557/b_1_ (FPU_DW_mult_uns_2)               0.00       9.06 r
+  fpu/div/mult_557/U587/Y (XNOR2XL)                       0.53       9.59 f
+  fpu/div/mult_557/U369/Y (AO22X1)                        0.53      10.12 f
+  fpu/div/mult_557/U452/Y (AND2X1)                        0.28      10.41 f
+  fpu/div/mult_557/U52/CO (ADDFXL)                        0.49      10.89 f
+  fpu/div/mult_557/U438/CO (ADDFHX1)                      0.35      11.24 f
+  fpu/div/mult_557/U380/CO (ADDFXL)                       0.50      11.74 f
+  fpu/div/mult_557/U378/CO (ADDFXL)                       0.54      12.28 f
+  fpu/div/mult_557/U381/CO (ADDFHX2)                      0.34      12.62 f
+  fpu/div/mult_557/U382/Y (NAND2X1)                       0.22      12.84 r
+  fpu/div/mult_557/U372/Y (NAND3X2)                       0.16      13.00 f
+  fpu/div/mult_557/U429/CO (ADDFHX4)                      0.23      13.23 f
+  fpu/div/mult_557/U431/CO (ADDFHX4)                      0.24      13.47 f
+  fpu/div/mult_557/U376/Y (NAND2X2)                       0.11      13.58 r
+  fpu/div/mult_557/U404/Y (NAND3X1)                       0.17      13.75 f
+  fpu/div/mult_557/U385/CO (ADDFX2)                       0.41      14.15 f
+  fpu/div/mult_557/U407/CO (ADDFHX4)                      0.22      14.37 f
+  fpu/div/mult_557/U384/CO (ADDFX2)                       0.36      14.74 f
+  fpu/div/mult_557/U426/CO (ADDFHX4)                      0.23      14.96 f
+  fpu/div/mult_557/U411/CO (ADDFHX4)                      0.24      15.21 f
+  fpu/div/mult_557/U374/Y (NAND2X2)                       0.11      15.32 r
+  fpu/div/mult_557/U405/Y (NAND3X1)                       0.17      15.48 f
+  fpu/div/mult_557/U391/CO (ADDFX2)                       0.41      15.89 f
+  fpu/div/mult_557/U406/CO (ADDFHX4)                      0.22      16.11 f
+  fpu/div/mult_557/U469/CO (ADDFXL)                       0.47      16.58 f
+  fpu/div/mult_557/U468/CO (ADDFXL)                       0.53      17.11 f
+  fpu/div/mult_557/U390/CO (ADDFXL)                       0.53      17.63 f
+  fpu/div/mult_557/U397/CO (ADDFXL)                       0.53      18.17 f
+  fpu/div/mult_557/U398/CO (ADDFX2)                       0.44      18.60 f
+  fpu/div/mult_557/U354/Y (XOR3X4)                        0.44      19.04 f
+  fpu/div/mult_557/product_25_ (FPU_DW_mult_uns_2)        0.00      19.04 f
+  fpu/div/U14/Y (CLKINVX12)                               0.11      19.16 r
+  fpu/div/mult_582_DP_OP_311_3358_41/I2[22] (FPU_mult_582_DP_OP_311_3358_0)
+                                                          0.00      19.16 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U1840/Y (INVX20)     0.07      19.23 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2762/Y (NAND2XL)
+                                                          0.24      19.47 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U2024/Y (NAND2X1)
+                                                          0.27      19.74 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U1916/Y (AO22X1)     0.48      20.22 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2127/Y (XOR3X1)     0.74      20.96 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U2303/Y (INVX4)      0.15      21.11 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2302/Y (OAI222X2)
+                                                          0.29      21.40 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U2376/Y (CLKINVX1)
+                                                          0.32      21.72 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U3188/Y (XOR3X2)     0.42      22.14 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U3588/Y (CLKINVX1)
+                                                          0.22      22.36 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2649/Y (OAI222X1)
+                                                          0.39      22.75 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U2648/Y (CLKINVX1)
+                                                          0.33      23.08 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2664/Y (XOR3X1)     0.67      23.76 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2011/Y (NAND2X1)
+                                                          0.25      24.00 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U2687/Y (CLKINVX1)
+                                                          0.25      24.25 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2723/Y (AOI21X2)
+                                                          0.30      24.55 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U2926/Y (AO22X4)     0.28      24.82 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U2023/Y (INVX3)      0.23      25.05 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2924/Y (AO21X4)     0.35      25.40 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2013/Y (AO21X1)     0.38      25.78 f
+  fpu/div/mult_582_DP_OP_311_3358_41/U2214/Y (AOI31X1)
+                                                          0.27      26.05 r
+  fpu/div/mult_582_DP_OP_311_3358_41/U1989/Y (XOR2X1)     0.33      26.37 r
+  fpu/div/mult_582_DP_OP_311_3358_41/O12_25_ (FPU_mult_582_DP_OP_311_3358_0)
+                                                          0.00      26.37 r
+  fpu/div/mult_633_DP_OP_310_1534_42/I1[9] (FPU_mult_633_DP_OP_310_1534_0)
+                                                          0.00      26.37 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1223/Y (CLKBUFX8)
+                                                          0.43      26.80 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1296/Y (INVX3)      0.25      27.05 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1255/Y (OAI2BB1X4)
+                                                          0.27      27.32 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1275/Y (INVX3)      0.46      27.79 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1499/Y (AO22X1)     0.48      28.27 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1423/Y (INVX3)      0.15      28.42 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1776/Y (OAI222X1)
+                                                          0.36      28.78 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1189/Y (INVX1)      0.34      29.12 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1589/Y (OAI222X1)
+                                                          0.41      29.53 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1588/Y (CLKINVX1)
+                                                          0.39      29.92 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1612/Y (XOR3X1)     0.75      30.66 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1892/Y (CLKINVX1)
+                                                          0.26      30.92 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1132/Y (OAI222X4)
+                                                          0.59      31.52 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1130/Y (NAND2BX2)
+                                                          0.26      31.78 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1603/Y (AND2X2)     0.26      32.04 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1725/Y (AO21X4)     0.20      32.24 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1859/Y (AOI21X1)
+                                                          0.12      32.36 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1538/Y (OR2X6)      0.27      32.63 f
+  fpu/div/mult_633_DP_OP_310_1534_42/U1819/Y (OAI31X2)
+                                                          0.21      32.84 r
+  fpu/div/mult_633_DP_OP_310_1534_42/U1711/Y (XOR3X2)     0.32      33.16 f
+  fpu/div/mult_633_DP_OP_310_1534_42/O10_27_ (FPU_mult_633_DP_OP_310_1534_0)
+                                                          0.00      33.16 f
+  fpu/div/U329/Y (INVX8)                                  0.14      33.30 r
+  fpu/div/U77/Y (CLKINVX20)                               0.14      33.44 f
+  fpu/div/U472/Y (MXI2X4)                                 0.27      33.71 r
+  fpu/div/U467/Y (INVX12)                                 0.17      33.87 f
+  fpu/div/add_769/A_0_ (FPU_DW01_inc_5)                   0.00      33.87 f
+  fpu/div/add_769/U1_1_1/CO (CMPR22X4)                    0.19      34.06 f
+  fpu/div/add_769/U11/Y (AND2X2)                          0.24      34.30 f
+  fpu/div/add_769/U1_1_3/CO (ADDHX4)                      0.17      34.47 f
+  fpu/div/add_769/U1_1_4/CO (ADDHX4)                      0.16      34.63 f
+  fpu/div/add_769/U1_1_5/CO (ADDHX4)                      0.17      34.79 f
+  fpu/div/add_769/U1/Y (AND2X8)                           0.15      34.94 f
+  fpu/div/add_769/U1_1_7/CO (ADDHX4)                      0.17      35.12 f
+  fpu/div/add_769/U15/Y (NAND2X6)                         0.09      35.20 r
+  fpu/div/add_769/U5/Y (INVX6)                            0.06      35.27 f
+  fpu/div/add_769/U1_1_9/CO (ADDHX4)                      0.15      35.42 f
+  fpu/div/add_769/U1_1_10/CO (ADDHX4)                     0.16      35.58 f
+  fpu/div/add_769/U1_1_11/CO (ADDHX4)                     0.16      35.73 f
+  fpu/div/add_769/U1_1_12/CO (ADDHX4)                     0.16      35.89 f
+  fpu/div/add_769/U1_1_13/CO (ADDHX4)                     0.16      36.05 f
+  fpu/div/add_769/U1_1_14/CO (ADDHX4)                     0.15      36.20 f
+  fpu/div/add_769/U1_1_15/CO (ADDHX2)                     0.21      36.41 f
+  fpu/div/add_769/U1_1_16/CO (ADDHX4)                     0.17      36.59 f
+  fpu/div/add_769/U1_1_17/CO (ADDHX4)                     0.16      36.75 f
+  fpu/div/add_769/U10/Y (AND2X2)                          0.22      36.98 f
+  fpu/div/add_769/U1_1_19/CO (CMPR22X2)                   0.21      37.19 f
+  fpu/div/add_769/U1_1_20/S (CMPR22X2)                    0.18      37.37 r
+  fpu/div/add_769/SUM[20] (FPU_DW01_inc_5)                0.00      37.37 r
+  fpu/div/mult_776_DP_OP_309_9911_43/I1[20] (FPU_mult_776_DP_OP_309_9911_0)
+                                                          0.00      37.37 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2262/Y (XNOR2X2)
+                                                          0.42      37.79 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2277/Y (OR2X1)      0.48      38.27 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2602/Y (XNOR3XL)
+                                                          0.87      39.14 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2418/Y (XOR3X1)     0.74      39.89 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2429/Y (XNOR3X1)
+                                                          0.86      40.75 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U3054/Y (XNOR3X1)
+                                                          0.54      41.29 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2577/Y (NAND2X1)
+                                                          0.42      41.70 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U3028/Y (CLKINVX1)
+                                                          0.20      41.90 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2632/Y (OAI2BB1X1)
+                                                          0.40      42.30 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2346/Y (OAI32X2)
+                                                          0.31      42.61 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2770/Y (OAI31X2)
+                                                          0.23      42.84 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2489/Y (INVX4)      0.12      42.96 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2193/Y (OAI2BB1X4)
+                                                          0.22      43.18 r
+  fpu/div/mult_776_DP_OP_309_9911_43/U2596/Y (CLKINVX1)
+                                                          0.27      43.45 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2744/Y (OR3XL)      0.46      43.91 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2699/Y (CLKMX2X2)
+                                                          0.26      44.17 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2367/Y (AND4X4)     0.19      44.36 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U3086/Y (NAND2BX2)
+                                                          0.18      44.54 f
+  fpu/div/mult_776_DP_OP_309_9911_43/U2257/Y (AND3X4)     0.19      44.73 f
+  fpu/div/mult_776_DP_OP_309_9911_43/O4 (FPU_mult_776_DP_OP_309_9911_0)
+                                                          0.00      44.73 f
+  fpu/div/U237/Y (NAND3X6)                                0.11      44.84 r
+  fpu/div/U236/Y (MXI2X6)                                 0.10      44.94 f
+  fpu/div/U238/Y (INVX8)                                  0.08      45.02 r
+  fpu/div/U387/Y (NAND2X2)                                0.10      45.12 f
+  fpu/div/U674/Y (CLKINVX6)                               0.08      45.20 r
+  fpu/div/U511/Y (NAND2X2)                                0.07      45.27 f
+  fpu/div/U453/Y (OAI2BB1X1)                              0.38      45.65 r
+  fpu/div/U323/Y (CLKBUFX8)                               0.47      46.13 r
+  fpu/div/U733/Y (NAND2X1)                                0.18      46.30 f
+  fpu/div/U732/Y (NAND3X1)                                0.29      46.59 r
+  fpu/div/U929/Y (MXI2X1)                                 0.23      46.82 f
+  fpu/div/U319/Y (OR3X2)                                  0.35      47.17 f
+  fpu/div/U317/Y (OR4X4)                                  0.34      47.50 f
+  fpu/div/U462/Y (NAND4BX4)                               0.21      47.72 f
+  fpu/div/U332/Y (NAND3X6)                                0.23      47.95 r
+  fpu/div/U194/Y (OAI21X1)                                0.18      48.13 f
+  fpu/div/z[24] (FPU_DW_fp_div_1)                         0.00      48.13 f
+  fpu/U7/Y (NAND2X2)                                      0.13      48.26 r
+  fpu/U23/Y (NAND4X2)                                     0.16      48.42 f
+  fpu/out[56] (FPU)                                       0.00      48.42 f
+  U510/Y (CLKMX2X2)                                       0.32      48.75 f
+  register_fp/write_data[56] (REGISTER_FP)                0.00      48.75 f
+  register_fp/U478/Y (INVX4)                              0.55      49.30 r
+  register_fp/U2057/Y (CLKBUFX3)                          0.46      49.76 r
+  register_fp/U2553/Y (OAI222XL)                          0.31      50.06 f
+  register_fp/regs_reg_8__24_/D (DFFX1)                   0.00      50.06 f
+  data arrival time                                                 50.06
 
-  clock clk (rise edge)                                  40.00      40.00
-  clock network delay (ideal)                             0.50      40.50
-  clock uncertainty                                      -0.10      40.40
-  register_fp/regs_reg_1__24_/CK (DFFX1)                  0.00      40.40 r
-  library setup time                                     -0.33      40.07
-  data required time                                                40.07
+  clock clk (rise edge)                                  50.00      50.00
+  clock network delay (ideal)                             0.50      50.50
+  clock uncertainty                                      -0.10      50.40
+  register_fp/regs_reg_8__24_/CK (DFFX1)                  0.00      50.40 r
+  library setup time                                     -0.34      50.06
+  data required time                                                50.06
   --------------------------------------------------------------------------
-  data required time                                                40.07
-  data arrival time                                                -40.04
+  data required time                                                50.06
+  data arrival time                                                -50.06
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.03
+  slack (MET)                                                        0.00
 
 
 1

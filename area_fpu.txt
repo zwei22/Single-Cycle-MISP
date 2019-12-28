@@ -3,30 +3,30 @@
 Report : area
 Design : SingleCycleMIPS
 Version: N-2017.09-SP2
-Date   : Sun Dec 22 15:40:51 2019
+Date   : Sat Dec 28 15:22:03 2019
 ****************************************
 
 Library(s) Used:
 
     slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
 
-Number of ports:                         4996
-Number of nets:                         30238
-Number of cells:                        23493
-Number of combinational cells:          21368
-Number of sequential cells:              2059
+Number of ports:                         4891
+Number of nets:                         29057
+Number of cells:                        22370
+Number of combinational cells:          20256
+Number of sequential cells:              2054
 Number of macros/black boxes:               0
-Number of buf/inv:                       5202
-Number of references:                      64
+Number of buf/inv:                       4331
+Number of references:                      56
 
-Combinational area:             251902.646321
-Buf/Inv area:                    29943.833158
-Noncombinational area:           64037.810509
+Combinational area:             223267.508202
+Buf/Inv area:                    20300.903720
+Noncombinational area:           64085.337585
 Macro/Black Box area:                0.000000
-Net Interconnect area:         3070542.062408
+Net Interconnect area:         2978188.251984
 
-Total cell area:                315940.456829
-Total area:                    3386482.519238
+Total cell area:                287352.845787
+Total area:                    3265541.097771
 
 Hierarchical area distribution
 ------------------------------
@@ -35,75 +35,69 @@ Hierarchical area distribution
                                   --------------------  ------------------------------- 
 Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
                                   Total        Total    national     national    boxes   Design
---------------------------------  -----------  -------  -----------  ----------  ------  ------------------------------
-SingleCycleMIPS                   315940.4568    100.0    4178.9988      0.0000  0.0000  SingleCycleMIPS
-add_143                              580.5108      0.2     580.5108      0.0000  0.0000  SingleCycleMIPS_DW01_inc_0
-add_147                              998.0713      0.3     998.0713      0.0000  0.0000  SingleCycleMIPS_DW01_add_1
-alu                                 8582.0544      2.7    7405.7562      0.0000  0.0000  ALU
-alu/sub_49                          1176.2983      0.4    1176.2983      0.0000  0.0000  ALU_DW01_sub_0
-alu_ctrl                             162.9504      0.1     162.9504      0.0000  0.0000  ALU_CTRL
+--------------------------------  -----------  -------  -----------  ----------  ------  --------------------------------
+SingleCycleMIPS                   287352.8458    100.0    3866.6772      0.0000  0.0000  SingleCycleMIPS
+add_145                              580.5108      0.2     580.5108      0.0000  0.0000  SingleCycleMIPS_DW01_inc_0
+add_149                              996.3739      0.3     996.3739      0.0000  0.0000  SingleCycleMIPS_DW01_add_2
+alu                                 8811.2034      3.1    7641.6948      0.0000  0.0000  ALU
+alu/sub_69                          1169.5087      0.4    1169.5087      0.0000  0.0000  ALU_DW01_sub_2
 control_fp                           293.6502      0.1     293.6502      0.0000  0.0000  CONTROL_FP
-fpu                               183959.1192     58.2    3309.9300      0.0000  0.0000  FPU
-fpu/add                             9330.6077      3.0     176.5296      0.0000  0.0000  FPU_DW_fp_add_1
-fpu/add/U1                          9154.0781      2.9    5798.3183      0.0000  0.0000  FPU_DW_fp_addsub_3
-fpu/add/U1/U1                        385.3098      0.1     385.3098      0.0000  0.0000  FPU_DW_lzd_5
-fpu/add/U1/add_1_root_add_234_2     1133.8632      0.4    1133.8632      0.0000  0.0000  FPU_DW01_add_51
-fpu/add/U1/add_272                   436.2318      0.1     436.2318      0.0000  0.0000  FPU_DW01_inc_4
+fpu                               158007.5705     55.0    2588.5350      0.0000  0.0000  FPU
+fpu/add                             8677.1088      3.0      33.9480      0.0000  0.0000  FPU_DW_fp_add_1
+fpu/add/U1                          8643.1608      3.0    5633.6705      0.0000  0.0000  FPU_DW_fp_addsub_3
+fpu/add/U1/U1                        375.1254      0.1     375.1254      0.0000  0.0000  FPU_DW_lzd_5
+fpu/add/U1/add_1_root_add_234_2      906.4116      0.3     906.4116      0.0000  0.0000  FPU_DW01_add_51
+fpu/add/U1/add_272                   407.3760      0.1     407.3760      0.0000  0.0000  FPU_DW01_inc_4
 fpu/add/U1/add_275_DP_OP_298_9752_22    373.4280     0.1    373.4280     0.0000  0.0000  FPU_add_275_DP_OP_298_9752_0
-fpu/add/U1/lt_177                    680.6574      0.2     680.6574      0.0000  0.0000  FPU_DW_cmp_13
-fpu/add/U1/sub_219                   346.2696      0.1     346.2696      0.0000  0.0000  FPU_DW01_sub_5
-fpu/add_dp                         24748.0919      7.8     264.7944      0.0000  0.0000  FPU_DW_fp_add_0
-fpu/add_dp/U1                      24483.2975      7.7   13893.2188      0.0000  0.0000  FPU_DW_fp_addsub_1
-fpu/add_dp/U1/U1                     930.1752      0.3     930.1752      0.0000  0.0000  FPU_DW_lzd_1
-fpu/add_dp/U1/add_1_root_add_234_2   4605.0462     1.5    4605.0462      0.0000  0.0000  FPU_DW01_add_1
-fpu/add_dp/U1/add_272               2254.1472      0.7    2254.1472      0.0000  0.0000  FPU_DW01_inc_1
+fpu/add/U1/lt_177                    667.0782      0.2     667.0782      0.0000  0.0000  FPU_DW_cmp_13
+fpu/add/U1/sub_219                   280.0710      0.1     280.0710      0.0000  0.0000  FPU_DW01_sub_5
+fpu/add_dp                         21940.5922      7.6      40.7376      0.0000  0.0000  FPU_DW_fp_add_0
+fpu/add_dp/U1                      21899.8546      7.6   13288.9444      0.0000  0.0000  FPU_DW_fp_addsub_1
+fpu/add_dp/U1/U1                     819.8442      0.3     819.8442      0.0000  0.0000  FPU_DW_lzd_1
+fpu/add_dp/U1/add_1_root_add_234_2   3966.8238     1.4    3966.8238      0.0000  0.0000  FPU_DW01_add_1
+fpu/add_dp/U1/add_272               1220.4306      0.4    1220.4306      0.0000  0.0000  FPU_DW01_inc_1
 fpu/add_dp/U1/add_275_DP_OP_292_5914_10    505.8252     0.2    505.8252     0.0000 0.0000 FPU_add_275_DP_OP_292_5914_0
-fpu/add_dp/U1/lt_177                1644.7806      0.5    1644.7806      0.0000  0.0000  FPU_DW_cmp_1
-fpu/add_dp/U1/sub_219                650.1042      0.2     650.1042      0.0000  0.0000  FPU_DW01_sub_1
-fpu/div                            92798.5551     29.4   10325.2842      0.0000  0.0000  FPU_DW_fp_div_1
-fpu/div/add_502_4_DP_OP_308_4899_36   1003.1634     0.3   1003.1634      0.0000  0.0000  FPU_add_502_4_DP_OP_308_4899_0
-fpu/div/add_769                     1171.2060      0.4    1171.2060      0.0000  0.0000  FPU_DW01_inc_5
-fpu/div/add_770                      436.2318      0.1     436.2318      0.0000  0.0000  FPU_DW01_add_52
-fpu/div/add_771                      454.9032      0.1     454.9032      0.0000  0.0000  FPU_DW01_add_53
-fpu/div/eq_530                       353.0592      0.1     353.0592      0.0000  0.0000  FPU_DW_cmp_15
-fpu/div/eq_980                        44.1324      0.0      44.1324      0.0000  0.0000  FPU_DW_cmp_19
-fpu/div/gte_951                       39.0402      0.0      39.0402      0.0000  0.0000  FPU_DW_cmp_16
-fpu/div/gte_951_2                      3.3948      0.0       3.3948      0.0000  0.0000  FPU_DW_cmp_17
-fpu/div/lt_835                       524.4966      0.2     524.4966      0.0000  0.0000  FPU_DW_cmp_14
-fpu/div/mult_551                    8510.7636      2.7    8510.7636      0.0000  0.0000  FPU_DW_mult_uns_1
-fpu/div/mult_557                    6653.8080      2.1    6653.8080      0.0000  0.0000  FPU_DW_mult_uns_2
-fpu/div/mult_582_DP_OP_307_3358_37  26703.4967     8.5   26703.4967      0.0000  0.0000  FPU_mult_582_DP_OP_307_3358_0
-fpu/div/mult_631                    4049.9964      1.3    4049.9964      0.0000  0.0000  FPU_DW_mult_uns_3
-fpu/div/mult_633_DP_OP_306_1534_38  13151.4551     4.2   13151.4551      0.0000  0.0000  FPU_mult_633_DP_OP_306_1534_0
-fpu/div/mult_776_DP_OP_305_6813_39  19335.0833     6.1   19335.0833      0.0000  0.0000  FPU_mult_776_DP_OP_305_6813_0
-fpu/div/r434                          39.0402      0.0      39.0402      0.0000  0.0000  FPU_DW_cmp_18
-fpu/mul                            19105.9345      6.0    1626.1092      0.0000  0.0000  FPU_DW_fp_mult_0
+fpu/add_dp/U1/lt_177                1495.4094      0.5    1495.4094      0.0000  0.0000  FPU_DW_cmp_1
+fpu/add_dp/U1/sub_219                602.5770      0.2     602.5770      0.0000  0.0000  FPU_DW01_sub_1
+fpu/div                            77350.5177     26.9    7560.2195      0.0000  0.0000  FPU_DW_fp_div_1
+fpu/div/add_502_4_DP_OP_312_4899_40    499.0356     0.2    499.0356      0.0000  0.0000  FPU_add_502_4_DP_OP_312_4899_0_0
+fpu/div/add_769                     1028.6244      0.4    1028.6244      0.0000  0.0000  FPU_DW01_inc_5
+fpu/div/add_770                      487.1538      0.2     487.1538      0.0000  0.0000  FPU_DW01_add_5
+fpu/div/add_771                      448.1136      0.2     448.1136      0.0000  0.0000  FPU_DW01_add_3
+fpu/div/lt_835                       617.8536      0.2     617.8536      0.0000  0.0000  FPU_DW01_cmp2_2
+fpu/div/mult_551                    7461.7704      2.6    7461.7704      0.0000  0.0000  FPU_DW_mult_uns_1
+fpu/div/mult_557                    5526.7344      1.9    5526.7344      0.0000  0.0000  FPU_DW_mult_uns_2
+fpu/div/mult_582_DP_OP_311_3358_41  23488.6212     8.2   23488.6212      0.0000  0.0000  FPU_mult_582_DP_OP_311_3358_0
+fpu/div/mult_631                    3595.0932      1.3    3595.0932      0.0000  0.0000  FPU_DW_mult_uns_3
+fpu/div/mult_633_DP_OP_310_1534_42  10931.2559     3.8   10931.2559      0.0000  0.0000  FPU_mult_633_DP_OP_310_1534_0
+fpu/div/mult_776_DP_OP_309_9911_43  15706.0421     5.5   15706.0421      0.0000  0.0000  FPU_mult_776_DP_OP_309_9911_0
+fpu/mul                            17753.1067      6.2    1379.9862      0.0000  0.0000  FPU_DW_fp_mult_0
 fpu/mul/U3                           278.3736      0.1     278.3736      0.0000  0.0000  FPU_DW_lzd_2
 fpu/mul/U4                           278.3736      0.1     278.3736      0.0000  0.0000  FPU_DW_lzd_3
-fpu/mul/add_324_4                    256.3074      0.1     256.3074      0.0000  0.0000  FPU_DW01_add_47
+fpu/mul/add_324_4                    259.7022      0.1     259.7022      0.0000  0.0000  FPU_DW01_add_9
 fpu/mul/add_327                      127.3050      0.0     127.3050      0.0000  0.0000  FPU_DW01_inc_2
-fpu/mul/add_478                      672.1704      0.2     672.1704      0.0000  0.0000  FPU_DW01_add_49
-fpu/mul/mult_446                   15867.2952      5.0   15867.2952      0.0000  0.0000  FPU_DW_mult_uns_0
-fpu/sub                             9780.4187      3.1     176.5296      0.0000  0.0000  FPU_DW_fp_sub_1
-fpu/sub/U1                          9603.8891      3.0    5803.4105      0.0000  0.0000  FPU_DW_fp_addsub_2
-fpu/sub/U1/U1                        385.3098      0.1     385.3098      0.0000  0.0000  FPU_DW_lzd_4
-fpu/sub/U1/add_1_root_add_234_2     1475.0406      0.5    1475.0406      0.0000  0.0000  FPU_DW01_add_50
-fpu/sub/U1/add_272                   480.3642      0.2     480.3642      0.0000  0.0000  FPU_DW01_inc_3
+fpu/mul/add_478                      544.8654      0.2     544.8654      0.0000  0.0000  FPU_DW01_add_7
+fpu/mul/mult_446                   14884.5006      5.2   14884.5006      0.0000  0.0000  FPU_DW_mult_uns_0
+fpu/sub                             8711.0568      3.0      33.9480      0.0000  0.0000  FPU_DW_fp_sub_1
+fpu/sub/U1                          8677.1088      3.0    5667.6185      0.0000  0.0000  FPU_DW_fp_addsub_2
+fpu/sub/U1/U1                        375.1254      0.1     375.1254      0.0000  0.0000  FPU_DW_lzd_4
+fpu/sub/U1/add_1_root_add_234_2      906.4116      0.3     906.4116      0.0000  0.0000  FPU_DW01_add_50
+fpu/sub/U1/add_272                   407.3760      0.1     407.3760      0.0000  0.0000  FPU_DW01_inc_3
 fpu/sub/U1/add_275_DP_OP_296_9752_18    373.4280     0.1    373.4280     0.0000  0.0000  FPU_add_275_DP_OP_296_9752_0
-fpu/sub/U1/lt_177                    692.5392      0.2     692.5392      0.0000  0.0000  FPU_DW_cmp_12
-fpu/sub/U1/sub_219                   393.7968      0.1     393.7968      0.0000  0.0000  FPU_DW01_sub_4
-fpu/sub_dp                         24885.5813      7.9     251.2152      0.0000  0.0000  FPU_DW_fp_sub_0
-fpu/sub_dp/U1                      24634.3661      7.8   13908.4954      0.0000  0.0000  FPU_DW_fp_addsub_0
-fpu/sub_dp/U1/U1                     872.4636      0.3     872.4636      0.0000  0.0000  FPU_DW_lzd_0
-fpu/sub_dp/U1/add_1_root_add_234_2   4713.6799     1.5    4713.6799      0.0000  0.0000  FPU_DW01_add_0
-fpu/sub_dp/U1/add_272               2247.3576      0.7    2247.3576      0.0000  0.0000  FPU_DW01_inc_0
+fpu/sub/U1/lt_177                    667.0782      0.2     667.0782      0.0000  0.0000  FPU_DW_cmp_12
+fpu/sub/U1/sub_219                   280.0710      0.1     280.0710      0.0000  0.0000  FPU_DW01_sub_4
+fpu/sub_dp                         20986.6534      7.3      27.1584      0.0000  0.0000  FPU_DW_fp_sub_0
+fpu/sub_dp/U1                      20959.4950      7.3   13161.6394      0.0000  0.0000  FPU_DW_fp_addsub_0
+fpu/sub_dp/U1/U1                     816.4494      0.3     816.4494      0.0000  0.0000  FPU_DW_lzd_0
+fpu/sub_dp/U1/add_1_root_add_234_2   3328.6014     1.2    3328.6014      0.0000  0.0000  FPU_DW01_add_0
+fpu/sub_dp/U1/add_272               1157.6268      0.4    1157.6268      0.0000  0.0000  FPU_DW01_inc_0
 fpu/sub_dp/U1/add_275_DP_OP_290_5914_6    505.8252     0.2    505.8252     0.0000 0.0000 FPU_add_275_DP_OP_290_5914_0
-fpu/sub_dp/U1/lt_177                1621.0170      0.5    1621.0170      0.0000  0.0000  FPU_DW_cmp_0
-fpu/sub_dp/U1/sub_219                765.5274      0.2     765.5274      0.0000  0.0000  FPU_DW01_sub_0
-pc                                  1018.4400      0.3     152.7660    865.6740  0.0000  PC
-register                           49098.9939     15.5   13738.7561  35360.2378  0.0000  REGISTER
-register_fp                        67067.6679     21.2   39255.7692  27811.8987  0.0000  REGISTER_FP
---------------------------------  -----------  -------  -----------  ----------  ------  ------------------------------
-Total                                                   251902.6463  64037.8105  0.0000
+fpu/sub_dp/U1/lt_177                1456.3692      0.5    1456.3692      0.0000  0.0000  FPU_DW_cmp_0
+fpu/sub_dp/U1/sub_219                532.9836      0.2     532.9836      0.0000  0.0000  FPU_DW01_sub_0
+pc                                  1171.2060      0.4     203.6880    967.5180  0.0000  PC
+register                           49093.9017     17.1   13733.6639  35360.2378  0.0000  REGISTER
+register_fp                        64531.7522     22.5   36774.1704  27757.5818  0.0000  REGISTER_FP
+--------------------------------  -----------  -------  -----------  ----------  ------  --------------------------------
+Total                                                   223267.5082  64085.3376  0.0000
 
 1
