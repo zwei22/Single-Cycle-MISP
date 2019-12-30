@@ -24,11 +24,11 @@ HOME=/home/raid7_2/userb06/b06051
 PATH=/usr/cad/spring_soft/laker/cur/bin:/usr/cad/synopsys/customexplorer/cur/bin:/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/spring_soft/verdi/cur/bin:/usr/spring_soft/verdi/cur/nLint/bin:/usr/mentor/calibre/cur/bin:/usr/cad/cadence/STRATUS/cur/tools/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/usr/cad/cadence/RC/cur/tools/bin:/usr/cad/cadence/MMSIM/cur/tools/dfII/bin:/usr/cad/cadence/MMSIM/cur/tools/bin:/usr/cad/cadence/NEOCIRCUIT/cur/tools/NeoCircuit/bin:bin.linux:/usr/cad/cadence/SPB/cur/tools/specctra/bin:/usr/cad/cadence/SPB/cur/tools/pcb/bin:/usr/cad/cadence/SPB/cur/tools/dfII/bin:/usr/cad/cadence/SPB/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dracula/bin:/usr/cad/cadence/IC/cur/tools/bin:/usr/cad/cadence/EXT/cur/tools/bin:/usr/cad/cadence/ETS/cur/tools/bin:/usr/cad/cadence/CONFRML/cur/./bin:/usr/cad/cadence/CONFRML/cur/tools/bin:/usr/cad/cadence/CCD/cur/tools/bin:/usr/cad/cadence/ASSURA/cur/tools/assura/bin:/usr/cad/cadence/ASSURA/cur/tools/dsm/bin:/usr/cad/cadence/ASSURA/cur/tools/bin:/usr/cad/cadence/ASSURA/cur/tools/dfII/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/home/raid7_4/raid1_1/linux/novas/verdi/cur/bin
 MAIL=/var/spool/mail/b06051
 SHELL=/bin/tcsh
-SSH_CLIENT=140.112.150.167 58614 22
-SSH_CONNECTION=140.112.150.167 58614 140.112.20.72 22
-SSH_TTY=/dev/pts/62
+SSH_CLIENT=140.112.217.23 52670 22
+SSH_CONNECTION=140.112.217.23 52670 140.112.20.72 22
+SSH_TTY=/dev/pts/63
 TERM=xterm-256color
-DISPLAY=localhost:60.0
+DISPLAY=localhost:64.0
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
 SELINUX_USE_CURRENT_RANGE=
@@ -40,7 +40,7 @@ SHLVL=1
 PWD=/home/raid7_2/userb06/b06051/CA_HW4
 GROUP=user
 HOST=cad29
-REMOTEHOST=ip150-167.vpnip.cc.ntu.edu.tw
+REMOTEHOST=140.112.217.23
 HOSTNAME=cad29
 LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
 CVS_RSH=ssh
@@ -54,7 +54,7 @@ QTINC=/usr/lib64/qt-3.3/include
 QTLIB=/usr/lib64/qt-3.3/lib
 ASSURAHOME=/usr/cad/cadence/ASSURA/cur
 LD_LIBRARY_PATH=:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX/xl_shared:/usr/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX/nc_shared:/home/raid7_4/raid1_1/linux/novas/verdi/cur/share/PLI/IUS/LINUX/
-LM_LICENSE_FILE=26585@lscic:1717@lscic:26585@lsntu:5280@lscic:5280@lsntu:5280@lsncku:
+LM_LICENSE_FILE=26585@lscic:1717@lscic:26585@lsntu:5280@lscic:5280@lsnctu:5280@lsncu:5280@lsncku:5280@lsnchu:
 VERPLEX_HOME=/usr/cad/cadence/CONFRML/cur
 OAHOME=/usr/cad/cadence/oa_v22.04.073
 OA_HOME=/usr/cad/cadence/INNOVUS/cur/oa
@@ -82,9 +82,9 @@ argv[3]=tsmc13.v
 argv[4]=+define+Baseline+SDF
 argv[5]=+access+r
 83 profile - 100
-          CPU/Mem usage: 0.050 sys,  0.040 user,  73.61M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.050 user,  73.67M sys,  0.00M vm
 84 VC callback profile - scalar:0 vector:0
-85 Sat Dec 28 16:48:33 2019
+85 Mon Dec 30 20:14:21 2019
 86 pliAppInit
 87 FSDB_GATE is disabled.
 88 Enable Parallel Dumping.
@@ -93,7 +93,7 @@ argv[5]=+access+r
 91 LIBSSCORE=found /home/raid7_4/raid1_1/linux/novas/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
 92 argv[0]: MIPS.fsdb
 93 argv[0]: 0
-94 argv[1]: (handle)0xb9f0ce0 SingleCycle_tb
+94 argv[1]: (handle)0xb85ff80 SingleCycle_tb
 95 argv[2]: +mda
 96 FSDB Dumper for IUS, Release Verdi_N-2017.12, Linux, 11/12/2017
 97 (C) 1996 - 2017 by Synopsys, Inc.
@@ -103,14 +103,14 @@ argv[5]=+access+r
 101 *Verdi* : Create FSDB file 'MIPS.fsdb'
 102 sps_call_fsdbDumpvars at 0 : /home/raid7_2/userb06/b06051/CA_HW4/tb.v(87)
 103 argv[0]: 0
-104 argv[1]: (handle)0xb9f0ce0 SingleCycle_tb
+104 argv[1]: (handle)0xb85ff80 SingleCycle_tb
 105 argv[2]: +mda
 106 *Verdi* : Begin traversing the scope (SingleCycle_tb), layer (0).
 107 *Verdi* : Enable +mda dumping.
 108 Cell instance `SingleCycle_tb.SingleCycleMIPS.U116'.
 109 *Verdi* : End of traversing.
 110 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.290 user,  162.08M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.300 user,  162.15M sys,  0.00M vm
                    incr: 0.000 sys,  0.240 user,  9.66M sys,  0.00M vm
                    accu: 0.000 sys,  0.240 user,  9.66M sys,  0.00M vm
               accu incr: 0.000 sys,  0.240 user,  9.66M sys,  0.00M vm
@@ -120,9 +120,9 @@ argv[5]=+access+r
                  accu: 37368 var,  13589 idcode,  13590 callback
             accu incr: 37368 var,  13589 idcode,  13590 callback
 111 VC callback profile - scalar:0 vector:0
-112 Sat Dec 28 16:48:34 2019
+112 Mon Dec 30 20:14:22 2019
 113 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.060 sys,  0.300 user,  163.13M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.310 user,  163.20M sys,  0.00M vm
                    incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
                    accu: 0.000 sys,  0.250 user,  10.71M sys,  0.00M vm
               accu incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
@@ -132,27 +132,27 @@ argv[5]=+access+r
                  accu: 37368 var,  13589 idcode,  13590 callback
             accu incr: 0 var,  0 idcode,  0 callback
 114 VC callback profile - scalar:10514 vector:3075
-115 Sat Dec 28 16:48:34 2019
+115 Mon Dec 30 20:14:22 2019
 116 sps_call_fsdbDumpvars at 0 : /home/raid7_2/userb06/b06051/CA_HW4/tb.v(88)
 117 *Verdi* : Begin traversing the scopes, layer (0).
 118 Cell instance `SingleCycle_tb.SingleCycleMIPS.U116'.
 119 *Verdi* : End of traversing.
 120 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.460 user,  163.99M sys,  0.00M vm
-                   incr: 0.000 sys,  0.160 user,  0.86M sys,  0.00M vm
-                   accu: 0.000 sys,  0.160 user,  0.86M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.160 user,  0.86M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.460 user,  164.06M sys,  0.00M vm
+                   incr: 0.000 sys,  0.150 user,  0.86M sys,  0.00M vm
+                   accu: 0.000 sys,  0.150 user,  0.86M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.150 user,  0.86M sys,  0.00M vm
 
           Count usage: 75070 var,  14869 idcode,  14870 callback
                  incr: 37702 var,  1280 idcode,  1280 callback
                  accu: 37702 var,  1280 idcode,  1280 callback
             accu incr: 37702 var,  1280 idcode,  1280 callback
 121 VC callback profile - scalar:10514 vector:3075
-122 Sat Dec 28 16:48:34 2019
+122 Mon Dec 30 20:14:22 2019
 123 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.060 sys,  0.460 user,  163.99M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.460 user,  164.06M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
-                   accu: 0.000 sys,  0.160 user,  0.86M sys,  0.00M vm
+                   accu: 0.000 sys,  0.150 user,  0.86M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
 
           Count usage: 75070 var,  14869 idcode,  14870 callback
@@ -160,16 +160,16 @@ argv[5]=+access+r
                  accu: 37702 var,  1280 idcode,  1280 callback
             accu incr: 0 var,  0 idcode,  0 callback
 124 VC callback profile - scalar:22308 vector:3092
-125 Sat Dec 28 16:48:34 2019
+125 Mon Dec 30 20:14:22 2019
 126 End of simulation at 7316000
 127 VC callback profile - scalar:778969 vector:18086
-128 Sat Dec 28 16:48:34 2019
+128 Mon Dec 30 20:14:22 2019
 129 Begin FSDB profile info:
 130 FSDB Writer : bc1(778969) bcn(18086) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.110687) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer elapsed time : flush(0.141368) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 131 End FSDB profile info
 132 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:4 BlockUsed:4
-133                        ProduceTime:1.144047047 ConsumerTime:0.105068683 Buffer:64MB
+133                        ProduceTime:1.157362512 ConsumerTime:0.103626455 Buffer:64MB
 134 SimExit
 135 Sim process exit

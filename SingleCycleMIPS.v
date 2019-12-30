@@ -1,4 +1,3 @@
-`include "ALU_CTRL.v"
 `include "ALU.v"
 `include "CONTROL.v"
 `include "REGISTER.v"
@@ -35,15 +34,11 @@ module SingleCycleMIPS(
     wire w_regdst, w_jump, w_beq, w_bne, w_mem_r, w_mem2reg, w_jr;
     wire w_mem_w, w_alusrc, w_reg_w, w_mem_en, w_zero, w_jal;
     wire [1:0] w_aluop;
-    //wire [3:0] w_alu_ctrl;
     wire [4:0] w_write_reg;
     wire [6:0] w_A;
     wire [29:0] w_pc_in, w_pc_out, w_pc_add4, w_pc_branch, w_pc_jump;
     wire [31:0] w_rd1, w_rd2, w_alu, w_se, w_alu_result, w_jal_wr;
-    // wire [4:0] w_pc_temp[0:6];
-    // wire [1:0] w_pc_temp1;
-    
-    //integer i;
+
 //==== wire connection to submodule ======================
 
 REGISTER register(
@@ -88,13 +83,6 @@ ALU alu(
     .jr(w_jr)
 );
 
-// ALU_CTRL alu_ctrl(
-//     .alu_op(w_aluop),
-//     .funct(IR[5:0]),
-//     .alu_ctrl(w_alu_ctrl),
-//     .jr(w_jr)
-// );
-
 PC pc(
     .clk(clk),
     .rst_n(rst_n),
@@ -102,15 +90,6 @@ PC pc(
     .out(w_pc_out)
 );
 
-// assign w_pc_temp[0] = w_pc_add4[3:0]+w_se[3:0];
-// assign w_pc_temp[1] = w_pc_add4[7:4]+w_se[7:4]+{3'd0,w_pc_temp[0][4]};
-// assign w_pc_temp[2] = w_pc_add4[11:8]+w_se[11:8]+{3'd0,w_pc_temp[1][4]};
-// assign w_pc_temp[3] = w_pc_add4[15:12]+w_se[15:12]+{3'd0,w_pc_temp[2][4]};
-// assign w_pc_temp[4] = w_pc_add4[19:16]+w_se[19:16]+{3'd0,w_pc_temp[3][4]};
-// assign w_pc_temp[5] = w_pc_add4[23:20]+w_se[23:20]+{3'd0,w_pc_temp[4][4]};
-// assign w_pc_temp[6] = w_pc_add4[27:24]+w_se[27:24]+{3'd0,w_pc_temp[5][4]};
-// assign w_pc_temp1 = w_pc_add4[29:28]+w_se[29:28]+{1'b0,w_pc_temp[6][4]};
-// assign w_pc_branch = {w_pc_temp1,w_pc_temp[6][3:0],w_pc_temp[5][3:0],w_pc_temp[4][3:0],w_pc_temp[3][3:0],w_pc_temp[2][3:0],w_pc_temp[1][3:0],w_pc_temp[0][3:0]};
 assign w_pc_add4 = w_pc_out + 1;
 
 assign w_se = { {16{IR[15]}},IR[15:0] };
@@ -125,9 +104,8 @@ assign w_pc_in =    (w_jr) ? w_rd1 :
                     (w_beq && w_zero) || (w_bne && ~w_zero) ? w_pc_branch :
                     w_pc_add4;
 
-//assign w_mem_reg = (w_mem2reg) ? ReadDataMem : w_alu_result;
 assign w_jal_wr = (w_jal) ? w_pc_add4 : ((w_mem2reg) ? ReadDataMem : w_alu_result);
-//assign A = (w_mem_en) ? 0 : w_A;
+
 assign IR_addr = {w_pc_out, 2'b00};
 assign CEN = w_mem_en;
 assign OEN = w_mem_r;

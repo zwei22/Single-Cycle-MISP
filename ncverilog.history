@@ -464,3 +464,15 @@ s463(28Dec2019:16:41:12):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define
 s464(28Dec2019:16:48:10):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
 s465(28Dec2019:16:48:23):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
 s466(28Dec2019:16:48:31):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s467(30Dec2019:19:48:13):  ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r 
+s468(30Dec2019:19:48:24):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r 
+s469(30Dec2019:19:48:34):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s470(30Dec2019:19:48:45):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Single +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s471(30Dec2019:19:48:55):  ncverilog tb.v SingleCycleMIPS_FPU.v +define+FPU+Double +access+r -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v +incdir+/usr/cad/synopsys/synthesis/cur/dw/sim_ver/ 
+s472(30Dec2019:19:49:02):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s473(30Dec2019:19:49:17):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s474(30Dec2019:19:49:49):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Single +access+r 
+s475(30Dec2019:19:50:06):  ncverilog tb.v SingleCycleMIPS_FPU_syn.v tsmc13.v +define+FPU+Double +access+r 
+s476(30Dec2019:19:53:19):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s477(30Dec2019:20:02:58):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 
+s478(30Dec2019:20:14:19):  ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r 

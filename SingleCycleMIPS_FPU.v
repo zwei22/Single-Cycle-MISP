@@ -1,4 +1,3 @@
-`include "ALU_CTRL.v"
 `include "ALU.v"
 `include "CONTROL.v"
 `include "REGISTER.v"

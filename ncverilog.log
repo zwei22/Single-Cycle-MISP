@@ -1,17 +1,12 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Dec 28, 2019 at 16:48:31 CST
+TOOL:	ncverilog	15.20-s039: Started on Dec 30, 2019 at 20:14:19 CST
 ncverilog
 	tb.v
 	SingleCycleMIPS_syn.v
 	tsmc13.v
 	+define+Baseline+SDF
 	+access+r
-Recompiling... reason: file './tb.v' is newer than expected.
-	expected: Sat Dec 28 16:48:22 2019
-	actual:   Sat Dec 28 16:48:30 2019
-file: tb.v
-	module worklib.SingleCycle_tb:v
-		errors: 0, warnings: 0
+Recompiling... reason: unable to stat '/.//home/raid7_2/userb06/b06051/CA_HW4/SingleCycleMIPS_syn.sdf.X'.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
   EDFFXL regs_reg_24__29_ ( .D(n2524), .E(n2634), .CK(clk), .QN(n771) );
@@ -24,7 +19,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,289|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
 
-  EDFFXL regs_reg_3__31_ ( .D(net19949), .E(n2592), .CK(clk), .QN(n97) );
+  EDFFXL regs_reg_3__31_ ( .D(net19917), .E(n2592), .CK(clk), .QN(n97) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,290|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -34,7 +29,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,291|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_2__31_ ( .D(net19949), .E(n2590), .CK(clk), .QN(n65) );
+  EDFFXL regs_reg_2__31_ ( .D(net19917), .E(n2590), .CK(clk), .QN(n65) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,292|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -44,7 +39,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,293|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_1__31_ ( .D(net19949), .E(n2588), .CK(clk), .QN(n33) );
+  EDFFXL regs_reg_1__31_ ( .D(net19917), .E(n2588), .CK(clk), .QN(n33) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,294|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -59,7 +54,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,296|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_5__31_ ( .D(net19949), .E(n2597), .CK(clk), .QN(n161) );
+  EDFFXL regs_reg_5__31_ ( .D(net19917), .E(n2597), .CK(clk), .QN(n161) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,297|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -74,7 +69,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,299|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_7__31_ ( .D(net19949), .E(n2600), .CK(clk), .QN(n225) );
+  EDFFXL regs_reg_7__31_ ( .D(net19917), .E(n2600), .CK(clk), .QN(n225) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,300|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -84,7 +79,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,301|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_9__31_ ( .D(net19949), .E(n2605), .CK(clk), .QN(n289) );
+  EDFFXL regs_reg_9__31_ ( .D(net19917), .E(n2605), .CK(clk), .QN(n289) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,302|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -94,7 +89,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,303|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_11__31_ ( .D(net19949), .E(n2608), .CK(clk), .QN(n353) );
+  EDFFXL regs_reg_11__31_ ( .D(net19917), .E(n2608), .CK(clk), .QN(n353) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,304|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -104,7 +99,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,305|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_13__31_ ( .D(net19949), .E(n2612), .CK(clk), .QN(n417) );
+  EDFFXL regs_reg_13__31_ ( .D(net19917), .E(n2612), .CK(clk), .QN(n417) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,306|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -114,7 +109,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,307|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_15__31_ ( .D(net19949), .E(n2616), .CK(clk), .QN(n481) );
+  EDFFXL regs_reg_15__31_ ( .D(net19917), .E(n2616), .CK(clk), .QN(n481) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,308|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -129,7 +124,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,310|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_17__31_ ( .D(net19949), .E(n2620), .CK(clk), .QN(n545) );
+  EDFFXL regs_reg_17__31_ ( .D(net19917), .E(n2620), .CK(clk), .QN(n545) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,311|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -139,7 +134,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,312|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_19__31_ ( .D(net19949), .E(n2399), .CK(clk), .QN(n609) );
+  EDFFXL regs_reg_19__31_ ( .D(net19917), .E(n2399), .CK(clk), .QN(n609) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,313|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -149,12 +144,12 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,314|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_21__31_ ( .D(net19949), .E(n2628), .CK(clk), .QN(n673) );
+  EDFFXL regs_reg_21__31_ ( .D(net19917), .E(n2628), .CK(clk), .QN(n673) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,315|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
 
-  EDFFXL regs_reg_23__31_ ( .D(net19949), .E(n2633), .CK(clk), .QN(n737) );
+  EDFFXL regs_reg_23__31_ ( .D(net19917), .E(n2633), .CK(clk), .QN(n737) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,316|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -169,7 +164,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,318|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_25__31_ ( .D(net19949), .E(n2636), .CK(clk), .QN(n801) );
+  EDFFXL regs_reg_25__31_ ( .D(net19917), .E(n2636), .CK(clk), .QN(n801) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,319|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -179,7 +174,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,320|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_27__31_ ( .D(net19949), .E(n2641), .CK(clk), .QN(n865) );
+  EDFFXL regs_reg_27__31_ ( .D(net19917), .E(n2641), .CK(clk), .QN(n865) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,321|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -189,7 +184,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,322|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_29__31_ ( .D(net19949), .E(n2644), .CK(clk), .QN(n929) );
+  EDFFXL regs_reg_29__31_ ( .D(net19917), .E(n2644), .CK(clk), .QN(n929) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,323|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -199,7 +194,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,324|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_31__31_ ( .D(net19949), .E(n2345), .CK(clk), .QN(n993) );
+  EDFFXL regs_reg_31__31_ ( .D(net19917), .E(n2345), .CK(clk), .QN(n993) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,325|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -234,7 +229,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,331|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_8__31_ ( .D(net24873), .E(n2602), .CK(clk), .QN(n257) );
+  EDFFX1 regs_reg_8__31_ ( .D(net24841), .E(n2602), .CK(clk), .QN(n257) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,332|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -259,7 +254,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,336|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_14__31_ ( .D(net24873), .E(n2614), .CK(clk), .QN(n449) );
+  EDFFX1 regs_reg_14__31_ ( .D(net24841), .E(n2614), .CK(clk), .QN(n449) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,337|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -274,7 +269,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,339|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_16__31_ ( .D(net24873), .E(n2618), .CK(clk), .QN(n513) );
+  EDFFX1 regs_reg_16__31_ ( .D(net24841), .E(n2618), .CK(clk), .QN(n513) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,340|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -294,7 +289,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,343|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_22__31_ ( .D(net24873), .E(n2631), .CK(clk), .QN(n705) );
+  EDFFX1 regs_reg_22__31_ ( .D(net24841), .E(n2631), .CK(clk), .QN(n705) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,344|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -319,7 +314,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,348|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_28__31_ ( .D(net24873), .E(n2643), .CK(clk), .QN(n897) );
+  EDFFX1 regs_reg_28__31_ ( .D(net24841), .E(n2643), .CK(clk), .QN(n897) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,349|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -329,7 +324,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,350|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFX1 regs_reg_30__31_ ( .D(net24873), .E(n2379), .CK(clk), .QN(n961) );
+  EDFFX1 regs_reg_30__31_ ( .D(net24841), .E(n2379), .CK(clk), .QN(n961) );
                         |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,351|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
@@ -3554,7 +3549,7 @@ ncelab: (./tsmc13.v,19637): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,1033|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19637): Q
 
-  EDFFXL regs_reg_20__0_ ( .D(n1080), .E(n2755), .CK(clk), .Q(net20528) );
+  EDFFXL regs_reg_20__0_ ( .D(n1080), .E(n2755), .CK(clk), .Q(net20496) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,2615|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): QN
@@ -4484,7 +4479,7 @@ ncelab: (./tsmc13.v,19579): Q
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,2817|24): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
 
-  EDFFXL regs_reg_6__31_ ( .D(net24873), .E(n2743), .CK(clk), .QN(n193) );
+  EDFFXL regs_reg_6__31_ ( .D(net24841), .E(n2743), .CK(clk), .QN(n193) );
                        |
 ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,2818|23): 1 output port was not connected:
 ncelab: (./tsmc13.v,19579): Q
@@ -4910,6 +4905,7 @@ ncelab: *W,CUVWSP (./SingleCycleMIPS_syn.v,4754|17): 1 output port was not conne
 ncelab: (./tsmc13.v,17883): QN
 
 	Reading SDF file from location "./SingleCycleMIPS_syn.sdf"
+	Writing compiled SDF file to "SingleCycleMIPS_syn.sdf.X".
 	Annotating SDF timing data:
 		Compiled SDF file:     SingleCycleMIPS_syn.sdf.X
 		Log file:              
@@ -4918,266 +4914,266 @@ ncelab: (./tsmc13.v,17883): QN
 		MTM control:           
 		Scale factors:         
 		Scale type:            
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13192>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13193>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13196>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13197>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13208>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13209>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13212>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13213>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13235>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13236>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13239>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13240>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13253>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13254>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13257>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13258>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13271>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13272>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13275>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13276>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13289>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13290>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13293>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13294>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13307>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13308>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13311>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13312>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13325>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13326>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13329>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13330>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13343>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13344>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13347>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13348>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13361>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13362>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13365>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13366>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13379>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13380>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13383>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13384>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13397>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13398>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13401>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13402>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13415>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13416>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13419>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13420>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13433>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13434>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13437>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13438>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13451>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13452>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13455>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13456>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13469>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13470>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13473>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13474>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13487>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13488>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13491>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13492>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13505>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13506>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13509>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13510>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13523>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13524>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13527>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13528>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13541>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13542>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13545>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13546>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13559>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13560>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13563>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13564>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13577>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13578>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13581>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13582>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13595>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13596>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13599>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13600>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13613>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13614>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13617>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13618>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13631>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13632>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13635>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13636>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13649>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13650>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13653>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13654>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13667>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13668>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13671>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13672>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13685>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13686>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13689>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13690>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13703>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13704>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13707>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_114.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13708>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13749>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13750>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13753>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13754>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U26 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13765>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U26 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13766>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13782>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13783>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13791>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13792>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U24 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13806>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U24 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13807>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13840>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13841>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13849>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13850>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13901>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13902>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13905>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13906>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13919>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13920>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13925>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13926>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13929>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13930>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13952>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13953>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13956>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13957>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14091>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14092>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14100>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14101>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14121>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14122>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14130>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14131>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14151>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14152>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14160>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14161>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14181>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14182>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14190>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14191>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14211>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14212>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14220>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14221>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14241>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14242>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14250>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14251>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14271>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14272>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14280>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14281>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14301>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14302>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14310>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14311>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14331>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14332>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14340>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14341>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14361>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14362>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14367>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14368>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14371>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14372>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14392>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14393>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14398>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14399>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14402>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14403>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14423>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14424>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14432>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14433>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14453>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14454>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14459>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14460>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14463>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14464>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14484>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14485>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14493>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14494>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14514>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14515>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14520>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14521>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14524>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14525>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14545>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14546>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14551>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14552>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14555>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14556>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14576>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14577>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14585>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14586>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14606>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14607>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14615>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14616>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14636>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14637>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14642>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14643>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14646>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14647>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14667>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14668>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14676>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14677>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14697>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14698>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14703>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14704>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14707>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14708>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14728>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14729>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14734>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14735>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14738>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14739>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14759>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14760>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14768>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14769>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14782>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14783>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14788>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14789>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14792>.
-ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_117.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14793>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13192>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13193>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13196>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_2 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13197>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13208>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13209>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13212>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U2 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13213>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13235>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13236>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13239>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_22 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13240>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13253>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13254>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13257>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_12 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13258>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13271>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13272>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13275>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_15 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13276>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13289>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13290>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13293>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_17 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13294>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13307>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13308>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13311>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_16 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13312>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13325>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13326>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13329>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_18 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13330>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13343>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13344>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13347>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_19 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13348>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13361>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13362>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13365>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_1 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13366>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13379>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13380>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13383>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_4 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13384>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13397>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13398>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13401>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_6 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13402>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13415>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13416>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13419>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_7 of module CMPR22X2 <./SingleCycleMIPS_syn.sdf, line 13420>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13433>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13434>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13437>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_8 of module ADDHX2 <./SingleCycleMIPS_syn.sdf, line 13438>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13451>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13452>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13455>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_3 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13456>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13469>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13470>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13473>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_21 of module ADDHXL <./SingleCycleMIPS_syn.sdf, line 13474>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13487>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13488>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13491>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_9 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13492>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13505>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13506>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13509>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_11 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13510>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13523>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13524>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13527>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_20 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13528>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13541>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13542>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13545>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_28 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13546>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13559>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13560>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13563>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_5 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13564>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13577>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13578>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13581>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_10 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13582>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13595>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13596>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13599>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_13 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13600>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13613>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13614>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13617>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_14 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13618>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13631>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13632>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13635>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_23 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13636>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13649>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13650>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13653>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_24 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13654>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13667>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13668>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13671>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_25 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13672>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13685>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13686>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13689>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_26 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13690>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13703>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13704>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13707>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_93.U1_1_27 of module ADDHX1 <./SingleCycleMIPS_syn.sdf, line 13708>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13749>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13750>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13753>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U27 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13754>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U26 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13765>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U26 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13766>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13782>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13783>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13791>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U25 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13792>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U24 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13806>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U24 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13807>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13840>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13841>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13849>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U21 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13850>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13901>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13902>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13905>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U15 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13906>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13919>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13920>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13925>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13926>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13929>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U14 of module XOR3XL <./SingleCycleMIPS_syn.sdf, line 13930>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13952>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13953>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13956>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U12 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 13957>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14091>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14092>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14100>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_27 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14101>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14121>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14122>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14130>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_6 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14131>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14151>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14152>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14160>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_12 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14161>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14181>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14182>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14190>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_7 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14191>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14211>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14212>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14220>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_13 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14221>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14241>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14242>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14250>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_9 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14251>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14271>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14272>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14280>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_8 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14281>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14301>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14302>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14310>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_10 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14311>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14331>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14332>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14340>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_14 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14341>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14361>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14362>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14367>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14368>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14371>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_16 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14372>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14392>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14393>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14398>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14399>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14402>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_15 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14403>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14423>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14424>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14432>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_18 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14433>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14453>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14454>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14459>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14460>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14463>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_17 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14464>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14484>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14485>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14493>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_21 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14494>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14514>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14515>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14520>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14521>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14524>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_23 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14525>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14545>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14546>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14551>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14552>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14555>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_22 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14556>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14576>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14577>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14585>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_4 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14586>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14606>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14607>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14615>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_2 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14616>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14636>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14637>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14642>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14643>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14646>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_19 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14647>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14667>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14668>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14676>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_24 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14677>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14697>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14698>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14703>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14704>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14707>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_25 of module ADDFHX2 <./SingleCycleMIPS_syn.sdf, line 14708>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14728>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14729>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14734>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14735>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14738>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_26 of module ADDFX2 <./SingleCycleMIPS_syn.sdf, line 14739>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14759>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14760>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14768>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_3 of module ADDFHX4 <./SingleCycleMIPS_syn.sdf, line 14769>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14782>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14783>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14788>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14789>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14792>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) Y) of instance SingleCycle_tb.SingleCycleMIPS.add_96.U1_29 of module XOR3X2 <./SingleCycleMIPS_syn.sdf, line 14793>.
 ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.alu.U774 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 15612>.
 ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance SingleCycle_tb.SingleCycleMIPS.alu.U774 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 15613>.
 ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance SingleCycle_tb.SingleCycleMIPS.alu.U774 of module XOR2X1 <./SingleCycleMIPS_syn.sdf, line 15616>.
@@ -5931,9 +5927,6 @@ ncelab: *W,MXWARN: Reached maximum warning limit for 'SDFNEP'(1000).
 		                                     |
 ncelab: *W,MEMODR (./tb.v,79|39): $readmem default memory order incompatible with IEEE1364.
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.SingleCycle_tb:v <0x59958772>
-			streams:  11, words: 14915
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -8141,4 +8134,4 @@ using SDF File ./SingleCycleMIPS_syn.sdf  for this simulation.
 Simulation complete via $finish(1) at time 7316 NS + 0
 ./tb.v:160 			$finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Dec 28, 2019 at 16:48:35 CST  (total: 00:00:04)
+TOOL:	ncverilog	15.20-s039: Exiting on Dec 30, 2019 at 20:14:23 CST  (total: 00:00:04)
